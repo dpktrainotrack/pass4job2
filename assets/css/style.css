@@ -1959,10 +1959,10 @@ button.courses-btn.show {
   overflow: auto;
 }
 
-.brand-listing-tabs {
+/* .brand-listing-tabs {
   overflow: auto;
   max-height: 650px;
-}
+} */
 
 /* ===What You Will Learn Section=== */
 .what-you-learn-section {
@@ -2441,7 +2441,7 @@ button.courses-btn.show {
   outline: none;
   background: transparent;
   padding: 18px 12px 6px 0;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--dark-text);
   font-family: 'Roboto', sans-serif;
   width: 100%;
@@ -2461,9 +2461,9 @@ button.courses-btn.show {
 }
 
 /* Float label when input has content or is focused */
-.hef-input:not(:placeholder-shown)~.hef-label,
-.hef-input:focus~.hef-label {
-  top: 8px;
+.hef-input:not(:placeholder-shown) ~ .hef-label,
+.hef-input:focus ~ .hef-label {
+  top: 4px;
   transform: none;
   font-size: 0.68rem;
   color: var(--primary-blue);
@@ -2487,13 +2487,13 @@ button.courses-btn.show {
 }
 
 .hef-label-phone {
-  left: 116px;
+  left: 86px;
 }
 
 .hef-input-phone:not(:placeholder-shown)~.hef-label-phone,
 .hef-input-phone:focus~.hef-label-phone {
   left: 116px;
-  top: 8px;
+  top: 4px;
   transform: none;
   font-size: 0.68rem;
   color: var(--primary-blue);
@@ -2532,7 +2532,7 @@ button.courses-btn.show {
   padding: 8px;
   border-radius: 8px;
   display: inline-block;
-  max-width: 90px;
+  /* max-width: 90px; */
 }
 
 .price-card-right {
@@ -2548,12 +2548,13 @@ button.courses-btn.show {
 }
 
 /* Float label for select when a non-placeholder option is chosen */
-.hef-select:valid~.hef-label {
-  top: 8px;
+.hef-select:valid ~ .hef-label,
+.hef-select:focus ~ .hef-label {
+  top: 4px;
   transform: none;
-  font-size: 0.85rem;
-  color: #a08070;
-  /* font-weight: 600; */
+  font-size: 0.68rem;
+  color: var(--primary-blue);
+  font-weight: 600;
 }
 
 /* ---- Textarea ---- */
@@ -2577,7 +2578,8 @@ button.courses-btn.show {
 
 .hef-textarea:not(:placeholder-shown)~.hef-label,
 .hef-textarea:focus~.hef-label {
-  top: 6px;
+  top: 4px;
+  transform: none;
   font-size: 0.68rem;
   color: var(--primary-blue);
   font-weight: 600;
@@ -2879,4 +2881,9 @@ button.courses-btn.show {
   .co-stat-item {
     min-width: 100%;
   }
+}
+
+.col-md-3.bg-light.border-end {
+  height: 600px;
+  overflow-y: auto;
 }
