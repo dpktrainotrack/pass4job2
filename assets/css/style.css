@@ -1844,7 +1844,7 @@ footer a:hover {
   box-shadow: var(--shadow-md);
   padding: 30px;
   margin-bottom: 30px;
-  border-top: 4px solid var(--accent-color);
+  border-top: 4px solid var(--primary-blue);
 }
 
 .course-price {
@@ -2521,6 +2521,25 @@ button.courses-btn.show {
   font-size: 0.75rem;
   pointer-events: none;
   transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.disc-badge {
+
+  background: var(--accent-color);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px;
+  border-radius: 8px;
+  display: inline-block;
+  max-width: 90px;
+}
+
+.price-card-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .hef-input-wrap:focus-within .hef-select-arrow {

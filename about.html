@@ -18,36 +18,226 @@
 
 <body>
 
-    <!-- Top Header -->
-    <div class="top-header d-none d-lg-block">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div>
-                <a href="mailto:support@pass4job.com"><i class="fas fa-envelope me-2"></i>support@pass4job.com</a>
-                <a href="tel:+1234567890"><i class="fas fa-phone-alt me-2"></i>+1 234 567 890</a>
-            </div>
-            <div>
-                <span>Official & Trusted Vouchers Provider</span>
-            </div>
-        </div>
-    </div>
+
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
+            <!-- <a class="navbar-brand" href="index.html">
+                            <img src="assets/images/logo.png" alt="Pass4Job Logo" style="height: 36px;">
+                        </a> -->
             <a class="navbar-brand" href="index.html">
                 <i class="fas fa-shield-check me-2" style="color: var(--accent-color);"></i>Pass4<span>Job</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+            <!-- Megamenu Toggler -->
+            <div class="dropdown me-auto ms-3 d-none d-lg-block position-static">
+                <button class="btn theme-primary dropdown-toggle courses-btn d-flex align-items-center gap-2 px-4 py-2"
+                    type="button" id="coursesMegaMenuButton" data-bs-toggle="dropdown" aria-expanded="false"
+                    data-bs-auto-close="outside">
+                    Training
+                </button>
+                <!-- Megamenu Dropdown -->
+                <div class="dropdown-menu w-100 mega-menu-dropdown  border-0 mt-3 p-3 "
+                    aria-labelledby="coursesMegaMenuButton">
+                    <div class="container p-0 rounded">
+                        <div class="row g-0">
+                            <!-- Left Sidebar Categories -->
+                            <div class="col-md-3 bg-light border-end">
+                                <div class="nav flex-column nav-pills mega-menu-tabs p-3 gap-2 brand-listing-tabs"
+                                    id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <button class="nav-link active d-flex align-items-center bg-white border"
+                                        id="v-pills-data-analytics-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-data-analytics" type="button" role="tab"
+                                        aria-controls="v-pills-data-analytics" aria-selected="true">
+                                        <img src="assets/images/brands/aws.webp" alt="" height="50">
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                    <button class="nav-link d-flex align-items-center bg-white border"
+                                        id="v-pills-data-science-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-data-science" type="button" role="tab"
+                                        aria-controls="v-pills-data-science" aria-selected="false">
+                                        <img src="assets/images/brands/isaca.webp" alt="" height="50">
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                    <button class="nav-link d-flex align-items-center bg-white border"
+                                        id="v-pills-development-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-development" type="button" role="tab"
+                                        aria-controls="v-pills-development" aria-selected="false">
+                                        <img src="assets/images/brands/comptia.webp" alt="" height="50">
+
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                    <button class="nav-link d-flex align-items-center bg-white border"
+                                        id="v-pills-cyber-security-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-cyber-security" type="button" role="tab"
+                                        aria-controls="v-pills-cyber-security" aria-selected="false">
+                                        <img src="assets/images/brands/pmi.webp" alt="" height="50">
+
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                    <button class="nav-link d-flex align-items-center bg-white border"
+                                        id="v-pills-cloud-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cloud"
+                                        type="button" role="tab" aria-controls="v-pills-cloud" aria-selected="false">
+                                        <img src="assets/images/brands/paloalto.webp" alt="" height="50">
+
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                    <button class="nav-link d-flex align-items-center bg-white border"
+                                        id="v-pills-design-tab" data-bs-toggle="pill" data-bs-target="#v-pills-design"
+                                        type="button" role="tab" aria-controls="v-pills-design" aria-selected="false">
+                                        <img src="assets/images/brands/google.png" alt="" height="50">
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                    <button class="nav-link d-flex align-items-center bg-white border" id="tab7"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-tab7" type="button" role="tab"
+                                        aria-controls="v-pills-tab7" aria-selected="false">
+                                        <img src="assets/images/brands/vmware.png" alt="" height="50">
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Right Content Area -->
+                            <div class="col-md-9 p-4 bg-white">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <!-- Data Analytics Content -->
+                                    <div class="tab-pane fade show active" id="v-pills-data-analytics" role="tabpanel"
+                                        aria-labelledby="v-pills-data-analytics-tab">
+                                        <!-- <h4 class="fw-bold mb-4">Data Analytics</h4> -->
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <a href="detailpage.html" class="text-decoration-none text-dark"
+                                                    style="cursor: pointer;">
+                                                    <div
+                                                        class="mega-course-card p-3 border rounded h-100 d-flex align-items-center gap-3 transition-all">
+                                                        <div class="icon-wrapper rounded text-white p-3 fs-3 bg-light ">
+                                                            <img src="assets/images/brands/aws.webp" alt="" height="40">
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <h6 class="fw-bold mb-2">AWS Certified Solutions
+                                                                Architect Associate</h6>
+                                                            <div
+                                                                class="d-flex justify-content-between text-muted small">
+                                                                <span>8 Months</span>
+                                                                <span>Online</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <a href="detailpage.html" class="text-decoration-none text-dark"
+                                                    style="cursor: pointer;">
+                                                    <div
+                                                        class="mega-course-card p-3 border rounded h-100 d-flex align-items-center gap-3 transition-all">
+                                                        <div class="icon-wrapper rounded text-white p-3 fs-3 bg-light ">
+                                                            <img src="assets/images/brands/aws.webp" alt="" height="40">
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <h6 class="fw-bold mb-2">AWS Certified Solutions
+                                                                Architect Associate</h6>
+                                                            <div
+                                                                class="d-flex justify-content-between text-muted small">
+                                                                <span>8 Months</span>
+                                                                <span>Online</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="detailpage.html" class="text-decoration-none text-dark"
+                                                    style="cursor: pointer;">
+                                                    <div
+                                                        class="mega-course-card p-3 border rounded h-100 d-flex align-items-center gap-3 transition-all">
+                                                        <div class="icon-wrapper rounded text-white p-3 fs-3 bg-light ">
+                                                            <img src="assets/images/brands/aws.webp" alt="" height="40">
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <h6 class="fw-bold mb-2">AWS Certified Solutions
+                                                                Architect Associate</h6>
+                                                            <div
+                                                                class="d-flex justify-content-between text-muted small">
+                                                                <span>8 Months</span>
+                                                                <span>Online</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <a href="detailpage.html" class="text-decoration-none text-dark"
+                                                    style="cursor: pointer;">
+                                                    <div
+                                                        class="mega-course-card p-3 border rounded h-100 d-flex align-items-center gap-3 transition-all">
+                                                        <div class="icon-wrapper rounded text-white p-3 fs-3 bg-light ">
+                                                            <img src="assets/images/brands/aws.webp" alt="" height="40">
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <h6 class="fw-bold mb-2">AWS Certified Solutions
+                                                                Architect Associate</h6>
+                                                            <div
+                                                                class="d-flex justify-content-between text-muted small">
+                                                                <span>8 Months</span>
+                                                                <span>Online</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Other Content Panels Placeholder -->
+                                    <div class="tab-pane fade" id="v-pills-data-science" role="tabpanel"
+                                        aria-labelledby="v-pills-data-science-tab">
+                                        <h4 class="fw-bold mb-4">isaca</h4>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-development" role="tabpanel"
+                                        aria-labelledby="v-pills-development-tab">
+                                        <h4 class="fw-bold mb-4">compTia</h4>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-cyber-security" role="tabpanel"
+                                        aria-labelledby="v-pills-cyber-security-tab">
+                                        <h4 class="fw-bold mb-4">PMI</h4>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-cloud" role="tabpanel"
+                                        aria-labelledby="v-pills-cloud-tab">
+                                        <h4 class="fw-bold mb-4">DevOps and Cloud</h4>
+                                        <p class="text-muted">Courses coming soon.</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-design" role="tabpanel"
+                                        aria-labelledby="v-pills-design-tab">
+                                        <h4 class="fw-bold mb-4">Design</h4>
+                                        <p class="text-muted">Courses coming soon.</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-tab7" role="tabpanel" aria-labelledby="tab7">
+                                        <h4 class="fw-bold mb-4">vmware</h4>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link " href="index.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="category.html">Explore Courses</a>
-                    </li>
+                    <!-- <li class="nav-item">
+                                    <a class="nav-link" href="category.html">Training</a>
+                                </li> -->
                     <li class="nav-item">
                         <a class="nav-link active" href="about.html">About Us</a>
                     </li>
@@ -56,10 +246,12 @@
                     </li>
 
                 </ul>
-                <div class="d-flex">
-                    <a href="tel:1234567890" class="btn btn-primary d-none d-lg-block">+91 xxxxx xxxxx</a>
+                <div class="d-flex gap-2 hero-cta-btn">
+                    <a href="tel:+917428563177" class="btn btn-outline-light ">+91 74285 63177</a>
                 </div>
+
             </div>
+            <!-- ===CTA-Btuuon -->
         </div>
     </nav>
 
@@ -176,8 +368,9 @@
         <div class="container">
             <div class="row gy-4">
                 <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                    <h3 class="mb-4" style="font-family: 'Montserrat'; font-weight:800;">Pass4<span
-                            style="color:var(--accent-color);">Job</span></h3>
+                    <div class="mb-4">
+                        <img src="assets/images/logo-white.png" alt="Pass4Job Logo" style="height: 36px;">
+                    </div>
                     <p class="small opacity-75 pe-lg-4">Your trusted partner for official and discounted IT
                         certification vouchers. Start saving on your exams today.</p>
                     <div class="footer-socials mt-4">
@@ -192,26 +385,31 @@
                     <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="vouchers.html">Vouchers</a></li>
+                        <li><a href="category.html">Vouchers</a></li>
                         <li><a href="faq.html">FAQ</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <h5 class="mb-4">Certifications</h5>
+                    <h5 class="mb-4">Training</h5>
                     <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
-                        <li><a href="vouchers.html">AWS Vouchers</a></li>
-                        <li><a href="vouchers.html">Microsoft Azure Vouchers</a></li>
-                        <li><a href="vouchers.html">Cisco Vouchers</a></li>
-                        <li><a href="vouchers.html">CompTIA Vouchers</a></li>
+                        <li><a href="category.html">AWS Training</a></li>
+                        <li><a href="category.html">Microsoft Training</a></li>
+                        <li><a href="category.html">Cisco Training</a></li>
+                        <li><a href="category.html">CompTIA Training</a></li>
+                        <li><a href="category.html">Isaca Training</a></li>
+                        <li><a href="category.html">PMI Training</a></li>
+                        <li><a href="category.html">CIA Training</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="mb-4">Contact Info</h5>
                     <ul class="list-unstyled mb-0 d-flex flex-column gap-3 small opacity-75">
-                        <li><i class="fas fa-map-marker-alt me-2 text-primary"></i> 123 Tech Avenue, Silicon Valley</li>
-                        <li><i class="fas fa-envelope me-2 text-primary"></i> support@pass4job.com</li>
-                        <li><i class="fas fa-phone-alt me-2 text-primary"></i> +1 234 567 890</li>
+
+                        <li><i class="fas fa-envelope me-2 text-primary"></i> <a href="mailto:info@pass4job.com"
+                                class="text-decoration-none text-white">info@pass4job.com</a></li>
+                        <li><i class="fas fa-phone-alt me-2 text-primary"></i> <a href="tel:+917428563177"
+                                class="text-decoration-none text-white">+91 74285 63177</a></li>
                     </ul>
                 </div>
             </div>
@@ -227,6 +425,7 @@
             </div>
         </div>
     </footer>
+
 
     <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
