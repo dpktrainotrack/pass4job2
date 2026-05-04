@@ -174,7 +174,7 @@ section:nth-child(even) {
 
 /* Hero Section */
 .hero {
-  position: relative;
+  /* position: relative; */
   padding-bottom: 60px;
   background: var(--white);
   overflow: hidden;
@@ -190,7 +190,7 @@ section:nth-child(even) {
 }
 
 
-.hero::before {
+/* .hero::before {
   content: '';
   position: absolute;
   top: -50%;
@@ -198,14 +198,14 @@ section:nth-child(even) {
   width: 80%;
   height: 180%;
   background: #ffecdc46;
-  /* transform: rotate(-15deg); */
+
   z-index: 0;
   border-radius: 60px;
   opacity: .5;
   animation: spin 60s linear infinite;
   transition: all 22s ease;
   z-index: 1;
-}
+} */
 
 nav.navbar {
   box-shadow: none;
@@ -1955,8 +1955,9 @@ button.courses-btn.show {
 }
 
 .mega-menu-dropdown {
-  max-height: 600px;
+  max-height: 632px;
   overflow: auto;
+  border-radius: 30px;
 }
 
 /* .brand-listing-tabs {
@@ -2461,8 +2462,8 @@ button.courses-btn.show {
 }
 
 /* Float label when input has content or is focused */
-.hef-input:not(:placeholder-shown) ~ .hef-label,
-.hef-input:focus ~ .hef-label {
+.hef-input:not(:placeholder-shown)~.hef-label,
+.hef-input:focus~.hef-label {
   top: 4px;
   transform: none;
   font-size: 0.68rem;
@@ -2548,8 +2549,8 @@ button.courses-btn.show {
 }
 
 /* Float label for select when a non-placeholder option is chosen */
-.hef-select:valid ~ .hef-label,
-.hef-select:focus ~ .hef-label {
+.hef-select:valid~.hef-label,
+.hef-select:focus~.hef-label {
   top: 4px;
   transform: none;
   font-size: 0.68rem;
@@ -2883,7 +2884,29 @@ button.courses-btn.show {
   }
 }
 
-.col-md-3.bg-light.border-end {
-  height: 600px;
+.mobile-responsive-sidebar {
+
   overflow-y: auto;
+}
+
+@media screen and (min-width:992px) {
+  .mobile-responsive-sidebar {
+    height: 600px;
+  }
+}
+
+
+@media screen and (max-width: 767.98px) {
+  .mobile-responsive-sidebar {
+    height: auto;
+    overflow: auto;
+
+  }
+
+  #v-pills-tab {
+    width: 1510px;
+    overflow: auto;
+  }
+
+
 }
