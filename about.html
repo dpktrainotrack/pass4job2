@@ -24,15 +24,16 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <!-- <a class="navbar-brand" href="index.html">
-                            <img src="assets/images/logo.png" alt="Pass4Job Logo" style="height: 36px;">
-                        </a> -->
+                        <img src="assets/images/logo.png" alt="Pass4Job Logo" style="height: 36px;">
+                    </a> -->
             <a class="navbar-brand" href="index.html">
-                <i class="fas fa-shield-check me-2" style="color: var(--accent-color);"></i>Pass4<span>Job</span>
+                <i class="fas fa-shield-check " style="color: var(--accent-color);"></i>Pass4<span>Job</span>
             </a>
 
             <!-- Megamenu Toggler -->
-            <div class="dropdown me-auto ms-3 d-none d-lg-block position-static">
-                <button class="btn theme-primary dropdown-toggle courses-btn d-flex align-items-center gap-2 px-4 py-2"
+            <div class="dropdown me-auto   position-static">
+                <button
+                    class="btn theme-primary dropdown-toggle courses-btn d-flex align-items-center gap-2 px-2 px-md-4 py-2"
                     type="button" id="coursesMegaMenuButton" data-bs-toggle="dropdown" aria-expanded="false"
                     data-bs-auto-close="outside">
                     Training
@@ -40,11 +41,11 @@
                 <!-- Megamenu Dropdown -->
                 <div class="dropdown-menu w-100 mega-menu-dropdown  border-0 mt-3 p-3 "
                     aria-labelledby="coursesMegaMenuButton">
-                    <div class="container p-0 rounded">
+                    <div class="container p-sm-0 pb-5 rounded">
                         <div class="row g-0">
                             <!-- Left Sidebar Categories -->
-                            <div class="col-md-3 bg-light border-end">
-                                <div class="nav flex-column nav-pills mega-menu-tabs p-3 gap-2 brand-listing-tabs"
+                            <div class="col-md-3 bg-light border-end mobile-responsive-sidebar">
+                                <div class="nav flex-md-column nav-pills mega-menu-tabs p-3 gap-2 brand-listing-tabs"
                                     id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                     <button class="nav-link active d-flex align-items-center bg-white border"
                                         id="v-pills-data-analytics-tab" data-bs-toggle="pill"
@@ -86,7 +87,7 @@
                                     <button class="nav-link d-flex align-items-center bg-white border"
                                         id="v-pills-design-tab" data-bs-toggle="pill" data-bs-target="#v-pills-design"
                                         type="button" role="tab" aria-controls="v-pills-design" aria-selected="false">
-                                        <img src="assets/images/brands/google.png" alt="" height="50">
+                                        <img src="assets/images/brands/microsoft.webp" alt="" height="50">
                                         <i class="fas fa-chevron-right ms-auto small"></i>
                                     </button>
                                     <button class="nav-link d-flex align-items-center bg-white border" id="tab7"
@@ -95,17 +96,29 @@
                                         <img src="assets/images/brands/vmware.png" alt="" height="50">
                                         <i class="fas fa-chevron-right ms-auto small"></i>
                                     </button>
+                                    <button class="nav-link d-flex align-items-center bg-white border" id="tab8"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-tab-cisco" type="button"
+                                        role="tab" aria-controls="v-pills-tab-cisco" aria-selected="false">
+                                        <img src="assets/images/brands/cisco.webp" alt="" height="50">
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                    <button class="nav-link d-flex align-items-center bg-white border" id="tab9"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-tab-cia" type="button" role="tab"
+                                        aria-controls="v-pills-tab-cia" aria-selected="false">
+                                        <img src="assets/images/brands/CIA.png" alt="" height="50">
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
                                 </div>
                             </div>
                             <!-- Right Content Area -->
-                            <div class="col-md-9 p-4 bg-white">
+                            <div class="col-md-9 p-sm-4 p-2 bg-white">
                                 <div class="tab-content" id="v-pills-tabContent">
                                     <!-- Data Analytics Content -->
                                     <div class="tab-pane fade show active" id="v-pills-data-analytics" role="tabpanel"
                                         aria-labelledby="v-pills-data-analytics-tab">
                                         <!-- <h4 class="fw-bold mb-4">Data Analytics</h4> -->
-                                        <div class="row g-3">
-                                            <div class="col-md-6">
+                                        <div class="row g-3 ">
+                                            <div class="col-lg-6 col-12">
                                                 <a href="detailpage.html" class="text-decoration-none text-dark"
                                                     style="cursor: pointer;">
                                                     <div
@@ -126,7 +139,7 @@
                                                 </a>
                                             </div>
 
-                                            <div class="col-md-6">
+                                            <div class="col-lg-6 col-12">
                                                 <a href="detailpage.html" class="text-decoration-none text-dark"
                                                     style="cursor: pointer;">
                                                     <div
@@ -146,7 +159,7 @@
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-lg-6 col-12">
                                                 <a href="detailpage.html" class="text-decoration-none text-dark"
                                                     style="cursor: pointer;">
                                                     <div
@@ -167,7 +180,89 @@
                                                 </a>
                                             </div>
 
-                                            <div class="col-md-6">
+                                            <div class="col-lg-6 col-12">
+                                                <a href="detailpage.html" class="text-decoration-none text-dark"
+                                                    style="cursor: pointer;">
+                                                    <div
+                                                        class="mega-course-card p-3 border rounded h-100 d-flex align-items-center gap-3 transition-all">
+                                                        <div class="icon-wrapper rounded text-white p-3 fs-3 bg-light ">
+                                                            <img src="assets/images/brands/aws.webp" alt="" height="40">
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <h6 class="fw-bold mb-2">AWS Certified Solutions
+                                                                Architect Associate</h6>
+                                                            <div
+                                                                class="d-flex justify-content-between text-muted small">
+                                                                <span>8 Months</span>
+                                                                <span>Online</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <a href="detailpage.html" class="text-decoration-none text-dark"
+                                                    style="cursor: pointer;">
+                                                    <div
+                                                        class="mega-course-card p-3 border rounded h-100 d-flex align-items-center gap-3 transition-all">
+                                                        <div class="icon-wrapper rounded text-white p-3 fs-3 bg-light ">
+                                                            <img src="assets/images/brands/aws.webp" alt="" height="40">
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <h6 class="fw-bold mb-2">AWS Certified Solutions
+                                                                Architect Associate</h6>
+                                                            <div
+                                                                class="d-flex justify-content-between text-muted small">
+                                                                <span>8 Months</span>
+                                                                <span>Online</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-lg-6 col-12">
+                                                <a href="detailpage.html" class="text-decoration-none text-dark"
+                                                    style="cursor: pointer;">
+                                                    <div
+                                                        class="mega-course-card p-3 border rounded h-100 d-flex align-items-center gap-3 transition-all">
+                                                        <div class="icon-wrapper rounded text-white p-3 fs-3 bg-light ">
+                                                            <img src="assets/images/brands/aws.webp" alt="" height="40">
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <h6 class="fw-bold mb-2">AWS Certified Solutions
+                                                                Architect Associate</h6>
+                                                            <div
+                                                                class="d-flex justify-content-between text-muted small">
+                                                                <span>8 Months</span>
+                                                                <span>Online</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <a href="detailpage.html" class="text-decoration-none text-dark"
+                                                    style="cursor: pointer;">
+                                                    <div
+                                                        class="mega-course-card p-3 border rounded h-100 d-flex align-items-center gap-3 transition-all">
+                                                        <div class="icon-wrapper rounded text-white p-3 fs-3 bg-light ">
+                                                            <img src="assets/images/brands/aws.webp" alt="" height="40">
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <h6 class="fw-bold mb-2">AWS Certified Solutions
+                                                                Architect Associate</h6>
+                                                            <div
+                                                                class="d-flex justify-content-between text-muted small">
+                                                                <span>8 Months</span>
+                                                                <span>Online</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-lg-6 col-12">
                                                 <a href="detailpage.html" class="text-decoration-none text-dark"
                                                     style="cursor: pointer;">
                                                     <div
@@ -220,6 +315,16 @@
                                         <h4 class="fw-bold mb-4">vmware</h4>
 
                                     </div>
+                                    <div class="tab-pane fade" id="v-pills-tab-cisco" role="tabpanel"
+                                        aria-labelledby="tab8">
+                                        <h4 class="fw-bold mb-4">Cisco</h4>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-tab-cia" role="tabpanel"
+                                        aria-labelledby="tab9">
+                                        <h4 class="fw-bold mb-4">CIA</h4>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -233,13 +338,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link " href="index.html">Home</a>
+                        <a class="nav-link active" href="index.html">Home</a>
                     </li>
                     <!-- <li class="nav-item">
-                                    <a class="nav-link" href="category.html">Training</a>
-                                </li> -->
+                                <a class="nav-link" href="category.html">Training</a>
+                            </li> -->
                     <li class="nav-item">
-                        <a class="nav-link active" href="about.html">About Us</a>
+                        <a class="nav-link" href="about.html">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact Us</a>

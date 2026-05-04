@@ -1957,7 +1957,7 @@ button.courses-btn.show {
 .mega-menu-dropdown {
   max-height: 632px;
   overflow: auto;
-  border-radius: 30px;
+
 }
 
 /* .brand-listing-tabs {
@@ -2891,7 +2891,7 @@ button.courses-btn.show {
 
 @media screen and (min-width:992px) {
   .mobile-responsive-sidebar {
-    height: 600px;
+    height: 630px;
   }
 }
 
