@@ -42,7 +42,6 @@ section {
 section:nth-child(even) {
   background-color: rgb(255, 246, 238);
 }
-
 .hero-title-style {
   color: var(--primary-blue);
 }
