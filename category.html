@@ -22,6 +22,91 @@
     <link rel="stylesheet" href="assets/css/aos.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .custom-table-wrapper {
+            padding: 40px;
+
+        }
+
+        .custom-table {
+            width: 100%;
+            border-collapse: collapse;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: var(--shadow-md);
+            background: var(--white);
+        }
+
+        .custom-table thead {
+            background: var(--gradient-blue);
+        }
+
+        .custom-table thead th {
+            color: var(--white);
+            padding: 18px;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border: none;
+        }
+
+        .custom-table tbody tr {
+            transition: var(--transition);
+            border-bottom: 1px solid #eee;
+        }
+
+        .custom-table tbody tr:hover {
+            background: rgba(92, 57, 18, 0.08);
+            transform: scale(1.005);
+        }
+
+        .custom-table tbody td {
+            padding: 18px;
+            color: var(--dark-text);
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .custom-badge {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 20px;
+            background: var(--gradient-btn);
+            color: var(--white);
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .table-btn {
+            display: inline-block;
+            padding: 10px 18px;
+            border-radius: 8px;
+            background: var(--gradient-btn);
+            color: var(--white);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .table-btn:hover {
+            background: var(--accent-color);
+            color: var(--secondary-blue);
+        }
+
+        @media(max-width:768px) {
+            .custom-table-wrapper {
+                overflow-x: auto;
+                padding: 20px;
+            }
+
+            .custom-table {
+                min-width: 700px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -369,20 +454,17 @@
     </nav>
 
     <!-- Page Header -->
-    <div class="py-5" style="background: var(--gradient-blue); ">
-        <div class="container text-center">
-            <h1 class="text-white">AWS</h1>
-            <p class="lead opacity-75 text-white"><a href="index2.html" class="text-decoration-none text-white">Home</a>
-                /
-                AWS</p>
-        </div>
+    <div class="" style=" background-image: url(assets/images/banners/banner2.jpg);  padding: 120PX 0;">
+        <h1 class="text-center text-white">AWS</h1>
     </div>
+    <section>
 
+    </section>
     <section class="py-5 position-relative">
         <div class="container">
-
-
-
+            <p class="  "><a href="index2.html" class="text-decoration-none ">Home</a>
+                /
+                AWS</p>
             <div class="category-grid">
                 <div class="voucher-card text-center ">
                     <div>
@@ -446,6 +528,214 @@
                 </div>
             </div>
 
+    </section>
+    <section class="content">
+        <div class="container py-5">
+            <div class=" pb-5">
+                <h2>Lorem Ipsum is simply dummy text of the printing and</h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown
+                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                    only five centuries,
+                    but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+                    in the 1960s with the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like
+                    Aldus PageMaker including versions of Lorem Ip
+                </p>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown
+                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                    only five centuries,
+                    but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+                    in the 1960s with the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like
+                    Aldus PageMaker including versions of Lorem Ip
+                </p>
+            </div>
+            <div class="custom-table-wrapper">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>name</th>
+                            <th>Category</th>
+                            <th>Description</th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>AWS Solutions Architect</td>
+                            <td>AWS</td>
+                            <td>Recognizes professionals in IT risk management and implementation of effective controls.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>AWS Solutions Architect</td>
+                            <td>AWS</td>
+                            <td>Recognizes professionals in IT risk management and implementation of effective controls.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>AWS Solutions Architect</td>
+                            <td>AWS</td>
+                            <td>Recognizes professionals in IT risk management and implementation of effective controls.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>AWS Solutions Architect</td>
+                            <td>AWS</td>
+                            <td>Recognizes professionals in IT risk management and implementation of effective controls.
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+            <div class=" ">
+                <h2>Lorem Ipsum is simply dummy text of the printing and</h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown
+                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                    only five centuries,
+                    but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+                    in the 1960s with the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like
+                    Aldus PageMaker including versions of Lorem Ip
+                </p>
+
+                <h4>Lorem Ipsum simply </h4>
+                <ul>
+                    <li>
+                        Lorem Ipsum is simply dummy text
+                    </li>
+                    <li>
+                        Lorem Ipsum is simply dummy text
+                    </li>
+                    <li>
+                        Lorem Ipsum is simply dummy text
+                    </li>
+                    <li>
+                        Lorem Ipsum is simply dummy text
+                    </li>
+                    <li>
+                        Lorem Ipsum is simply dummy text
+                    </li>
+                </ul>
+                <h2>Lorem Ipsum is simply dummy text of the printing and</h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown
+                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                    only five centuries,
+                    but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+                    in the 1960s with the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like
+                    Aldus PageMaker including versions of Lorem Ip
+                </p>
+
+                <div class="row justify-content-center pt-4">
+                    <div class="col-lg-5">
+                        <div class="position-relative">
+                            <img src="assets/images/faq-old.avif" alt="FAQ" class="img-fluid rounded-3">
+
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button rounded" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <strong>What is an IT Certification Voucher?</strong>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        An IT Certification Voucher is a pre-paid alphanumeric code that you use to pay
+                                        for
+                                        your official IT certification exam instead of paying with a credit card at the
+                                        time
+                                        of registration.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed rounded" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        <strong>How long is the voucher valid?</strong>
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        Typically, vouchers are valid for up to 12 months from the date of purchase.
+                                        Ensure
+                                        to schedule and take your exam before the expiration date.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+                                <h2 class="accordion-header" id="headingfour">
+                                    <button class="accordion-button collapsed rounded" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <strong>How do I redeem my voucher?</strong>
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        During the checkout process on the official testing provider (like Pearson VUE),
+                                        you
+                                        will see an option to "Add Voucher or Promo Code". Enter the code we sent you
+                                        there,
+                                        and the balance will become zero.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+                                <h2 class="accordion-header" id="headingfive">
+                                    <button class="accordion-button collapsed rounded" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false"
+                                        aria-controls="collapsesix">
+                                        <strong>Can I get a refund if I don't use the voucher?</strong>
+                                    </button>
+                                </h2>
+                                <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="collapsesix"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        No, generally vouchers are non-refundable. Once purchased, they cannot be
+                                        canceled
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="text-center mt-4">
+                            <a href="faq.html" class="text-primary fw-bold text-decoration-none">View All FAQs <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
