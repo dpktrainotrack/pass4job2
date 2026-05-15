@@ -69,32 +69,8 @@
             font-weight: 500;
         }
 
-        .custom-badge {
-            display: inline-block;
-            padding: 6px 14px;
-            border-radius: 20px;
-            background: var(--gradient-btn);
-            color: var(--white);
-            font-size: 13px;
-            font-weight: 600;
-        }
 
-        .table-btn {
-            display: inline-block;
-            padding: 10px 18px;
-            border-radius: 8px;
-            background: var(--gradient-btn);
-            color: var(--white);
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 600;
-            transition: var(--transition);
-        }
 
-        .table-btn:hover {
-            background: var(--accent-color);
-            color: var(--secondary-blue);
-        }
 
         @media(max-width:768px) {
             .custom-table-wrapper {
@@ -105,6 +81,639 @@
             .custom-table {
                 min-width: 700px;
             }
+        }
+
+
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .course-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .rating-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 18px;
+            margin-bottom: 28px;
+        }
+
+        .rating-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .rating-stars {
+            color: var(--accent-color);
+        }
+
+        .course-points {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .course-points li {
+            position: relative;
+            padding-left: 34px;
+            margin-bottom: 14px;
+            color: rgba(255, 255, 255, 0.95);
+            line-height: 1.7;
+            font-size: 17px;
+        }
+
+        .course-points li:last-child {
+            margin-bottom: 0;
+        }
+
+
+        .course-points li::before {
+            content: "\f058";
+            font-family: "Font Awesome 6 Free";
+            position: absolute;
+            left: 0;
+            top: 1px;
+            color: var(--accent-color);
+            font-size: 18px;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: 700;
+        }
+
+        .course-stats {
+            margin-top: 35px;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            padding-top: 28px;
+        }
+
+        .stat-box {
+            border-right: 1px solid rgba(255, 255, 255, 0.12);
+            padding-right: 20px;
+        }
+
+        .stat-box:last-child {
+            border-right: none;
+        }
+
+        .stat-title {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 14px;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .stat-value {
+            color: var(--white);
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        /* FORM CARD */
+
+        .enquiry-card {
+            background: rgba(255, 255, 255, 0.97);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            z-index: 5;
+        }
+
+        .form-header {
+            background: var(--gradient-btn);
+            padding: 24px 28px;
+            color: var(--white);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .form-header h3 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .form-header i {
+            font-size: 42px;
+            opacity: 0.9;
+        }
+
+        .form-body {
+            padding: 28px;
+        }
+
+        .custom-input,
+        .custom-select,
+        .custom-textarea {
+            width: 100%;
+            border: 1px solid #e6e6e6;
+            background: #f7f7f7;
+            border-radius: 10px;
+            padding: 14px 16px;
+            margin-bottom: 16px;
+            font-size: 15px;
+            transition: var(--transition);
+        }
+
+        .custom-input:focus,
+        .custom-select:focus,
+        .custom-textarea:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+            background: var(--white);
+            box-shadow: 0 0 0 3px rgba(92, 57, 18, 0.12);
+        }
+
+        .custom-textarea {
+            /* min-height: 120px; */
+            resize: none;
+        }
+
+        .submit-btn {
+            width: 100%;
+            border: none;
+            background: var(--gradient-btn);
+            color: var(--white);
+            padding: 15px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 16px;
+            transition: var(--transition);
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 991px) {
+            .hero-section {
+                padding: 60px 0;
+            }
+
+            .course-title {
+                font-size: 2.3rem;
+            }
+
+            .enquiry-card {
+                margin-top: 40px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .course-title {
+                font-size: 1.9rem;
+            }
+
+            .rating-wrap {
+                gap: 12px;
+            }
+
+            .rating-item {
+                font-size: 14px;
+            }
+
+            .course-points li {
+                font-size: 15px;
+            }
+
+            .stat-box {
+                border-right: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+                padding: 15px 0;
+            }
+
+            .stat-box:last-child {
+                border-bottom: none;
+            }
+
+            .form-header h3 {
+                font-size: 24px;
+            }
+        }
+
+
+        :root {
+            /* --primary-blue: #5c3912;
+            --secondary-blue: #311001; */
+            --accent-color: #F8B400;
+            --light-bg: #F8F9FA;
+            --dark-text: #212529;
+            --gray-text: #6C757D;
+            --white: #ffffff;
+
+            --gradient-blue: linear-gradient(90deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            --gradient-btn: linear-gradient(90deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
+
+            --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 10px 20px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.12);
+            --shadow-card: 0 20px 40px rgba(3, 123, 128, 0.26);
+
+            --transition: all 0.3s ease-in-out;
+        }
+
+
+        .overview-box-style {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+
+        .stats-section {
+            position: relative;
+            z-index: 5;
+        }
+
+        .stats-card {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+
+            padding: 22px 24px;
+
+            border-radius: 14px;
+
+            background: rgba(255, 255, 255, 0.06);
+
+            border: 1px solid rgba(255, 255, 255, 0.18);
+
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+
+            transition: var(--transition);
+
+            height: 100%;
+        }
+
+        .stats-card:hover {
+            transform: translateY(-5px);
+
+            background: rgba(255, 255, 255, 0.09);
+
+            border-color: rgba(255, 255, 255, 0.28);
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .stats-icon {
+            width: 58px;
+            height: 58px;
+
+            min-width: 58px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 12px;
+
+            background: rgba(255, 255, 255, 0.08);
+
+            color: var(--white);
+
+            font-size: 30px;
+        }
+
+        .stats-content h3 {
+            margin: 0 0 6px;
+
+            font-size: 2rem;
+            font-weight: 800;
+
+            color: var(--white);
+
+            line-height: 1;
+        }
+
+        .stats-content p {
+            margin: 0;
+
+            color: rgba(255, 255, 255, 0.9);
+
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        /* Responsive */
+
+        @media (max-width: 991px) {
+
+            .stats-content h3 {
+                font-size: 1.7rem;
+            }
+
+            .stats-content p {
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 767px) {
+
+            .stats-card {
+                padding: 18px;
+            }
+
+            .stats-icon {
+                width: 50px;
+                height: 50px;
+                min-width: 50px;
+
+                font-size: 24px;
+            }
+
+            .stats-content h3 {
+                font-size: 1.5rem;
+            }
+
+            .stats-content p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+    <style>
+        /* ===========================
+   QUICK INFO STRIP
+=========================== */
+        .trail-info-strip {
+            background: #fff;
+            border-bottom: 1px solid #E2E8F0;
+            padding: 0;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        }
+
+
+        .trail-info-strip-inner {
+            display: flex;
+            align-items: center;
+            /* justify-content: center; */
+            overflow: auto;
+            gap: 0;
+            /* padding: 0 20px; */
+        }
+
+        .trail-strip-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 22px 30px;
+            transition: background 0.3s ease;
+        }
+
+        .trail-strip-item:first-child {
+            padding-left: 0;
+        }
+
+        span.strip-value a {
+            text-decoration: none;
+            color: var(--primary-color);
+        }
+
+        .trail-strip-item:hover {
+            background: var(--trail-surface);
+        }
+
+        .trail-strip-item>i {
+            font-size: 22px;
+            color: var(--trail-primary);
+            width: 36px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .strip-label {
+            display: block;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--trail-text-muted);
+            font-weight: 600;
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+
+        .strip-value {
+            display: block;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--trail-secondary);
+            line-height: 1;
+        }
+
+        .trail-strip-divider {
+            width: 1px;
+            height: 40px;
+            background: #E2E8F0;
+            flex-shrink: 0;
+        }
+    </style>
+    <style>
+        .course-card {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+
+            background: var(--light-bg);
+
+            border-radius: 22px;
+
+            padding: 18px;
+
+            box-shadow: var(--shadow-sm);
+
+            transition: var(--transition);
+
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .course-card:hover {
+            transform: translateY(-4px);
+
+            box-shadow: var(--shadow-md);
+        }
+
+        .course-image {
+
+            max-width: 200px;
+
+            overflow: hidden;
+
+            border-radius: 16px;
+        }
+
+        .course-image img {
+            width: 100%;
+            height: 150px;
+
+            object-fit: cover;
+
+            border-radius: 16px;
+
+            transition: var(--transition);
+        }
+
+
+        .course-content {
+            flex: 1;
+        }
+
+        .course-description {
+            color: var(--gray-text);
+
+            font-size: 1rem;
+
+            line-height: 1.8;
+
+            margin-bottom: 10px;
+        }
+
+        .mode-badge {
+            display: inline-block;
+
+            padding: 6px 14px;
+
+            border-radius: 50px;
+
+            background: var(--gradient-btn);
+
+            color: var(--white);
+
+            font-size: 14px;
+            font-weight: 400;
+
+
+        }
+
+        .course-meta {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+        }
+
+        .meta-block h6 {
+            color: var(--dark-text);
+
+            font-size: 1rem;
+            font-weight: 700;
+
+            margin-bottom: 10px;
+        }
+
+        .meta-info {
+            color: var(--dark-text);
+        }
+
+        .meta-info i {
+            color: var(--primary-blue);
+            font-size: 18px;
+        }
+
+        .course-price {
+            font-size: 1rem;
+            font-weight: 800;
+            color: var(--secondary-blue);
+            line-height: 1;
+        }
+
+        .traning-info-wrapper {
+            gap: 30px;
+        }
+
+
+
+        @media (max-width: 991px) {
+
+            .course-card {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .course-image,
+            .course-sidebar {
+                width: 100%;
+                min-width: 100%;
+            }
+
+            .course-image img {
+                height: 240px;
+            }
+
+            .course-sidebar {
+                border-left: none;
+                border-top: 1px solid rgba(0, 0, 0, 0.08);
+                padding-left: 0;
+                padding-top: 22px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .course-card {
+                padding: 16px;
+                gap: 18px;
+            }
+
+            .course-image img {
+                height: 200px;
+            }
+
+            .course-tags {
+                width: 100%;
+            }
+
+            .mode-badge {
+                width: 100%;
+                text-align: center;
+                padding: 12px 4px;
+                font-size: 15px;
+                font-weight: 400;
+            }
+
+            .traning-info-wrapper {
+                width: 100%;
+            }
+        }
+
+
+        @media screen and (min-width:992px) {
+            .sticky-sidebar {
+                position: sticky;
+                top: 100px;
+            }
+
+
+        }
+
+        .traning-fancy-card {
+            margin-bottom: 15px;
+        }
+
+        .traning-fancy-card:last-child {
+            margin-bottom: 0;
         }
     </style>
 </head>
@@ -453,292 +1062,671 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <div class="" style=" background-image: url(assets/images/banners/banner2.jpg);  padding: 120PX 0;">
-        <h1 class="text-center text-white">AWS</h1>
-    </div>
-    <section>
+    <!-- hero-section -->
+    <section class="hero-section py-5" style=" background-image: url(assets/images/banners/banner2.jpg);">
+        <div class=" container">
+            <div class="row  gy-5">
+
+                <!-- LEFT CONTENT -->
+                <div class="col-xl-8 col-lg-7">
+                    <div class="hero-content">
+
+                        <h1 class="course-title">
+                            AWS Online Training
+                        </h1>
+
+
+                        <div class="overview-box-style">
+                            <ul class="course-points">
+
+
+                                <li>
+                                    Master Cloud Computing and DevOps with the
+                                    AWS Certification Course in India.
+                                </li>
+
+                                <li>
+                                    Covers AWS Cloud Concepts, EC2, S3, RDS, Lambda, IAM,
+                                    CloudFormation, and Security Best Practices.
+                                </li>
+
+                                <li>
+
+                                    AWS Certification Course
+                                    with Career-Focused Placement Assistance.
+                                </li>
+
+                                <li>
+                                    Flexible AWS Training Options:
+                                    Weekday, Weekend, or Fast-Track Batches.
+                                </li>
+
+
+
+                                <li>
+                                    Benefit from
+
+                                    Resume Assistance, Mock Interviews,
+                                    and Career Support for Advancing in AWS Roles.
+
+                                </li>
+
+                                <li>
+
+                                    AWS Certification Course
+                                    with Career-Focused Placement Assistance.
+                                </li>
+
+                                <li>
+                                    Flexible AWS Training Options:
+                                    Weekday, Weekend, or Fast-Track Batches.
+                                </li>
+
+
+
+                                <li>
+                                    Benefit from
+
+                                    Resume Assistance, Mock Interviews,
+                                    and Career Support for Advancing in AWS Roles.
+
+                                </li>
+                                <li>
+                                    Get Hands-On Experience with Real-Time Cloud Projects and Practical Labs Guided by
+                                    Certified AWS Experts.
+                                </li>
+
+                            </ul>
+
+                        </div>
+                        <!-- Bullet Points -->
+
+
+                        <!-- Stats -->
+
+
+                    </div>
+                </div>
+
+                <!-- RIGHT FORM -->
+                <div class="col-xl-4 col-lg-5">
+
+                    <div class="enquiry-card">
+
+                        <div class="form-header">
+                            <h3>
+                                Book A Session Now
+                            </h3>
+
+                            <i class="bi bi-briefcase-fill"></i>
+                        </div>
+
+                        <div class="form-body">
+
+                            <form>
+
+                                <input type="text" class="custom-input" placeholder="Your Name">
+
+                                <input type="email" class="custom-input" placeholder="Your Email">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" class="custom-input" placeholder="Mobile Number">
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <select class="custom-select">
+                                            <option>Training Mode</option>
+                                            <option>Online</option>
+                                            <option>Weekend Batch</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <select class="custom-input">
+                                    <option>Select Course</option>
+                                    <option>AWS Solution Architect</option>
+                                    <option>AWS DevOps</option>
+                                    <option>AWS Cloud Practitioner</option>
+                                </select>
+
+                                <textarea class="custom-textarea" placeholder="Message"></textarea>
+
+                                <button class="submit-btn">
+                                    SUBMIT
+                                    <i class="bi bi-send-fill ms-1"></i>
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="stats-section pt-4 pt-lg-5">
+            <div class="container">
+                <div class="row g-4">
+
+                    <!-- Item -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-card">
+                            <div class="stats-icon">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+
+                            <div class="stats-content">
+                                <h3>12900+</h3>
+                                <p>Professionals Trained</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-card">
+                            <div class="stats-icon">
+                                <i class="fa-regular fa-calendar"></i>
+                            </div>
+
+                            <div class="stats-content">
+                                <h3>12+</h3>
+                                <p>Batches every month</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-card">
+                            <div class="stats-icon">
+                                <i class="fa-solid fa-user-graduate"></i>
+                            </div>
+
+                            <div class="stats-content">
+                                <h3>2144+</h3>
+                                <p>Placed Students</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-card">
+                            <div class="stats-icon">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+
+                            <div class="stats-content">
+                                <h3>230+</h3>
+                                <p>Corporate Served</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
     </section>
-    <section class="py-5 position-relative">
+
+    <section class="trail-info-strip ">
         <div class="container">
-            <p class="  "><a href="index2.html" class="text-decoration-none ">Home</a>
-                /
-                AWS</p>
-            <div class="category-grid">
-                <div class="voucher-card text-center ">
+            <div class="trail-info-strip-inner">
+                <div class="trail-strip-item">
+                    <!-- <i class="fa fa-clock"></i> -->
                     <div>
-                        <div class="mb-1 d-flex justify-content-end">
-                            <span class="badge ">Trending</span>
-                        </div>
-                        <div class="brand-icon-wrapper">
-                            <img src="assets/images/brands/aws.webp" alt="AWS Logo" style="max-width: 100px;">
-                        </div>
-                        <h5 class="voucher-card-title">AWS Certified Solutions Architect</h5>
-                        <p class="text-muted small mb-3">Validate your technical skills and cloud expertise to grow
-                            your
-                            career and business.
-
-                        </p>
+                        <span class="strip-value"><a href="#overview_section">Overview</a></span>
                     </div>
-                    <div>
-                        <a href="detailpage.html" class="btn theme-primary w-100">View Details</a>
-                    </div>
-
                 </div>
-                <div class="voucher-card text-center ">
-                    <div>
-                        <div class="mb-1 d-flex justify-content-end">
-                            <span class="badge ">Trending</span>
-                        </div>
-                        <div class="brand-icon-wrapper">
-                            <img src="assets/images/brands/aws.webp" alt="AWS Logo" style="max-width: 100px;">
-                        </div>
-                        <h5 class="voucher-card-title">AWS Certified Solutions Architect</h5>
-                        <p class="text-muted small mb-3">Validate your technical skills and cloud expertise to grow
-                            your
-                            career and business.
-
-                        </p>
-                    </div>
-                    <div>
-                        <a href="detailpage.html" class="btn theme-primary w-100">View Details</a>
-                    </div>
-
+                <div class="trail-strip-divider"></div>
+                <div class="trail-strip-item">
+                    <span class="strip-value"><a href="#certification">Training & Certification </a></span>
                 </div>
-                <div class="voucher-card text-center ">
-                    <div>
-                        <div class="mb-1 d-flex justify-content-end">
-                            <span class="badge ">Trending</span>
-                        </div>
-                        <div class="brand-icon-wrapper">
-                            <img src="assets/images/brands/aws.webp" alt="AWS Logo" style="max-width: 100px;">
-                        </div>
-                        <h5 class="voucher-card-title">AWS Certified Solutions Architect</h5>
-                        <p class="text-muted small mb-3">Validate your technical skills and cloud expertise to grow
-                            your
-                            career and business.
-
-                        </p>
-                    </div>
-                    <div>
-                        <a href="detailpage.html" class="btn theme-primary w-100">View Details</a>
-                    </div>
-
+                <div class="trail-strip-divider"></div>
+                <div class="trail-strip-item">
+                    <span class="strip-value"><a href="#curriculum">Curriculum</a></span>
                 </div>
-            </div>
-
-    </section>
-    <section class="content">
-        <div class="container py-5">
-            <div class=" pb-4">
-                <h2>Lorem Ipsum is simply dummy text of the printing and</h2>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown
-                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-                    only five centuries,
-                    but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
-                    in the 1960s with the
-                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like
-                    Aldus PageMaker including versions of Lorem Ip
-                </p>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown
-                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-                    only five centuries,
-                    but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
-                    in the 1960s with the
-                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like
-                    Aldus PageMaker including versions of Lorem Ip
-                </p>
-            </div>
-            <div class="custom-table-wrapper pb-4">
-                <table class="custom-table">
-                    <thead>
-                        <tr>
-                            <th>name</th>
-                            <th>Category</th>
-                            <th>Description</th>
-
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>AWS Solutions Architect</td>
-                            <td>AWS</td>
-                            <td>Recognizes professionals in IT risk management and implementation of effective controls.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>AWS Solutions Architect</td>
-                            <td>AWS</td>
-                            <td>Recognizes professionals in IT risk management and implementation of effective controls.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>AWS Solutions Architect</td>
-                            <td>AWS</td>
-                            <td>Recognizes professionals in IT risk management and implementation of effective controls.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>AWS Solutions Architect</td>
-                            <td>AWS</td>
-                            <td>Recognizes professionals in IT risk management and implementation of effective controls.
-                            </td>
-                        </tr>
-
-
-                    </tbody>
-                </table>
-            </div>
-            <div class=" ">
-                <h2>Lorem Ipsum is simply dummy text of the printing and</h2>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown
-                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-                    only five centuries,
-                    but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
-                    in the 1960s with the
-                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like
-                    Aldus PageMaker including versions of Lorem Ip
-                </p>
-
-                <h4>Lorem Ipsum simply </h4>
-                <ul>
-                    <li>
-                        Lorem Ipsum is simply dummy text
-                    </li>
-                    <li>
-                        Lorem Ipsum is simply dummy text
-                    </li>
-                    <li>
-                        Lorem Ipsum is simply dummy text
-                    </li>
-                    <li>
-                        Lorem Ipsum is simply dummy text
-                    </li>
-                    <li>
-                        Lorem Ipsum is simply dummy text
-                    </li>
-                </ul>
-                <h2>Lorem Ipsum is simply dummy text of the printing and</h2>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown
-                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-                    only five centuries,
-                    but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
-                    in the 1960s with the
-                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like
-                    Aldus PageMaker including versions of Lorem Ip
-                </p>
-
-                <div class="row justify-content-center pt-4">
-                    <div class="col-lg-5">
-                        <div class="position-relative">
-                            <img src="assets/images/faq-old.avif" alt="FAQ" class="img-fluid rounded-3">
-
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="accordion" id="faqAccordion">
-                            <div class="accordion-item border-0 mb-3 rounded shadow-sm">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button rounded" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <strong>What is an IT Certification Voucher?</strong>
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body text-muted">
-                                        An IT Certification Voucher is a pre-paid alphanumeric code that you use to pay
-                                        for
-                                        your official IT certification exam instead of paying with a credit card at the
-                                        time
-                                        of registration.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item border-0 mb-3 rounded shadow-sm">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed rounded" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                                        aria-controls="collapseTwo">
-                                        <strong>How long is the voucher valid?</strong>
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                    data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body text-muted">
-                                        Typically, vouchers are valid for up to 12 months from the date of purchase.
-                                        Ensure
-                                        to schedule and take your exam before the expiration date.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item border-0 mb-3 rounded shadow-sm">
-                                <h2 class="accordion-header" id="headingfour">
-                                    <button class="accordion-button collapsed rounded" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                        <strong>How do I redeem my voucher?</strong>
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body text-muted">
-                                        During the checkout process on the official testing provider (like Pearson VUE),
-                                        you
-                                        will see an option to "Add Voucher or Promo Code". Enter the code we sent you
-                                        there,
-                                        and the balance will become zero.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item border-0 mb-3 rounded shadow-sm">
-                                <h2 class="accordion-header" id="headingfive">
-                                    <button class="accordion-button collapsed rounded" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false"
-                                        aria-controls="collapsesix">
-                                        <strong>Can I get a refund if I don't use the voucher?</strong>
-                                    </button>
-                                </h2>
-                                <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="collapsesix"
-                                    data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body text-muted">
-                                        No, generally vouchers are non-refundable. Once purchased, they cannot be
-                                        canceled
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="text-center mt-4">
-                            <a href="faq.html" class="text-primary fw-bold text-decoration-none">View All FAQs <i
-                                    class="fas fa-arrow-right"></i></a>
-                        </div>
+                <div class="trail-strip-divider"></div>
+                <div class="trail-strip-item">
+                    <span class="strip-value"><a href="#review">
+                            Testimonials
+                        </a></span>
+                </div>
+                <div class="trail-strip-divider"></div>
+                <div class="trail-strip-item">
+                    <div>
+                        <span class="strip-value"><a href="#faq_section">FAQs</a></span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- course-layout -->
+    <section class="course-layout-section ">
+
+        <div class="container py-5">
+
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="content-wrapper">
+                        <div class="content-card " id="overview_section">
+                            <h3 class="section-heading">
+                                Overview
+                            </h3>
+
+                            <p class="section-text mb-0">
+                                This AWS course helps you build strong cloud skills with
+                                practical implementation, live projects, mock interviews,
+                                and placement assistance. Suitable for students, developers,
+                                system administrators, and IT professionals.
+                                This AWS course helps you build strong cloud skills with
+                                practical implementation, live projects, mock interviews,
+                                and placement assistance. Suitable for students, developers,
+                                system administrators, and IT professionals.This AWS course helps you build strong cloud
+                                skills with
+                                practical implementation, live projects, mock interviews,
+                                and placement assistance. Suitable for students, developers,
+                                system administrators, and IT professionals.
+                            </p>
+                        </div>
+                        <!-- Certification -->
+                        <div class="course-list-section pt-5" id="certification">
+                            <h3 class="section-heading">
+                                Certification
+                            </h3>
+                            <div class="traning-fancy-card">
+                                <div class="course-card">
+                                    <div class="course-image">
+                                        <img src="assets/images/cert/1.webp" alt="AWS Course">
+                                    </div>
+                                    <div class="fancy-card">
+                                        <div class="course-content">
+                                            <div class="border-bottom mb-3">
+
+                                                <h5 class="mb-2">
+                                                    AWS Certified Cloud Practitioner - CLF-C02
+                                                </h5>
+                                                <p class="course-description">
+                                                    Trainocate’s Architecting on AWS course empowers solutions
+                                                    architects
+                                                    and developers to design high-quality cloud
+                                                </p>
+                                            </div>
+
+                                            <div
+                                                class="d-flex justify-content-md-between flex-column flex-md-row  align-items-center gap-4 gap-md-0">
+
+                                                <div class="d-flex justify-content-between traning-info-wrapper">
 
 
+                                                    <div class="meta-block ">
+                                                        <div class="me-1"> Duration: </div>
+                                                        <div class="course-price">
+                                                            360 Days</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="meta-block">
+                                                        <div class=" me-1">Fees: </div>
+                                                        <div class="course-price meta-info">
+                                                            ₹ XX,XXX
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="course-tags">
+                                                    <div class="mode-badge ">
+                                                        <a href="detailpage.html"
+                                                            class="text-white text-decoration-none">Full
+                                                            Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="traning-fancy-card">
+                                <div class="course-card">
+                                    <div class="course-image">
+                                        <img src="assets/images/cert/8.webp" alt="AWS Course">
+                                    </div>
+                                    <div class="fancy-card">
+                                        <div class="course-content">
+                                            <div class="border-bottom mb-3">
+
+                                                <h5 class="mb-2">
+                                                    AWS Certified Cloud Practitioner - CLF-C02
+                                                </h5>
+                                                <p class="course-description">
+                                                    Trainocate’s Architecting on AWS course empowers solutions
+                                                    architects
+                                                    and developers to design high-quality cloud
+                                                </p>
+                                            </div>
+
+                                            <div
+                                                class="d-flex justify-content-md-between flex-column flex-md-row  align-items-center gap-4 gap-md-0">
+
+                                                <div class="d-flex justify-content-between traning-info-wrapper">
+
+
+                                                    <div class="meta-block ">
+                                                        <div class="me-1"> Duration: </div>
+                                                        <div class="course-price">
+                                                            360 Days</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="meta-block">
+                                                        <div class=" me-1">Fees: </div>
+                                                        <div class="course-price meta-info">
+                                                            ₹ XX,XXX
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="course-tags">
+                                                    <div class="mode-badge ">
+                                                        <a href="detailpage.html"
+                                                            class="text-white text-decoration-none">Full
+                                                            Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="traning-fancy-card">
+                                <div class="course-card">
+                                    <div class="course-image">
+                                        <img src="assets/images/cert/10.webp" alt="AWS Course">
+                                    </div>
+                                    <div class="fancy-card">
+                                        <div class="course-content">
+                                            <div class="border-bottom mb-3">
+
+                                                <h5 class="mb-2">
+                                                    AWS Certified Cloud Practitioner - CLF-C02
+                                                </h5>
+                                                <p class="course-description">
+                                                    Trainocate’s Architecting on AWS course empowers solutions
+                                                    architects
+                                                    and developers to design high-quality cloud
+                                                </p>
+                                            </div>
+
+                                            <div
+                                                class="d-flex justify-content-md-between flex-column flex-md-row  align-items-center gap-4 gap-md-0">
+
+                                                <div class="d-flex justify-content-between traning-info-wrapper">
+
+
+                                                    <div class="meta-block ">
+                                                        <div class="me-1"> Duration: </div>
+                                                        <div class="course-price">
+                                                            360 Days</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="meta-block">
+                                                        <div class=" me-1">Fees: </div>
+                                                        <div class="course-price meta-info">
+                                                            ₹ XX,XXX
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="course-tags">
+                                                    <div class="mode-badge ">
+                                                        <a href="detailpage.html"
+                                                            class="text-white text-decoration-none">Full
+                                                            Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- What You Will Learn -->
+                        <div class="pt-5 what-you-learn-section" id="curriculum">
+                            <h3 class="section-heading">What You Will Learn</h3>
+                            <p class="text-muted mb-4">By the end of this course, you'll have a comprehensive
+                                understanding of AWS cloud services and the confidence to ace your certification exam.
+                            </p>
+
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <div class="learn-item">
+                                        <div class="learn-icon"><i class="fas fa-check"></i></div>
+                                        <span>Design resilient, high-performing cloud architectures on AWS</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="learn-item">
+                                        <div class="learn-icon"><i class="fas fa-check"></i></div>
+                                        <span>Implement secure applications and architectures using IAM policies</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="learn-item">
+                                        <div class="learn-icon"><i class="fas fa-check"></i></div>
+                                        <span>Configure VPCs, subnets, security groups &amp; network ACLs</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="learn-item">
+                                        <div class="learn-icon"><i class="fas fa-check"></i></div>
+                                        <span>Deploy scalable applications using EC2, ECS, and Lambda</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="learn-item">
+                                        <div class="learn-icon"><i class="fas fa-check"></i></div>
+                                        <span>Set up monitoring, logging &amp; alarms with CloudWatch</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="learn-item">
+                                        <div class="learn-icon"><i class="fas fa-check"></i></div>
+                                        <span>Master S3 storage classes, lifecycle policies &amp; replication</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="learn-item">
+                                        <div class="learn-icon"><i class="fas fa-check"></i></div>
+                                        <span>Implement cost-optimization strategies for AWS workloads</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="learn-item">
+                                        <div class="learn-icon"><i class="fas fa-check"></i></div>
+                                        <span>Build fault-tolerant systems with auto-scaling &amp; load balancers</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- reviews -->
+                        <div class="pt-5 " id="review">
+                            <h3 class="section-heading">Reviews</h3>
+                            <div class="owl-carousel owl-theme" id="brandReview">
+                                <!-- Review 1 -->
+                                <div class="item">
+                                    <div class="testimonial-card">
+                                        <div class="quote"><i class="fas fa-quote-left"></i></div>
+                                        <p class="testimonial-text">"This course was exactly what I needed to pass the
+                                            AWS exam. The hands-on labs were incredibly helpful and the explanations
+                                            were clear and concise."</p>
+                                        <div class="user">
+                                            <img src="https://i.pravatar.cc/150?u=user1" alt="Student">
+                                            <div class="user-info">
+                                                <div class="user-name">Sarah Jenkins</div>
+                                                <div class="user-role">Cloud Engineer</div>
+                                            </div>
+                                        </div>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Review 2 -->
+                                <div class="item">
+                                    <div class="testimonial-card">
+                                        <div class="quote"><i class="fas fa-quote-left"></i></div>
+                                        <p class="testimonial-text">"Excellent material! I went from zero AWS knowledge
+                                            to passing the Associate exam in just 2 months. Highly recommend this to
+                                            anyone starting out."</p>
+                                        <div class="user">
+                                            <img src="https://i.pravatar.cc/150?u=user2" alt="Student">
+                                            <div class="user-info">
+                                                <div class="user-name">Michael Chang</div>
+                                                <div class="user-role">System Administrator</div>
+                                            </div>
+                                        </div>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Review 3 -->
+                                <div class="item">
+                                    <div class="testimonial-card">
+                                        <div class="quote"><i class="fas fa-quote-left"></i></div>
+                                        <p class="testimonial-text">"The practice exams provided at the end of the
+                                            course were very similar to the real exam. I felt completely prepared on
+                                            exam day."</p>
+                                        <div class="user">
+                                            <img src="https://i.pravatar.cc/150?u=user3" alt="Student">
+                                            <div class="user-info">
+                                                <div class="user-name">Emily Davis</div>
+                                                <div class="user-role">IT Manager</div>
+                                            </div>
+                                        </div>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- faq -->
+                        <div class=" pt-5" id="faq_section">
+                            <h3 class="section-heading">Frequently Asked Questions</h3>
+                            <div class="accordion" id="faqAccordion">
+                                <div class="accordion-item mb-3 border-0 shadow-sm rounded">
+                                    <h2 class="accordion-header" id="faqHeading1">
+                                        <button class="accordion-button collapsed fw-semibold rounded" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faqCollapse1">
+                                            Do I need programming experience?
+                                        </button>
+                                    </h2>
+                                    <div id="faqCollapse1" class="accordion-collapse collapse"
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body text-muted">
+                                            No, programming experience is not required. The course focuses on
+                                            architectural concepts and services provided by AWS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mb-3 border-0 shadow-sm rounded">
+                                    <h2 class="accordion-header" id="faqHeading2">
+                                        <button class="accordion-button collapsed fw-semibold rounded" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faqCollapse2">
+                                            Is the exam voucher included in the course fee?
+                                        </button>
+                                    </h2>
+                                    <div id="faqCollapse2" class="accordion-collapse collapse"
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body text-muted">
+                                            Yes! By enrolling through Pass4Job, you receive a heavily discounted
+                                            official AWS exam voucher included as part of your training package.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mb-3 border-0 shadow-sm rounded">
+                                    <h2 class="accordion-header" id="faqHeading3">
+                                        <button class="accordion-button collapsed fw-semibold rounded" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faqCollapse3">
+                                            How long do I have access to the materials?
+                                        </button>
+                                    </h2>
+                                    <div id="faqCollapse3" class="accordion-collapse collapse"
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body text-muted">
+                                            You get lifetime access to all course materials, including future updates to
+                                            the curriculum as AWS services evolve.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT STICKY SIDEBAR -->
+                <div class="col-lg-4 d-none d-lg-block">
+
+                    <div class="sticky-sidebar">
+
+                        <div class="sidebar-card">
+
+                            <h3 class="sidebar-title">
+                                Book Now
+                            </h3>
+
+                            <p class="sidebar-subtitle">
+                                Start your AWS career journey today.
+                            </p>
+
+                            <form>
+
+                                <input type="text" class="custom-input" placeholder="Your Name">
+
+                                <input type="email" class="custom-input" placeholder="Email Address">
+
+                                <input type="text" class="custom-input" placeholder="Mobile Number">
+
+                                <select class="custom-input">
+                                    <option>Select Course</option>
+                                    <option>AWS Solution Architect</option>
+                                    <option>AWS DevOps</option>
+                                    <option>AWS Cloud Practitioner</option>
+                                </select>
+
+                                <textarea class="custom-input custom-textarea" placeholder="Your Message"></textarea>
+
+                                <button type="submit" class="submit-btn">
+                                    Submit Now
+                                    <i class="bi bi-send-fill ms-1"></i>
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -831,6 +1819,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize owl carousel when jQuery is ready
+            var checkJquery = setInterval(function () {
+                if (window.jQuery && window.jQuery.fn.owlCarousel) {
+                    clearInterval(checkJquery);
+                    $('#brandReview').owlCarousel({
+                        loop: true,
+                        margin: 20,
+                        nav: false,
+                        dots: true,
+                        autoplay: true,
+                        autoplayTimeout: 5000,
+                        responsive: {
+                            0: { items: 1 },
+                            768: { items: 2 },
+                            1000: { items: 2 }
+                        }
+                    });
+                }
+            }, 100);
+        });
+    </script>
 </body>
 
 </html>
