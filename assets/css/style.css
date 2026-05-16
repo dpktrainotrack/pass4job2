@@ -2942,3 +2942,10 @@ button.courses-btn.show {
   top: 20px;
   right: 20px;
 }
+
+.traning-title-style {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--secondary-blue);
+  opacity: .7;
+}
