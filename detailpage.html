@@ -635,6 +635,41 @@
 
 
                         </div>
+                        <style>
+                            .feature-list {
+                                padding-left: 0;
+                            }
+
+                            .feature-list li {
+                                position: relative;
+                                display: flex;
+                                align-items: flex-start;
+                                align-items: center;
+                                gap: 14px;
+                                padding-bottom: 18px;
+                                color: var(--bs-secondary-color);
+                                font-size: 16px;
+                                line-height: 1.5;
+                                /* font-weight: 500; */
+                            }
+
+                            .feature-list li::before {
+                                content: "\f00c";
+                                font-family: "Font Awesome 6 Free";
+                                font-weight: 900;
+                                width: 28px;
+                                height: 28px;
+                                min-width: 28px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                background: var(--gradient-blue);
+                                color: var(--accent-color);
+                                border-radius: 50%;
+                                font-size: 16px;
+                                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+                            }
+                        </style>
 
                         <!-- What You Will Learn -->
                         <div class="mb-5 what-you-learn-section">
@@ -643,7 +678,13 @@
                                 understanding of AWS cloud services and the confidence to ace your certification exam.
                             </p>
 
-                            <div class="row g-3 mb-4">
+                            <ul class="feature-list">
+                                <li>
+                                    Design resilient, high-performing cloud architectures on AWS
+                                </li>
+                            </ul>
+
+                            <!-- <div class="row g-3 mb-4">
                                 <div class="col-md-6">
                                     <div class="learn-item">
                                         <div class="learn-icon"><i class="fas fa-check"></i></div>
@@ -692,7 +733,7 @@
                                         <span>Build fault-tolerant systems with auto-scaling &amp; load balancers</span>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
 
                         </div>
@@ -1036,61 +1077,70 @@
 
                             <!-- Course Info Card -->
                             <div class="sidebar-card position-relative" id="enroll">
-                                <div class="discount-badge">Save 50%</div>
+                                <!-- <div class="discount-badge">Save 50%</div> -->
                                 <div class="text-center">
-                                    <img src="assets/images/cert/8.webp" alt="" class="img-fluid"
-                                        style="max-height: 170px;">
+                                    <img src="assets/images/banners/min-banner.webp" alt="" class="img-fluid"
+                                        style="max-height: 200px; overflow: hidden; border-radius: 10px 10px 0 0;">
                                 </div>
+                                <div class="right-content-wrapper">
 
-                                <p class="traning-title-style my-4">
-                                    AWS Certified Solutions Architect Professional</p>
-                                <div class="price-card-right">
-                                    <div class="mb-4 d-flex justify-content-between align-items-center">
-                                        <div class="">Actual Price: <span class="previous-price">$1000</span> </div>
-                                        <div class="our-price-wrapper">Our Price: <span class="our-price">$500</span>
+
+
+                                    <p class="traning-title-style my-4">
+                                        AWS Certified Solutions Architect Professional</p>
+                                    <div class="price-card-right">
+                                        <div class="mb-4 d-flex justify-content-between align-items-center">
+                                            <div class="">Actual Price: <span class="previous-price">$1000</span> </div>
+                                            <div class="our-price-wrapper">Our Price: <span
+                                                    class="our-price">$500</span>
+                                            </div>
+
+
                                         </div>
-
-
                                     </div>
+
+
+
+
+                                    <h6 class="fw-bold my-3 pb-2 border-bottom">Course Information:</h6>
+                                    <ul class="course-features-list mb-4">
+                                        <li class="justify-content-between pb-2 mb-3 border-bottom">
+                                            <div class="d-flex align-items-center text-dark"><i
+                                                    class="fas fa-clock"></i>
+                                                Duration</div>
+                                            <div class="small text-muted fw-semibold">40 Hours</div>
+                                        </li>
+                                        <li class="justify-content-between pb-2 mb-3 border-bottom">
+                                            <div class="d-flex align-items-center text-dark"><i
+                                                    class="fas fa-barcode"></i>
+                                                Exam Code</div>
+                                            <div class="small text-muted fw-semibold">ABC1234</div>
+                                        </li>
+                                        <li class="justify-content-between pb-2 mb-3 border-bottom">
+                                            <div class="d-flex align-items-center text-dark"><i
+                                                    class="fas fa-sync-alt"></i>
+                                                Retake Policy</div>
+                                            <div class="small text-muted fw-semibold">2 Free Retakes</div>
+                                        </li>
+                                        <li class="justify-content-between pb-2 mb-3 border-bottom">
+                                            <div class="d-flex align-items-center text-dark"><i
+                                                    class="fas fa-globe"></i>
+                                                Language</div>
+                                            <div class="small text-muted fw-semibold">English</div>
+                                        </li>
+                                        <li class="justify-content-between pb-2 mb-2">
+                                            <div class="d-flex align-items-center text-dark"><i
+                                                    class="fas fa-infinity"></i>
+                                                Access</div>
+                                            <div class="small text-muted fw-semibold">Lifetime</div>
+                                        </li>
+                                    </ul>
+
+
+
                                 </div>
-
-
-
-
-                                <h6 class="fw-bold my-3 pb-2 border-bottom">Course Information:</h6>
-                                <ul class="course-features-list mb-4">
-                                    <li class="justify-content-between pb-2 mb-3 border-bottom">
-                                        <div class="d-flex align-items-center text-dark"><i class="fas fa-clock"></i>
-                                            Duration</div>
-                                        <div class="small text-muted fw-semibold">40 Hours</div>
-                                    </li>
-                                    <li class="justify-content-between pb-2 mb-3 border-bottom">
-                                        <div class="d-flex align-items-center text-dark"><i class="fas fa-barcode"></i>
-                                            Exam Code</div>
-                                        <div class="small text-muted fw-semibold">ABC1234</div>
-                                    </li>
-                                    <li class="justify-content-between pb-2 mb-3 border-bottom">
-                                        <div class="d-flex align-items-center text-dark"><i class="fas fa-sync-alt"></i>
-                                            Retake Policy</div>
-                                        <div class="small text-muted fw-semibold">2 Free Retakes</div>
-                                    </li>
-                                    <li class="justify-content-between pb-2 mb-3 border-bottom">
-                                        <div class="d-flex align-items-center text-dark"><i class="fas fa-globe"></i>
-                                            Language</div>
-                                        <div class="small text-muted fw-semibold">English</div>
-                                    </li>
-                                    <li class="justify-content-between pb-2 mb-2">
-                                        <div class="d-flex align-items-center text-dark"><i class="fas fa-infinity"></i>
-                                            Access</div>
-                                        <div class="small text-muted fw-semibold">Lifetime</div>
-                                    </li>
-                                </ul>
-
-                                <!-- Why Choose Us Card -->
-
-
                             </div>
-                            <div class="sidebar-card bg-light border-0 border-top border-4"
+                            <div class="sidebar-card bg-light border-0 border-top border-4 p-4"
                                 style="border-color: var(--secondary-blue) !important;">
                                 <h5 class="fw-bold mb-4">Why Choose Pass4Job?</h5>
                                 <ul class="course-features-list">

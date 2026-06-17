@@ -1,0 +1,1709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass4Job | Discounted IT Exam Vouchers</title>
+    <meta name="description"
+        content="Pass4Job provides affordable and official IT certification vouchers for AWS, Azure, Cisco, CompTIA, and more. Start your certification journey today.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .custom-table-wrapper {
+            /* padding: 40px; */
+
+        }
+
+        .custom-table {
+            width: 100%;
+            border-collapse: collapse;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: var(--shadow-md);
+            background: var(--white);
+        }
+
+        .custom-table thead {
+            background: var(--gradient-blue);
+        }
+
+        .custom-table thead th {
+            color: var(--white);
+            padding: 18px;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border: none;
+        }
+
+        .custom-table tbody tr {
+            transition: var(--transition);
+            border-bottom: 1px solid #eee;
+        }
+
+        .custom-table tbody tr:hover {
+            background: rgba(92, 57, 18, 0.08);
+            transform: scale(1.005);
+        }
+
+        .custom-table tbody td {
+            padding: 18px;
+            color: var(--dark-text);
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+
+
+
+        @media(max-width:768px) {
+            .custom-table-wrapper {
+                overflow-x: auto;
+                padding: 20px;
+            }
+
+            .custom-table {
+                min-width: 700px;
+            }
+        }
+
+
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .course-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .rating-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 18px;
+            margin-bottom: 28px;
+        }
+
+        .rating-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .rating-stars {
+            color: var(--accent-color);
+        }
+
+        .course-points {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .course-points li {
+            position: relative;
+            padding-left: 34px;
+            margin-bottom: 14px;
+            color: rgba(255, 255, 255, 0.95);
+            line-height: 1.7;
+            font-size: 17px;
+        }
+
+        .course-points li:last-child {
+            margin-bottom: 0;
+        }
+
+
+        .course-points li::before {
+            content: "\f058";
+            font-family: "Font Awesome 6 Free";
+            position: absolute;
+            left: 0;
+            top: 1px;
+            color: var(--accent-color);
+            font-size: 18px;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: 700;
+        }
+
+        .course-stats {
+            margin-top: 35px;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            padding-top: 28px;
+        }
+
+        .stat-box {
+            border-right: 1px solid rgba(255, 255, 255, 0.12);
+            padding-right: 20px;
+        }
+
+        .stat-box:last-child {
+            border-right: none;
+        }
+
+        .stat-title {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 14px;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .stat-value {
+            color: var(--white);
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        /* FORM CARD */
+
+        .enquiry-card {
+            background: rgba(255, 255, 255, 0.97);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            z-index: 5;
+        }
+
+        .form-header {
+            background: var(--gradient-btn);
+            padding: 24px 28px;
+            color: var(--white);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .form-header h3 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .form-header i {
+            font-size: 42px;
+            opacity: 0.9;
+        }
+
+        .form-body {
+            padding: 28px;
+        }
+
+        .custom-input,
+        .custom-select,
+        .custom-textarea {
+            width: 100%;
+            border: 1px solid #e6e6e6;
+            background: #f7f7f7;
+            border-radius: 10px;
+            padding: 14px 16px;
+            margin-bottom: 16px;
+            font-size: 15px;
+            transition: var(--transition);
+        }
+
+        .custom-input:focus,
+        .custom-select:focus,
+        .custom-textarea:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+            background: var(--white);
+            box-shadow: 0 0 0 3px rgba(92, 57, 18, 0.12);
+        }
+
+        .custom-textarea {
+            /* min-height: 120px; */
+            resize: none;
+        }
+
+        .submit-btn {
+            width: 100%;
+            border: none;
+            background: var(--gradient-btn);
+            color: var(--white);
+            padding: 15px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 16px;
+            transition: var(--transition);
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 991px) {
+            .hero-section {
+                padding: 60px 0;
+            }
+
+            .course-title {
+                font-size: 2.3rem;
+            }
+
+            .enquiry-card {
+                margin-top: 40px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .course-title {
+                font-size: 1.9rem;
+            }
+
+            .rating-wrap {
+                gap: 12px;
+            }
+
+            .rating-item {
+                font-size: 14px;
+            }
+
+            .course-points li {
+                font-size: 15px;
+            }
+
+            .stat-box {
+                border-right: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+                padding: 15px 0;
+            }
+
+            .stat-box:last-child {
+                border-bottom: none;
+            }
+
+            .form-header h3 {
+                font-size: 24px;
+            }
+        }
+
+
+        :root {
+            /* --primary-blue: #5c3912;
+            --secondary-blue: #311001; */
+            --accent-color: #F8B400;
+            --light-bg: #F8F9FA;
+            --dark-text: #212529;
+            --gray-text: #6C757D;
+            --white: #ffffff;
+
+            --gradient-blue: linear-gradient(90deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            --gradient-btn: linear-gradient(90deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
+
+            --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 10px 20px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.12);
+            --shadow-card: 0 20px 40px rgba(3, 123, 128, 0.26);
+
+            --transition: all 0.3s ease-in-out;
+        }
+
+
+        .overview-box-style {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+
+        .stats-section {
+            position: relative;
+            z-index: 5;
+        }
+
+        .stats-card {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+
+            padding: 22px 24px;
+
+            border-radius: 14px;
+
+            background: rgba(255, 255, 255, 0.06);
+
+            border: 1px solid rgba(255, 255, 255, 0.18);
+
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+
+            transition: var(--transition);
+
+            height: 100%;
+        }
+
+        .stats-card:hover {
+            transform: translateY(-5px);
+
+            background: rgba(255, 255, 255, 0.09);
+
+            border-color: rgba(255, 255, 255, 0.28);
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .stats-icon {
+            width: 58px;
+            height: 58px;
+
+            min-width: 58px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 12px;
+
+            background: rgba(255, 255, 255, 0.08);
+
+            color: var(--white);
+
+            font-size: 30px;
+        }
+
+        .stats-content h3 {
+            margin: 0 0 6px;
+
+            font-size: 2rem;
+            font-weight: 800;
+
+            color: var(--white);
+
+            line-height: 1;
+        }
+
+        .stats-content p {
+            margin: 0;
+
+            color: rgba(255, 255, 255, 0.9);
+
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        /* Responsive */
+
+        @media (max-width: 991px) {
+
+            .stats-content h3 {
+                font-size: 1.7rem;
+            }
+
+            .stats-content p {
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 767px) {
+
+            .stats-card {
+                padding: 18px;
+            }
+
+            .stats-icon {
+                width: 50px;
+                height: 50px;
+                min-width: 50px;
+
+                font-size: 24px;
+            }
+
+            .stats-content h3 {
+                font-size: 1.5rem;
+            }
+
+            .stats-content p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+    <style>
+        /* ===========================
+   QUICK INFO STRIP
+=========================== */
+        .trail-info-strip {
+            background: #fff;
+            border-bottom: 1px solid #E2E8F0;
+            padding: 0;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        }
+
+
+        .trail-info-strip-inner {
+            display: flex;
+            align-items: center;
+            /* justify-content: center; */
+            overflow: auto;
+            gap: 0;
+            /* padding: 0 20px; */
+        }
+
+        .trail-strip-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 22px 30px;
+            transition: background 0.3s ease;
+        }
+
+        .trail-strip-item:first-child {
+            padding-left: 0;
+        }
+
+        span.strip-value a {
+            text-decoration: none;
+            color: var(--primary-color);
+        }
+
+        .trail-strip-item:hover {
+            background: var(--trail-surface);
+        }
+
+        .trail-strip-item>i {
+            font-size: 22px;
+            color: var(--trail-primary);
+            width: 36px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .strip-label {
+            display: block;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--trail-text-muted);
+            font-weight: 600;
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+
+        .strip-value {
+            display: block;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--trail-secondary);
+            line-height: 1;
+        }
+
+        .trail-strip-divider {
+            width: 1px;
+            height: 40px;
+            background: #E2E8F0;
+            flex-shrink: 0;
+        }
+    </style>
+    <style>
+        .course-card {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+
+            background: var(--light-bg);
+
+            border-radius: 22px;
+
+            padding: 18px;
+
+            box-shadow: var(--shadow-sm);
+
+            transition: var(--transition);
+
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .course-card:hover {
+            transform: translateY(-4px);
+
+            box-shadow: var(--shadow-md);
+        }
+
+        .course-image {
+
+            max-width: 200px;
+
+            overflow: hidden;
+
+            border-radius: 16px;
+        }
+
+        .course-image img {
+            width: 100%;
+            height: 150px;
+
+            object-fit: cover;
+
+            border-radius: 16px;
+
+            transition: var(--transition);
+        }
+
+
+        .course-content {
+            flex: 1;
+        }
+
+        .course-description {
+            color: var(--gray-text);
+
+            font-size: 1rem;
+
+            line-height: 1.8;
+
+            margin-bottom: 10px;
+        }
+
+        .mode-badge {
+            display: inline-block;
+
+            padding: 6px 14px;
+
+            border-radius: 50px;
+
+            background: var(--gradient-btn);
+
+            color: var(--white);
+
+            font-size: 14px;
+            font-weight: 400;
+
+
+        }
+
+        .course-meta {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+        }
+
+        .meta-block h6 {
+            color: var(--dark-text);
+
+            font-size: 1rem;
+            font-weight: 700;
+
+            margin-bottom: 10px;
+        }
+
+        .meta-info {
+            color: var(--dark-text);
+        }
+
+        .meta-info i {
+            color: var(--primary-blue);
+            font-size: 18px;
+        }
+
+        .course-price {
+            font-size: 1rem;
+            font-weight: 800;
+            color: var(--secondary-blue);
+            line-height: 1;
+        }
+
+        .traning-info-wrapper {
+            gap: 30px;
+        }
+
+
+
+        @media (max-width: 991px) {
+
+            .course-card {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .course-image,
+            .course-sidebar {
+                width: 100%;
+                min-width: 100%;
+            }
+
+            .course-image img {
+                height: 240px;
+            }
+
+            .course-sidebar {
+                border-left: none;
+                border-top: 1px solid rgba(0, 0, 0, 0.08);
+                padding-left: 0;
+                padding-top: 22px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .course-card {
+                padding: 16px;
+                gap: 18px;
+            }
+
+            .course-image img {
+                height: 200px;
+            }
+
+            .course-tags {
+                width: 100%;
+            }
+
+            .mode-badge {
+                width: 100%;
+                text-align: center;
+                padding: 12px 4px;
+                font-size: 15px;
+                font-weight: 400;
+            }
+
+            .traning-info-wrapper {
+                width: 100%;
+            }
+        }
+
+
+        @media screen and (min-width:992px) {
+            .sticky-sidebar {
+                position: sticky;
+                top: 100px;
+            }
+
+
+        }
+
+        .traning-fancy-card {
+            margin-bottom: 15px;
+        }
+
+        .traning-fancy-card:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- hero-section -->
+    <!-- <section class="hero-section py-5" style=" background-image: url(assets/images/banners/banner2.jpg);">
+        <div class=" container">
+            <div class="row  gy-5">  
+                <div class="col-xl-8 col-lg-7">
+                    <div class="hero-content"> 
+                        <h1 class="course-title">
+                            AWS Online Training
+                        </h1> 
+                        <div class="overview-box-style">
+                            <ul class="course-points">
+
+
+                                <li>
+                                    Master Cloud Computing and DevOps with the
+                                    AWS Certification Course in India.
+                                </li>
+
+                                <li>
+                                    Covers AWS Cloud Concepts, EC2, S3, RDS, Lambda, IAM,
+                                    CloudFormation, and Security Best Practices.
+                                </li>
+
+                                <li>
+
+                                    AWS Certification Course
+                                    with Career-Focused Placement Assistance.
+                                </li>
+
+                                <li>
+                                    Flexible AWS Training Options:
+                                    Weekday, Weekend, or Fast-Track Batches.
+                                </li>
+
+
+
+                                <li>
+                                    Benefit from
+
+                                    Resume Assistance, Mock Interviews,
+                                    and Career Support for Advancing in AWS Roles.
+
+                                </li>
+
+                                <li>
+
+                                    AWS Certification Course
+                                    with Career-Focused Placement Assistance.
+                                </li>
+
+                                <li>
+                                    Flexible AWS Training Options:
+                                    Weekday, Weekend, or Fast-Track Batches.
+                                </li>
+
+
+
+                                <li>
+                                    Benefit from
+
+                                    Resume Assistance, Mock Interviews,
+                                    and Career Support for Advancing in AWS Roles.
+
+                                </li>
+                                <li>
+                                    Get Hands-On Experience with Real-Time Cloud Projects and Practical Labs Guided by
+                                    Certified AWS Experts.
+                                </li>
+
+                            </ul>
+                        </div>
+                                         </div>
+                </div> 
+                <div class="col-xl-4 col-lg-5">
+
+                    <div class="enquiry-card">
+
+                        <div class="form-header">
+                            <h3>
+                                Book A Session Now
+                            </h3>
+
+                            <i class="bi bi-briefcase-fill"></i>
+                        </div>
+
+                        <div class="form-body">
+
+                            <form>
+
+                                <input type="text" class="custom-input" placeholder="Your Name">
+
+                                <input type="email" class="custom-input" placeholder="Your Email">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" class="custom-input" placeholder="Mobile Number">
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <select class="custom-select">
+                                            <option>Training Mode</option>
+                                            <option>Online</option>
+                                            <option>Weekend Batch</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <select class="custom-input">
+                                    <option>Select Course</option>
+                                    <option>AWS Solution Architect</option>
+                                    <option>AWS DevOps</option>
+                                    <option>AWS Cloud Practitioner</option>
+                                </select>
+
+                                <textarea class="custom-textarea" placeholder="Message"></textarea>
+
+                                <button class="submit-btn">
+                                    SUBMIT
+                                    <i class="bi bi-send-fill ms-1"></i>
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div> 
+            </div>
+        </div> 
+        <div class="stats-section pt-4 pt-lg-5">
+            <div class="container">
+                <div class="row g-4">
+
+      
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-card">
+                            <div class="stats-icon">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+
+                            <div class="stats-content">
+                                <h3>12900+</h3>
+                                <p>Professionals Trained</p>
+                            </div>
+                        </div>
+                    </div>
+
+        
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-card">
+                            <div class="stats-icon">
+                                <i class="fa-regular fa-calendar"></i>
+                            </div>
+
+                            <div class="stats-content">
+                                <h3>12+</h3>
+                                <p>Batches every month</p>
+                            </div>
+                        </div>
+                    </div>
+
+      
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-card">
+                            <div class="stats-icon">
+                                <i class="fa-solid fa-user-graduate"></i>
+                            </div>
+
+                            <div class="stats-content">
+                                <h3>2144+</h3>
+                                <p>Placed Students</p>
+                            </div>
+                        </div>
+                    </div>
+
+        
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-card">
+                            <div class="stats-icon">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+
+                            <div class="stats-content">
+                                <h3>230+</h3>
+                                <p>Corporate Served</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div> 
+    </section> -->
+
+    <!-- <section class="trail-info-strip ">
+        <div class="container">
+            <div class="trail-info-strip-inner">
+                <div class="trail-strip-item">
+                                   <div>
+                        <span class="strip-value"><a href="#overview_section">Overview</a></span>
+                    </div>
+                </div>
+                <div class="trail-strip-divider"></div>
+                <div class="trail-strip-item">
+                    <span class="strip-value"><a href="#certification">Training & Certification </a></span>
+                </div>
+                <div class="trail-strip-divider"></div>
+                <div class="trail-strip-item">
+                    <span class="strip-value"><a href="#curriculum">Curriculum</a></span>
+                </div>
+                <div class="trail-strip-divider"></div>
+                <div class="trail-strip-item">
+                    <span class="strip-value"><a href="#review">
+                            Testimonials
+                        </a></span>
+                </div>
+                <div class="trail-strip-divider"></div>
+                <div class="trail-strip-item">
+                    <div>
+                        <span class="strip-value"><a href="#faq_section">FAQs</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="course-layout-section ">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="content-wrapper">
+                        <div class="content-card " id="overview_section">
+                            <!-- <h3 class="section-heading">
+                                Overview
+                            </h3> -->
+
+                            <p class="section-text ">
+                                Cybersecurity has become one of the most critical priorities for modern organizations.
+                                Businesses across industries are
+                                constantly facing cyber threats, ransomware attacks, data breaches, and network
+                                vulnerabilities that can impact
+                                operations and business continuity. As organizations continue to strengthen their
+                                digital infrastructure, the demand for
+                                skilled professionals with expertise in network security and threat protection is
+                                growing rapidly.
+
+
+                            </p>
+                            <p class="section-text">
+                                Fortinet is one of the leading cybersecurity companies known for providing advanced
+                                network security, firewall
+                                protection, threat intelligence, cloud security, and enterprise security solutions.
+                                Fortinet technologies are widely
+                                used by businesses, government organizations, financial institutions, healthcare
+                                providers, and enterprises worldwide to
+                                secure their networks and digital environments.
+
+
+                            </p>
+                            <p class="section-text">
+                                At Pass4Job, we help learners build practical cybersecurity and network security skills
+                                through professional Fortinet
+                                training and certification programs designed to meet real-world industry requirements.
+                                Whether you are beginning your
+                                cybersecurity journey or planning to specialize in enterprise network security, our
+                                Fortinet programs focus on
+                                developing both technical expertise and recognized certification credentials.
+
+                            </p>
+
+                        </div>
+                        <!-- Certification -->
+                        <!-- <div class="course-list-section pt-5" id="certification">
+                            <h3 class="section-heading">
+                                Certification
+                            </h3>
+                            <p class="section-text pb-4">AWS offers certifications for different experience levels and
+                                technical roles. Choosing the right certification depends
+                                on your current skills, professional background, and career objectives.
+                            </p> 
+                            <div class="traning-fancy-card">
+                                <div class="course-card">
+                                    <div class="course-image">
+                                        <img src="assets/images/cert/aws-cloud-practitioner.webp"
+                                            alt="AWS Certified Cloud Practitioner">
+                                    </div>
+                                    <div class="fancy-card">
+                                        <div class="course-content">
+                                            <div class="border-bottom mb-3">
+                                                <h5 class="mb-2">AWS Certified Cloud Practitioner</h5>
+                                                <p class="course-description">
+                                                    Ideal for beginners to learn cloud computing fundamentals, AWS
+                                                    services,
+                                                    billing, pricing, security, and core cloud concepts.
+                                                </p>
+                                            </div>
+
+                                            <div
+                                                class="d-flex justify-content-md-between flex-column flex-md-row align-items-center gap-4 gap-md-0">
+                                                <div class="d-flex justify-content-between traning-info-wrapper">
+                                                    <div class="meta-block">
+                                                        <div class="me-1">Level:</div>
+                                                        <div class="course-price">Foundational</div>
+                                                    </div>
+
+                                                    <div class="meta-block">
+                                                        <div class="me-1">Mode:</div>
+                                                        <div class="course-price meta-info">Online / Classroom</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="course-tags">
+                                                    <div class="mode-badge">
+                                                        <a href="aws-certified-cloud-practitioner.html"
+                                                            class="text-white text-decoration-none">
+                                                            Full Details
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="traning-fancy-card">
+                                <div class="course-card">
+                                    <div class="course-image">
+                                        <img src="assets/images/cert/aws-solutions-architect-associate.webp"
+                                            alt="AWS Certified Solutions Architect Associate">
+                                    </div>
+                                    <div class="fancy-card">
+                                        <div class="course-content">
+                                            <div class="border-bottom mb-3">
+                                                <h5 class="mb-2">AWS Certified Solutions Architect – Associate</h5>
+                                                <p class="course-description">
+                                                    Learn to design scalable, secure, and reliable AWS cloud solutions
+                                                    for
+                                                    enterprise infrastructure and applications.
+                                                </p>
+                                            </div>
+
+                                            <div
+                                                class="d-flex justify-content-md-between flex-column flex-md-row align-items-center gap-4 gap-md-0">
+                                                <div class="d-flex justify-content-between traning-info-wrapper">
+                                                    <div class="meta-block">
+                                                        <div class="me-1">Level:</div>
+                                                        <div class="course-price">Associate</div>
+                                                    </div>
+
+                                                    <div class="meta-block">
+                                                        <div class="me-1">Mode:</div>
+                                                        <div class="course-price meta-info">Online / Classroom</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="course-tags">
+                                                    <div class="mode-badge">
+                                                        <a href="aws-solutions-architect-associate.html"
+                                                            class="text-white text-decoration-none">
+                                                            Full Details
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="traning-fancy-card">
+                                <div class="course-card">
+                                    <div class="course-image">
+                                        <img src="assets/images/cert/aws-developer-associate.webp"
+                                            alt="AWS Certified Developer Associate">
+                                    </div>
+                                    <div class="fancy-card">
+                                        <div class="course-content">
+                                            <div class="border-bottom mb-3">
+                                                <h5 class="mb-2">AWS Certified Developer – Associate</h5>
+                                                <p class="course-description">
+                                                    Focus on cloud-native application development, AWS SDKs, APIs,
+                                                    serverless technologies, and deployment best practices.
+                                                </p>
+                                            </div>
+
+                                            <div
+                                                class="d-flex justify-content-md-between flex-column flex-md-row align-items-center gap-4 gap-md-0">
+                                                <div class="d-flex justify-content-between traning-info-wrapper">
+                                                    <div class="meta-block">
+                                                        <div class="me-1">Level:</div>
+                                                        <div class="course-price">Associate</div>
+                                                    </div>
+
+                                                    <div class="meta-block">
+                                                        <div class="me-1">Mode:</div>
+                                                        <div class="course-price meta-info">Online / Classroom</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="course-tags">
+                                                    <div class="mode-badge">
+                                                        <a href="aws-developer-associate.html"
+                                                            class="text-white text-decoration-none">
+                                                            Full Details
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="traning-fancy-card">
+                                <div class="course-card">
+                                    <div class="course-image">
+                                        <img src="assets/images/cert/aws-sysops-administrator-associate.webp"
+                                            alt="AWS Certified SysOps Administrator Associate">
+                                    </div>
+                                    <div class="fancy-card">
+                                        <div class="course-content">
+                                            <div class="border-bottom mb-3">
+                                                <h5 class="mb-2">AWS Certified SysOps Administrator – Associate</h5>
+                                                <p class="course-description">
+                                                    Master AWS operations, monitoring, automation, networking,
+                                                    security management, and cloud administration best practices.
+                                                </p>
+                                            </div>
+
+                                            <div
+                                                class="d-flex justify-content-md-between flex-column flex-md-row align-items-center gap-4 gap-md-0">
+                                                <div class="d-flex justify-content-between traning-info-wrapper">
+                                                    <div class="meta-block">
+                                                        <div class="me-1">Level:</div>
+                                                        <div class="course-price">Associate</div>
+                                                    </div>
+
+                                                    <div class="meta-block">
+                                                        <div class="me-1">Mode:</div>
+                                                        <div class="course-price meta-info">Online / Classroom</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="course-tags">
+                                                    <div class="mode-badge">
+                                                        <a href="aws-sysops-administrator-associate.html"
+                                                            class="text-white text-decoration-none">
+                                                            Full Details
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="traning-fancy-card">
+                                <div class="course-card">
+                                    <div class="course-image">
+                                        <img src="assets/images/cert/aws-devops-engineer.webp"
+                                            alt="AWS Certified DevOps Engineer">
+                                    </div>
+                                    <div class="fancy-card">
+                                        <div class="course-content">
+                                            <div class="border-bottom mb-3">
+                                                <h5 class="mb-2">AWS Certified DevOps Engineer</h5>
+                                                <p class="course-description">
+                                                    Advanced certification covering CI/CD pipelines, infrastructure
+                                                    automation, monitoring, and operational excellence on AWS.
+                                                </p>
+                                            </div>
+
+                                            <div
+                                                class="d-flex justify-content-md-between flex-column flex-md-row align-items-center gap-4 gap-md-0">
+                                                <div class="d-flex justify-content-between traning-info-wrapper">
+                                                    <div class="meta-block">
+                                                        <div class="me-1">Level:</div>
+                                                        <div class="course-price">Professional</div>
+                                                    </div>
+
+                                                    <div class="meta-block">
+                                                        <div class="me-1">Mode:</div>
+                                                        <div class="course-price meta-info">Online / Classroom</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="course-tags">
+                                                    <div class="mode-badge">
+                                                        <a href="aws-devops-engineer.html"
+                                                            class="text-white text-decoration-none">
+                                                            Full Details
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div> -->
+
+                        <div class="pt-4">
+                            <h3 class="section-heading">Build Advanced Cybersecurity Skills With Fortinet</h3>
+
+                            <p class="section-text">
+                                Modern organizations require strong cybersecurity frameworks to protect networks,
+                                applications, cloud
+                                environments, and sensitive business data. Because of this, companies actively look for
+                                professionals who
+                                understand firewall management, network security architecture, threat prevention, VPN
+                                technologies, intrusion
+                                detection, and security operations.
+                            </p>
+
+                            <p class="section-text">
+                                Fortinet certifications validate your ability to work with enterprise-level security
+                                technologies and
+                                demonstrate practical knowledge of managing secure network environments. These
+                                certifications are highly
+                                respected in the cybersecurity industry and help professionals qualify for roles related
+                                to network security,
+                                cybersecurity operations, and infrastructure protection.
+                            </p>
+
+                            <p class="section-text">
+                                Learning Fortinet technologies is valuable for professionals working in networking,
+                                cybersecurity, cloud
+                                security, IT infrastructure, system administration, and security operations. As cyber
+                                threats continue to
+                                evolve, organizations increasingly prefer certified professionals who can manage and
+                                secure enterprise networks
+                                effectively.
+                            </p>
+
+                            <p class="section-text">
+                                Fortinet certifications can support career opportunities such as Network Security
+                                Engineer, Security
+                                Administrator, SOC Analyst, Cybersecurity Engineer, Firewall Administrator, Security
+                                Consultant, and
+                                Infrastructure Security Specialist.
+                            </p>
+                        </div>
+                        <div class="pt-4">
+                            <h3 class="section-heading">Professional Fortinet Training at Pass4Job</h3>
+
+                            <p class="section-text">
+                                At Pass4Job, our Fortinet training programs are designed to provide both theoretical
+                                understanding and hands-on
+                                practical learning. We focus on helping learners understand how Fortinet security
+                                technologies are implemented
+                                in real enterprise environments rather than limiting training to certification exam
+                                preparation alone.
+                            </p>
+
+                            <p class="section-text">
+                                Our training covers important cybersecurity concepts including firewall configuration,
+                                network security
+                                management, VPN implementation, threat analysis, intrusion prevention systems, secure
+                                access controls, cloud
+                                security integration, security monitoring, and enterprise security architecture.
+                            </p>
+
+                            <p class="section-text">
+                                Learners gain exposure to practical scenarios and security configurations that help
+                                improve technical confidence
+                                and real-world problem-solving abilities. The programs are designed to support both
+                                beginners and experienced IT
+                                professionals based on different learning requirements and career goals.
+                            </p>
+
+                            <p class="section-text">
+                                We also provide certification preparation guidance, helping learners understand exam
+                                objectives, security
+                                domains, and practical implementation concepts required for Fortinet certification
+                                success.
+                            </p>
+                        </div>
+                        <div class="pt-4">
+                            <h3 class="section-heading">Why Fortinet Certifications Matter</h3>
+
+                            <p class="section-text">
+                                Cybersecurity continues to dominate modern IT operations, and organizations are
+                                investing heavily in advanced
+                                security solutions to protect their digital infrastructure. Fortinet technologies are
+                                widely adopted because of
+                                their strong network security capabilities, integrated security platforms, and
+                                enterprise-grade threat
+                                protection solutions.
+                            </p>
+
+                            <p class="section-text">
+                                Fortinet certifications help professionals validate their technical expertise and
+                                demonstrate their ability to
+                                manage secure enterprise environments effectively. Employers often prefer certified
+                                professionals because they
+                                represent verified cybersecurity knowledge and practical implementation capabilities.
+                            </p>
+
+                            <p class="section-text">
+                                In addition to technical recognition, Fortinet-certified professionals often gain access
+                                to better career
+                                opportunities, higher salary potential, and more specialized cybersecurity roles across
+                                industries.
+                            </p>
+                        </div>
+                        <div class="pt-4">
+                            <h3 class="section-heading">Who Should Enroll in Fortinet Training?</h3>
+
+                            <p class="section-text">
+                                Fortinet training is suitable for a wide range of learners and IT professionals looking
+                                to build careers in
+                                cybersecurity and network security.
+                            </p>
+
+                            <p class="section-text">
+                                The training is beneficial for:
+                            </p>
+
+                            <ul class="section-text">
+                                <li>Network Engineers</li>
+                                <li>Cybersecurity Professionals</li>
+                                <li>Firewall Administrators</li>
+                                <li>System Administrators</li>
+                                <li>SOC Analysts</li>
+                                <li>Security Consultants</li>
+                                <li>Cloud Security Professionals</li>
+                                <li>IT Infrastructure Engineers</li>
+                                <li>DevOps Professionals</li>
+                                <li>Students and Fresh Graduates</li>
+                            </ul>
+
+                            <p class="section-text">
+                                Professionals already working in networking or IT infrastructure can use Fortinet
+                                certifications to transition
+                                into specialized cybersecurity and enterprise security roles.
+                            </p>
+                        </div>
+
+                        <div class="pt-4">
+                            <h3 class="section-heading">Why Choose Pass4Job for Fortinet Training</h3>
+
+                            <p class="section-text">
+                                At Pass4Job, we focus on delivering practical, career-oriented learning experiences that
+                                help learners develop
+                                real cybersecurity capabilities. Our Fortinet training programs are designed to simplify
+                                advanced security
+                                concepts while making learning more structured and industry-focused.
+                            </p>
+
+                            <p class="section-text">
+                                We provide expert-led training, certification preparation support, flexible learning
+                                assistance, and updated
+                                learning resources aligned with current Fortinet technologies and certification
+                                standards. Our goal is not only
+                                to help learners prepare for certification exams but also to build the confidence
+                                required for real-world
+                                enterprise security environments.
+                            </p>
+
+                            <p class="section-text">
+                                We understand that every learner has different experience levels, technical backgrounds,
+                                and career goals. That
+                                is why our Fortinet programs are designed to support both foundational cybersecurity
+                                learning and advanced
+                                network security specialization.
+                            </p>
+                        </div>
+                        <div class="pt-4">
+                            <h3 class="section-heading">Start Your Fortinet Learning Journey</h3>
+
+                            <p class="section-text">
+                                As cyber threats continue to evolve, organizations require skilled professionals who can
+                                secure networks, manage
+                                cybersecurity operations, and protect enterprise systems effectively. Fortinet skills
+                                and certifications have
+                                become highly valuable for professionals looking to build strong careers in
+                                cybersecurity and network security.
+                            </p>
+
+                            <p class="section-text">
+                                Whether your goal is to enter the cybersecurity industry, strengthen your technical
+                                expertise, or prepare for
+                                Fortinet certification exams, the right training can help you move forward confidently.
+                            </p>
+
+                            <p class="section-text">
+                                At Pass4Job, we are committed to helping learners build practical Fortinet knowledge and
+                                industry-relevant
+                                cybersecurity skills through professional training and certification support. With
+                                expert guidance, structured
+                                learning, and hands-on exposure, you can build a strong foundation for long-term success
+                                in cybersecurity and
+                                enterprise network protection.
+                            </p>
+                        </div>
+
+                        <!-- reviews -->
+                        <!-- <div class="pt-5 " id="review">
+                            <h3 class="section-heading">Reviews</h3>
+                            <div class="owl-carousel owl-theme" id="brandReview">
+                 
+                                <div class="item">
+                                    <div class="testimonial-card">
+                                        <div class="quote"><i class="fas fa-quote-left"></i></div>
+                                        <p class="testimonial-text">"This course was exactly what I needed to pass the
+                                            AWS exam. The hands-on labs were incredibly helpful and the explanations
+                                            were clear and concise."</p>
+                                        <div class="user">
+                                            <img src="https://i.pravatar.cc/150?u=user1" alt="Student">
+                                            <div class="user-info">
+                                                <div class="user-name">Sarah Jenkins</div>
+                                                <div class="user-role">Cloud Engineer</div>
+                                            </div>
+                                        </div>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                         
+                                <div class="item">
+                                    <div class="testimonial-card">
+                                        <div class="quote"><i class="fas fa-quote-left"></i></div>
+                                        <p class="testimonial-text">"Excellent material! I went from zero AWS knowledge
+                                            to passing the Associate exam in just 2 months. Highly recommend this to
+                                            anyone starting out."</p>
+                                        <div class="user">
+                                            <img src="https://i.pravatar.cc/150?u=user2" alt="Student">
+                                            <div class="user-info">
+                                                <div class="user-name">Michael Chang</div>
+                                                <div class="user-role">System Administrator</div>
+                                            </div>
+                                        </div>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="item">
+                                    <div class="testimonial-card">
+                                        <div class="quote"><i class="fas fa-quote-left"></i></div>
+                                        <p class="testimonial-text">"The practice exams provided at the end of the
+                                            course were very similar to the real exam. I felt completely prepared on
+                                            exam day."</p>
+                                        <div class="user">
+                                            <img src="https://i.pravatar.cc/150?u=user3" alt="Student">
+                                            <div class="user-info">
+                                                <div class="user-name">Emily Davis</div>
+                                                <div class="user-role">IT Manager</div>
+                                            </div>
+                                        </div>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class=" pt-5" id="faq_section">
+                            <h3 class="section-heading">Frequently Asked Questions</h3>
+                            <div class="accordion" id="faqAccordion">
+                                <div class="accordion-item mb-3 border-0 shadow-sm rounded">
+                                    <h2 class="accordion-header" id="faqHeading1">
+                                        <button class="accordion-button collapsed fw-semibold rounded" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faqCollapse1">
+                                            Do I need programming experience?
+                                        </button>
+                                    </h2>
+                                    <div id="faqCollapse1" class="accordion-collapse collapse"
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body text-muted">
+                                            No, programming experience is not required. The course focuses on
+                                            architectural concepts and services provided by AWS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mb-3 border-0 shadow-sm rounded">
+                                    <h2 class="accordion-header" id="faqHeading2">
+                                        <button class="accordion-button collapsed fw-semibold rounded" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faqCollapse2">
+                                            Is the exam voucher included in the course fee?
+                                        </button>
+                                    </h2>
+                                    <div id="faqCollapse2" class="accordion-collapse collapse"
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body text-muted">
+                                            Yes! By enrolling through Pass4Job, you receive a heavily discounted
+                                            official AWS exam voucher included as part of your training package.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mb-3 border-0 shadow-sm rounded">
+                                    <h2 class="accordion-header" id="faqHeading3">
+                                        <button class="accordion-button collapsed fw-semibold rounded" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faqCollapse3">
+                                            How long do I have access to the materials?
+                                        </button>
+                                    </h2>
+                                    <div id="faqCollapse3" class="accordion-collapse collapse"
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body text-muted">
+                                            You get lifetime access to all course materials, including future updates to
+                                            the curriculum as AWS services evolve.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT STICKY SIDEBAR -->
+                <div class="col-lg-4 d-none d-lg-block">
+
+                    <div class="sticky-sidebar">
+
+                        <div class="sidebar-card">
+
+                            <h3 class="sidebar-title">
+                                Book Now
+                            </h3>
+
+                            <p class="sidebar-subtitle">
+                                Start your AWS career journey today.
+                            </p>
+
+                            <form>
+
+                                <input type="text" class="custom-input" placeholder="Your Name">
+
+                                <input type="email" class="custom-input" placeholder="Email Address">
+
+                                <input type="text" class="custom-input" placeholder="Mobile Number">
+
+                                <select class="custom-input">
+                                    <option>Select Course</option>
+                                    <option>AWS Solution Architect</option>
+                                    <option>AWS DevOps</option>
+                                    <option>AWS Cloud Practitioner</option>
+                                </select>
+
+                                <textarea class="custom-input custom-textarea" placeholder="Your Message"></textarea>
+
+                                <button type="submit" class="submit-btn">
+                                    Submit Now
+                                    <i class="bi bi-send-fill ms-1"></i>
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="mb-4">
+                        <img src="assets/images/logo-white.png" alt="Pass4Job Logo" style="height: 36px;">
+                    </div>
+                    <p class="small opacity-75 pe-lg-4">Your trusted partner for official and discounted IT
+                        certification vouchers. Start saving on your exams today.</p>
+                    <div class="footer-socials mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="category.html">Vouchers</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="mb-4">Training</h5>
+                    <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
+                        <li><a href="category.html">AWS Training</a></li>
+                        <li><a href="category.html">Microsoft Training</a></li>
+                        <li><a href="category.html">Cisco Training</a></li>
+                        <li><a href="category.html">CompTIA Training</a></li>
+                        <li><a href="category.html">Isaca Training</a></li>
+                        <li><a href="category.html">PMI Training</a></li>
+                        <li><a href="category.html">CIA Training</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Contact Info</h5>
+                    <ul class="list-unstyled mb-0 d-flex flex-column gap-3 small opacity-75">
+
+                        <li><i class="fas fa-envelope me-2 text-primary"></i> <a href="mailto:info@pass4job.com"
+                                class="text-decoration-none text-white">info@pass4job.com</a></li>
+                        <li><i class="fas fa-phone-alt me-2 text-primary"></i> <a href="tel:+917428563177"
+                                class="text-decoration-none text-white">+91 74285 63177</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-5 mb-4" style="border-color: rgba(255,255,255,0.1);">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start small opacity-75">
+                    &copy; 2024 Pass4Job. All rights reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end small opacity-75 mt-3 mt-md-0">
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--call floating button-->
+    <a href="tel:+1234567890" class="call-float" target="_blank" rel="noopener noreferrer"
+        style="text-decoration: none;">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        style="text-decoration: none;">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Back To Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize owl carousel when jQuery is ready
+            var checkJquery = setInterval(function () {
+                if (window.jQuery && window.jQuery.fn.owlCarousel) {
+                    clearInterval(checkJquery);
+                    $('#brandReview').owlCarousel({
+                        loop: true,
+                        margin: 20,
+                        nav: false,
+                        dots: true,
+                        autoplay: true,
+                        autoplayTimeout: 5000,
+                        responsive: {
+                            0: { items: 1 },
+                            768: { items: 2 },
+                            1000: { items: 2 }
+                        }
+                    });
+                }
+            }, 100);
+        });
+    </script>
+</body>
+
+</html>
