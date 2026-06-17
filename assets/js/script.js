@@ -219,8 +219,7 @@ const presets = [
     { name: 'Bronze (Default)', primary: '#5c3912', secondary: '#311001', accent: '#F8B400' },
     { name: 'Coral Sunset', primary: '#974d17ff', secondary: '#772d05ff', accent: '#412608ff' },
     { name: 'Ocean Breeze', primary: '#0284c7', secondary: '#0369a1', accent: '#eab308' },
-    { name: 'Crimson Charcoal', primary: '#099c90ff', secondary: '#034b50ff', accent: '#1f2937' },
-
+    // { name: 'Crimson Charcoal', primary: '#099c90ff', secondary: '#034b50ff', accent: '#1f2937' },
     { name: 'Midnight Slate', primary: '#475569', secondary: '#334155', accent: '#38bdf8' },
     // edu 
     {
@@ -229,7 +228,6 @@ const presets = [
         secondary: '#132238',
         accent: '#D4A017'
     },
-
     {
         name: 'Cloud Academy',
         primary: '#0F4C81',
@@ -242,14 +240,12 @@ const presets = [
         secondary: '#1E293B',
         accent: '#EAB308'
     },
-
     {
         name: 'Certification Pro',
         primary: '#1D4ED8',
         secondary: '#1E3A8A',
         accent: '#F4B400'
     },
-
     {
         name: 'Knowledge Gray',
         primary: '#475569',
@@ -274,7 +270,6 @@ const presets = [
         secondary: '#1A365D',
         accent: '#D69E2E'
     }
-
 ];
 
 // Hex color to HSL helper
