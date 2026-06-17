@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap');
 
 :root {
-  --primary-color: #5c3912;
+  --primary-color: #974d17ff;
   --secondary-color: #311001;
   --accent-color: #F8B400;
   --primary-blue: var(--primary-color);
