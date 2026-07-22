@@ -1823,11 +1823,11 @@ footer a:hover {
 .course-hero {
   background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
   color: var(--white);
-  padding: 80px 0 60px;
+  padding: 60px 0;
   position: relative;
 }
 
-.course-hero::after {
+/* .course-hero::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -1836,7 +1836,7 @@ footer a:hover {
   height: 50px;
   background: var(--light-bg);
   clip-path: polygon(0 100%, 100% 100%, 100% 0);
-}
+} */
 
 .course-badges .badge {
   font-size: 0.9rem;
@@ -2426,9 +2426,10 @@ button.courses-btn.show {
   align-items: center;
   background: #f8f5f2;
   border: 1.5px solid #e0d6cc;
-  border-radius: 10px;
+  border-radius: 3px;
   transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
   overflow: hidden;
+  padding: 4px;
 }
 
 .hef-input-wrap:focus-within {
@@ -2458,11 +2459,13 @@ button.courses-btn.show {
   border: none;
   outline: none;
   background: transparent;
-  padding: 18px 12px 6px 0;
+  padding: 6px;
   font-size: 0.85rem;
   color: var(--dark-text);
   font-family: 'Roboto', sans-serif;
   width: 100%;
+  height: 100%;
+
 }
 
 .hef-label {
