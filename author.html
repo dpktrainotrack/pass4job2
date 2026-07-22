@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Author Profile | Pass4Job</title>
+    <meta name="description"
+        content="Meet our expert IT certification trainer at Pass4Job. Explore their credentials, certifications, expertise, and published articles.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS (Theme) -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Author Page CSS -->
+    <link rel="stylesheet" href="assets/css/author.css">
+</head>
+
+<body>
+
+    <!-- =========================================================
+       NAVBAR (shared site component)
+       ========================================================= -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-shield-check" style="color: var(--accent-color);"></i>Pass4<span>Job</span>
+            </a>
+
+            <!-- Megamenu Toggler -->
+            <div class="dropdown me-auto position-static">
+                <button
+                    class="btn theme-primary dropdown-toggle courses-btn d-flex align-items-center gap-2 px-2 px-md-4 py-2"
+                    type="button" id="coursesMegaMenuButton" data-bs-toggle="dropdown" aria-expanded="false"
+                    data-bs-auto-close="outside">
+                    Training
+                </button>
+                <!-- Megamenu Dropdown -->
+                <div class="dropdown-menu w-100 mega-menu-dropdown border-0 mt-3 p-3"
+                    aria-labelledby="coursesMegaMenuButton">
+                    <div class="container p-sm-0 pb-5 rounded">
+                        <div class="row g-0">
+                            <!-- Left Sidebar Categories -->
+                            <div class="col-md-3 bg-light border-end mobile-responsive-sidebar">
+                                <div class="nav flex-md-column nav-pills mega-menu-tabs p-3 gap-2 brand-listing-tabs"
+                                    id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <button class="nav-link active d-flex align-items-center bg-white border"
+                                        id="v-pills-aws-tab" data-bs-toggle="pill" data-bs-target="#v-pills-aws"
+                                        type="button" role="tab" aria-controls="v-pills-aws" aria-selected="true">
+                                        <img src="assets/images/brands/aws.webp" alt="AWS" height="50">
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                    <button class="nav-link d-flex align-items-center bg-white border"
+                                        id="v-pills-isaca-tab" data-bs-toggle="pill" data-bs-target="#v-pills-isaca"
+                                        type="button" role="tab" aria-controls="v-pills-isaca" aria-selected="false">
+                                        <img src="assets/images/brands/isaca.webp" alt="ISACA" height="50">
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                    <button class="nav-link d-flex align-items-center bg-white border"
+                                        id="v-pills-comptia-tab" data-bs-toggle="pill" data-bs-target="#v-pills-comptia"
+                                        type="button" role="tab" aria-controls="v-pills-comptia" aria-selected="false">
+                                        <img src="assets/images/brands/comptia.webp" alt="CompTIA" height="50">
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                    <button class="nav-link d-flex align-items-center bg-white border"
+                                        id="v-pills-microsoft-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-microsoft" type="button" role="tab"
+                                        aria-controls="v-pills-microsoft" aria-selected="false">
+                                        <img src="assets/images/brands/microsoft.webp" alt="Microsoft" height="50">
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Right Content Area -->
+                            <div class="col-md-9 p-sm-4 p-2 bg-white">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-aws" role="tabpanel"
+                                        aria-labelledby="v-pills-aws-tab">
+                                        <div class="row g-3">
+                                            <div class="col-lg-6 col-12">
+                                                <a href="detailpage.html" class="text-decoration-none text-dark">
+                                                    <div
+                                                        class="mega-course-card p-3 border rounded h-100 d-flex align-items-center gap-3">
+                                                        <div class="icon-wrapper rounded text-white p-3 fs-3 bg-light">
+                                                            <img src="assets/images/brands/aws.webp" alt="AWS"
+                                                                height="40">
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <h6 class="fw-bold mb-2">AWS Certified Solutions Architect
+                                                                Associate</h6>
+                                                            <div
+                                                                class="d-flex justify-content-between text-muted small">
+                                                                <span>8 Months</span><span>Online</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <a href="detailpage.html" class="text-decoration-none text-dark">
+                                                    <div
+                                                        class="mega-course-card p-3 border rounded h-100 d-flex align-items-center gap-3">
+                                                        <div class="icon-wrapper rounded text-white p-3 fs-3 bg-light">
+                                                            <img src="assets/images/brands/aws.webp" alt="AWS"
+                                                                height="40">
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <h6 class="fw-bold mb-2">AWS Certified Developer – Associate
+                                                            </h6>
+                                                            <div
+                                                                class="d-flex justify-content-between text-muted small">
+                                                                <span>6 Months</span><span>Online</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-isaca" role="tabpanel"
+                                        aria-labelledby="v-pills-isaca-tab">
+                                        <h4 class="fw-bold mb-4">ISACA Courses</h4>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-comptia" role="tabpanel"
+                                        aria-labelledby="v-pills-comptia-tab">
+                                        <h4 class="fw-bold mb-4">CompTIA Courses</h4>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-microsoft" role="tabpanel"
+                                        aria-labelledby="v-pills-microsoft-tab">
+                                        <h4 class="fw-bold mb-4">Microsoft Courses</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="d-flex gap-2 hero-cta-btn">
+                    <a href="tel:+917428563177" class="btn btn-outline-light">+91 74285 63177</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =========================================================
+       AUTHOR BANNER
+       ========================================================= -->
+    <section class="author-banner-section" style="
+       background: url('assets/images/banners/blog-banner.webp');   
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;">
+        <div class="author-banner">
+            <div class="container">
+                <h1 class="text-white fw-bold mb-1" style="font-size: 2rem;">Pankaj Durgapal</h1>
+                <p class="mb-0" style="color: rgba(255,255,255,0.75); font-size: 0.95rem;">
+                    Meet the expert behind the content
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container py-2">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="index.html"></i>Home</a></li>
+                <li class="breadcrumb-item"><a href="blog.html">Blog</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Pankaj Durgapal</li>
+            </ol>
+        </nav>
+    </div>
+    <!-- profile-card -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12">
+                    <!-- Author Profile Card -->
+                    <div class="author-profile-card ">
+                        <div class="author-profile-header d-flex flex-column flex-md-row gap-5 align-items-md-center">
+                            <div class="author-avatar-wrapper">
+                                <div class="author-avatar-placeholder">
+                                    PD
+                                </div>
+                                <div class="author-verified-badge" title="Verified Author">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+
+                            <div class="text-white">
+                                <h1 class="author-name">Pankaj Durgapal</h1>
+                                <p class="author-title">
+                                    <i class="fas fa-star me-1" style="color: var(--accent-color);"></i>
+                                    Senior IT Certification Trainer &amp; Cloud Architect
+                                </p>
+                                <div class="author-social-links">
+                                    <a href="#" class="author-social-link" title="LinkedIn"
+                                        aria-label="LinkedIn Profile">
+                                        <i class="fab fa-linkedin-in text-white"></i>
+                                    </a>
+                                    <a href="mailto:arjun@pass4job.com" class="author-social-link" title="Email"
+                                        aria-label="Email">
+                                        <i class="fas fa-envelope text-white"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="author-profile-body">
+
+
+                            <div class="d-flex flex-column  flex-wrap flex-md-row gap-2 mb-4">
+                                <div class="">
+                                    <div class="stat-item author-meta-badge">
+                                        <span class="stat-number">12+</span>
+                                        <span class="stat-label">Years Exp.</span>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    <div class="stat-item author-meta-badge">
+                                        <span class="stat-number">48</span>
+                                        <span class="stat-label">Articles</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <p class="author-bio">
+                                Arjun Kumar is a seasoned IT professional and certified trainer with over 12 years of
+                                experience
+                                in cloud computing, cybersecurity, and enterprise networking. He has trained thousands
+                                of
+                                professionals for globally recognized certifications including AWS, Microsoft Azure,
+                                Cisco, and
+                                CompTIA. His practical, exam-focused teaching style has earned him a reputation as one
+                                of India's
+                                top IT certification coaches. Arjun regularly contributes to Pass4Job's blog, sharing
+                                insights
+                                on certification strategies, industry trends, and career growth tips for IT
+                                professionals.
+                            </p>
+
+
+                        </div>
+                    </div>
+
+                    <!-- Areas of Expertise -->
+                    <!-- <div class="author-sidebar-card mb-4">
+                        <h2 class="author-section-title">Areas of Expertise</h2>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="expertise-tag"><i class="fab fa-aws"></i> AWS Cloud</span>
+                            <span class="expertise-tag"><i class="fab fa-microsoft"></i> Microsoft Azure</span>
+                            <span class="expertise-tag"><i class="fas fa-network-wired"></i> Cisco Networking</span>
+                            <span class="expertise-tag"><i class="fas fa-shield-alt"></i> Cybersecurity</span>
+                            <span class="expertise-tag"><i class="fas fa-server"></i> CompTIA Server+</span>
+                            <span class="expertise-tag"><i class="fas fa-lock"></i> CISSP</span>
+                            <span class="expertise-tag"><i class="fas fa-project-diagram"></i> PMP / PMI</span>
+                            <span class="expertise-tag"><i class="fas fa-cloud"></i> Cloud Architecture</span>
+                            <span class="expertise-tag"><i class="fas fa-chart-line"></i> DevOps</span>
+                            <span class="expertise-tag"><i class="fas fa-database"></i> ISACA CISA</span>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- article list -->
+    <section class="py-5">
+        <div class="container">
+            <div class="mb-4">
+                <div class="section-title">
+                    <h2 class="">Published Articles</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <article class="author-article-card">
+                            <div class="article-card-img-placeholder">
+                                <img src="assets/images/home/hero-image3.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="article-card-body">
+                                <span class="article-category-tag">AWS</span>
+                                <h3 class="article-card-title">
+                                    <a href="blog-detail.html">How to Pass the AWS Solutions Architect Exam on
+                                        Your First Try</a>
+                                </h3>
+                                <p class="article-card-excerpt">
+                                    A comprehensive guide covering study strategies, key domains, practice exam
+                                    tips, and common pitfalls to avoid when preparing for the SAA-C03 exam.
+                                </p>
+                                <div class="article-card-footer">
+                                    <span><i class="far fa-calendar-alt me-1"></i> June 15, 2026</span>
+                                    <a href="blog-detail.html" class="article-read-more">
+                                        Read More <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="author-article-card">
+                            <div class="article-card-img-placeholder">
+                                <img src="assets/images/home/hero-image3.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="article-card-body">
+                                <span class="article-category-tag">AWS</span>
+                                <h3 class="article-card-title">
+                                    <a href="blog-detail.html">How to Pass the AWS Solutions Architect Exam on
+                                        Your First Try</a>
+                                </h3>
+                                <p class="article-card-excerpt">
+                                    A comprehensive guide covering study strategies, key domains, practice exam
+                                    tips, and common pitfalls to avoid when preparing for the SAA-C03 exam.
+                                </p>
+                                <div class="article-card-footer">
+                                    <span><i class="far fa-calendar-alt me-1"></i> June 15, 2026</span>
+                                    <a href="blog-detail.html" class="article-read-more">
+                                        Read More <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="author-article-card">
+                            <div class="article-card-img-placeholder">
+                                <img src="assets/images/home/hero-image3.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="article-card-body">
+                                <span class="article-category-tag">AWS</span>
+                                <h3 class="article-card-title">
+                                    <a href="blog-detail.html">How to Pass the AWS Solutions Architect Exam on
+                                        Your First Try</a>
+                                </h3>
+                                <p class="article-card-excerpt">
+                                    A comprehensive guide covering study strategies, key domains, practice exam
+                                    tips, and common pitfalls to avoid when preparing for the SAA-C03 exam.
+                                </p>
+                                <div class="article-card-footer">
+                                    <span><i class="far fa-calendar-alt me-1"></i> June 15, 2026</span>
+                                    <a href="blog-detail.html" class="article-read-more">
+                                        Read More <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+
+
+
+                </div>
+
+                <!-- Load More -->
+                <div class="text-center mt-4">
+                    <a href="blog.html" class="btn-load-more" id="loadMoreArticles">
+                        <i class="fas fa-th-large"></i> View All Articles
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+       FOOTER (shared site component)
+       ========================================================= -->
+    <footer>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="mb-3">
+                        <a class="navbar-brand" href="index.html" style="font-size: 1.5rem;">
+                            <i class="fas fa-shield-check" style="color: var(--accent-color);"></i>Pass4<span>Job</span>
+                        </a>
+                    </div>
+                    <p class="small opacity-75 pe-lg-4">Your trusted partner for official and discounted IT
+                        certification
+                        vouchers. Start saving on your exams today.</p>
+                    <div class="footer-socials mt-4">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="category.html">Vouchers</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="mb-4">Training</h5>
+                    <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
+                        <li><a href="brand-aws.html">AWS Training</a></li>
+                        <li><a href="brand-microsoft .html">Microsoft Training</a></li>
+                        <li><a href="brand-cisco.html">Cisco Training</a></li>
+                        <li><a href="brand-comptia.html">CompTIA Training</a></li>
+                        <li><a href="brand-ISACA.html">ISACA Training</a></li>
+                        <li><a href="brand-pmi.html">PMI Training</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Contact Info</h5>
+                    <ul class="list-unstyled mb-0 d-flex flex-column gap-3 small opacity-75">
+                        <li><i class="fas fa-envelope me-2 text-primary"></i>
+                            <a href="mailto:info@pass4job.com"
+                                class="text-decoration-none text-white">info@pass4job.com</a>
+                        </li>
+                        <li><i class="fas fa-phone-alt me-2 text-primary"></i>
+                            <a href="tel:+917428563177" class="text-decoration-none text-white">+91 74285 63177</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-5 mb-4" style="border-color: rgba(255,255,255,0.1);">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start small opacity-75">
+                    &copy; 2024 Pass4Job. All rights reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end small opacity-75 mt-3 mt-md-0">
+                    <a href="privacy-policy.html" class="me-3">Privacy Policy</a>
+                    <a href="terms-conditions.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/917428563177" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back To Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

@@ -715,6 +715,59 @@
         .traning-fancy-card:last-child {
             margin-bottom: 0;
         }
+
+
+        /* Remove all default popover styling */
+        [popover] {
+            margin: auto;
+            padding: 0;
+            border: none;
+            outline: none;
+            background: transparent;
+            max-width: 500px;
+            width: auto;
+            height: auto;
+            overflow: visible;
+            box-shadow: none;
+
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+
+        [popover]::backdrop {
+            background: rgba(0, 0, 0, .6);
+            backdrop-filter: blur(4px);
+        }
+
+        button.close-training-popup-button {
+            background: transparent;
+            border: 0;
+            cursor: pointer;
+
+        }
+
+        .voucher-card-shape-top {
+            position: absolute;
+            top: -130px;
+            left: -130px;
+            width: 220px;
+            height: 220px;
+            background: rgb(212, 215, 255);
+            border-radius: 50%;
+            opacity: 0.3;
+        }
+
+        .voucher-card-shape-bottom {
+            position: absolute;
+            bottom: -155px;
+            right: -155px;
+            width: 220px;
+            height: 220px;
+            background: rgb(212, 215, 255);
+            border-radius: 50%;
+            opacity: 0.2;
+        }
     </style>
 </head>
 
@@ -1379,6 +1432,14 @@
                                                     </div>
                                                 </div>
                                                 <div class="course-tags">
+                                                    <button class="mode-badge " popovertarget="traning_booking_popup">
+                                                        <div class="text-white text-decoration-none">
+                                                            Book Now
+                                                        </div>
+                                                    </button>
+                                                </div>
+
+                                                <div class="course-tags">
                                                     <div class="mode-badge ">
                                                         <a href="detailpage.html"
                                                             class="text-white text-decoration-none">Full
@@ -1727,6 +1788,58 @@
 
         </div>
     </section>
+
+    <button popovertarget="traning_booking_popup" style="anchor-name: --menu-anchor;">
+        Open Menu
+    </button>
+
+    <div id="menu" popover="auto">
+        Popover Content
+    </div>
+
+
+    <!-- popover form -->
+    <div popover="auto" id="traning_booking_popup">
+        <div class="sidebar-card">
+            <div class=" mb-4">
+                <div class="d-flex justify-content-between align-items-center w-100 ">
+                    <h3 class="fw-bold  Session  mb-1">Book Now</h3>
+                    <button type="button" class="close-training-popup-button" popovertarget="traning_booking_popup"
+                        popovertargetaction="hide">
+                        <i class="fa-sharp fa-solid fa-circle-xmark  fa-2x "></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <form>
+
+                <input type="text" class="custom-input" placeholder="Your Name">
+
+                <input type="email" class="custom-input" placeholder="Email Address">
+
+                <input type="text" class="custom-input" placeholder="Mobile Number">
+
+                <select class="custom-input">
+                    <option>Select Course</option>
+                    <option>AWS Solution Architect</option>
+                    <option>AWS DevOps</option>
+                    <option>AWS Cloud Practitioner</option>
+                </select>
+
+                <textarea class="custom-input custom-textarea" placeholder="Your Message"></textarea>
+
+                <button type="submit" class="submit-btn">
+                    Submit Now
+                    <i class="bi bi-send-fill ms-1"></i>
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
 
     <!-- Footer -->
     <footer>

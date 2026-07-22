@@ -22,12 +22,96 @@
     <link rel="stylesheet" href="assets/css/aos.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .main-content-section p {
+            color: rgba(87, 95, 104, 0.993);
+            word-spacing: 2px;
+            line-height: 1.6;
+        }
+
+        .main-content-section h5 {
+            color: var(--secondary-color);
+            font-weight: 500;
+        }
+
+        .main-content-section .other-price {
+            color: gray;
+            font-size: 15px;
+        }
+
+
+        .main-content-section table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .main-content-section table thead {
+            background: var(--primary-blue);
+        }
+
+        .main-content-section table thead th {
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 14px 16px;
+            text-align: left;
+            border: 1px solid #dbe2ea;
+        }
+
+        .main-content-section table tbody td {
+            padding: 12px 16px;
+            font-size: 15px;
+            color: #4e5568;
+            border: 1px solid #e5e7eb;
+            vertical-align: middle;
+        }
+
+        .main-content-section table tbody tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        .main-content-section table tbody tr:hover {
+            background: #eef6ff;
+            transition: 0.3s ease;
+        }
+
+        .main-content-section table th,
+        .main-content-section table td {
+            word-break: break-word;
+        }
+
+
+        @media (max-width:768px) {
+
+            .main-content-section table {
+                display: block;
+                width: 100%;
+                overflow-x: auto;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .main-content-section table thead,
+            .main-content-section table tbody,
+            .main-content-section table tr {
+                white-space: nowrap;
+            }
+
+            .main-content-section table th,
+            .main-content-section table td {
+                min-width: 150px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-
-
-
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
@@ -367,14 +451,7 @@
             <!-- ===CTA-Btuuon -->
         </div>
     </nav>
-
-
     <main>
-        <!-- Custom CSS for Course Details Page -->
-        <style>
-
-        </style>
-
         <!-- Hero Banner Section -->
         <section class="course-hero">
             <div class="container">
@@ -386,16 +463,21 @@
 
 
                         </div>
-                        <h1 class="display-4 fw-bold mb-3">AWS Certified Solutions Architect Professional</h1>
-                        <p class="lead mb-4 opacity-75">Master cloud architecture and prepare for the official AWS
-                            certification exam with hands-on labs and expert guidance.</p>
+                        <h1 class="display-4 fw-bold mb-3">AWS Certified Solutions Architect Training</h1>
+                        <p class="lead mb-4 opacity-75">Design secure, scalable, and high-performing cloud solutions
+                            with our industry-focused AWS Certified Solutions Architect training. Learn directly from
+                            experienced cloud professionals through live sessions, practical AWS labs, and real-world
+                            architecture scenarios. Whether you're beginning your cloud journey or upgrading your
+                            existing skills, this program helps you build practical knowledge while preparing
+                            confidently for the AWS certification exam.
+                        </p>
                         <div class="d-flex flex-wrap gap-3">
                             <a href="#enroll" class="btn theme-primary btn-lg">Enroll Now <i
                                     class="fas fa-arrow-right ms-2"></i></a>
 
                         </div>
                         <!-- Key Course Highlights -->
-                        <div class="key-highlights-strip">
+                        <!-- <div class="key-highlights-strip">
                             <h5 class="fw-bold mb-3 mt-5">Key Course Highlights
                             </h5>
                             <div class="row g-3">
@@ -428,20 +510,20 @@
                                 </div>
 
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <!-- enquery form section -->
                     <div class="col-xl-4 col-lg-6 col-12 pb-5">
-                        <div class="hero-enquiry-card">
+                        <div class="hero-enquiry-card index-enquiry-card">
 
                             <!-- Card Header -->
                             <div class="hero-enquiry-header">
                                 <div class="hero-enquiry-header-icon">
-                                    <i class="fas fa-headset"></i>
+                                    <i class="fas fa-play-circle"></i>
                                 </div>
                                 <div class="flex-grow-1">
-                                    <h5 class="mb-0 fw-bold">Get Free Counselling</h5>
-                                    <p class="mb-0 small opacity-75">Talk to our experts today</p>
+                                    <h4 class="mb-0 fw-bold">Let's get in touch</h4>
+                                    <!-- <p class="mb-0 small opacity-75">Join 21,000+ certified professionals</p> -->
                                 </div>
                                 <div class="hef-live-dot">
                                     <span class="hef-pulse-ring"></span>
@@ -451,14 +533,15 @@
 
                             <!-- Form Body -->
                             <div class="hero-enquiry-body">
-                                <form action="" id="heroEnquiryForm" novalidate>
+                                <form action="" id="indexEnquiryForm" novalidate>
 
                                     <!-- Full Name -->
                                     <div class="hef-field-group mb-3">
                                         <div class="hef-input-wrap">
                                             <span class="hef-input-icon"><i class="fas fa-user"></i></span>
-                                            <input type="text" id="hefName" class="hef-input" placeholder=" " required>
-                                            <label for="hefName" class="hef-label">Full Name</label>
+                                            <input type="text" id="idxName" class="hef-input" placeholder="Full Name"
+                                                required>
+
                                         </div>
                                     </div>
 
@@ -466,9 +549,9 @@
                                     <div class="hef-field-group mb-3">
                                         <div class="hef-input-wrap">
                                             <span class="hef-input-icon"><i class="fas fa-envelope"></i></span>
-                                            <input type="email" id="hefEmail" class="hef-input" placeholder=" "
-                                                required>
-                                            <label for="hefEmail" class="hef-label">Email Address</label>
+                                            <input type="email" id="idxEmail" class="hef-input"
+                                                placeholder="Email Address" required>
+
                                         </div>
                                     </div>
 
@@ -476,65 +559,37 @@
                                     <div class="hef-field-group mb-3">
                                         <div class="hef-input-wrap hef-phone-wrap">
                                             <span class="hef-input-icon"><i class="fas fa-phone-alt"></i></span>
-                                            <span class="hef-country-code">+91</span>
-                                            <input type="tel" id="hefPhone" class="hef-input hef-input-phone"
-                                                placeholder=" " required>
-                                            <label for="hefPhone" class="hef-label hef-label-phone">Phone Number</label>
+
+                                            <input type="tel" id="idxPhone" class="hef-input hef-input-phone"
+                                                placeholder="Phone Number" required>
+
                                         </div>
                                     </div>
 
-                                    <!-- Course Interest -->
-                                    <div class="hef-field-group mb-3">
-                                        <div class="hef-input-wrap hef-select-wrap">
-                                            <span class="hef-input-icon"><i class="fas fa-graduation-cap"></i></span>
-                                            <select id="hefCourse" class="hef-input hef-select" required>
-                                                <option value="" disabled selected hidden></option>
-                                                <option>AWS Solutions Architect</option>
-                                                <option>Microsoft Azure</option>
-                                                <option>Google Cloud (GCP)</option>
-                                                <option>Cisco CCNA / CCNP</option>
-                                                <option>CompTIA Security+</option>
-                                            </select>
-                                            <label for="hefCourse" class="hef-label">Course Interested In</label>
-                                            <span class="hef-select-arrow"><i class="fas fa-chevron-down"></i></span>
-                                        </div>
-                                    </div>
 
-                                    <!-- Message -->
+
+                                    <!-- your message -->
                                     <div class="hef-field-group mb-4">
                                         <div class="hef-input-wrap hef-textarea-wrap">
                                             <span class="hef-input-icon hef-textarea-icon"><i
-                                                    class="fas fa-comment-dots"></i></span>
-                                            <textarea id="hefMessage" class="hef-input hef-textarea" rows="3"
-                                                placeholder=" "></textarea>
-                                            <label for="hefMessage" class="hef-label">Your Message (Optional)</label>
+                                                    class="fas fa-message"></i></span>
+                                            <textarea id="idxTime" class="hef-input hef-textarea"
+                                                placeholder="Your Message"></textarea>
+
+
                                         </div>
                                     </div>
 
                                     <!-- Submit Button -->
-                                    <button type="submit" class="hef-submit-btn">
+                                    <button type="submit" class="hef-submit-btn ">
                                         <span class="hef-btn-text">
-                                            <i class="fas fa-paper-plane me-2"></i>Request a Callback
+                                            Enquire Now
                                         </span>
-                                        <span class="hef-btn-arrow"><i class="fas fa-arrow-right"></i></span>
+                                        <span class="hef-btn-arrow"> <i class="fas fa-paper-plane"></i></span>
                                     </button>
                                 </form>
 
-                                <!-- Trust Badges -->
-                                <div class="hef-trust-row">
-                                    <div class="hef-trust-item">
-                                        <i class="fas fa-lock"></i>
-                                        <span>100% Secure</span>
-                                    </div>
-                                    <div class="hef-trust-item">
-                                        <i class="fas fa-bolt"></i>
-                                        <span>Quick Response</span>
-                                    </div>
-                                    <div class="hef-trust-item">
-                                        <i class="fas fa-shield-alt"></i>
-                                        <span>No Spam</span>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -543,23 +598,9 @@
         </section>
 
         <!-- Main Content Area -->
-        <section class="py-5">
-            <div class="container">
-                <div class="row">
-
-                    <!-- Left Column: Details -->
-                    <div class="col-lg-8">
-
-                        <!-- Course Overview -->
-                        <div class="mb-5 course-overview-section">
-                            <h3 class="section-heading">Course Overview</h3>
-                            <p class="text-muted lh-lg mb-4">This course is designed to help you pass the <strong>AWS
-                                    Certified Solutions Architect – Associate</strong> exam. Even if you've never logged
-                                into AWS before, our structured training takes you from zero to certified. No
-                                programming knowledge or prior cloud experience required.</p>
-
-                            <!-- Quick Stats Strip -->
-                            <!-- <div class="co-stats-strip mb-4">
+        <section class="py-5 main-content-section">
+            <!-- Quick Stats Strip -->
+            <!-- <div class="co-stats-strip mb-4">
                                 <div class="co-stat-item">
                                     <div class="co-stat-icon"><i class="fas fa-clock"></i></div>
                                     <div class="co-stat-info">
@@ -592,157 +633,199 @@
                                     </div>
                                 </div>
                             </div> -->
-
-                            <!-- Topics Covered -->
-                            <div class="co-topics-block mb-4">
-                                <h6 class="co-topics-title"><i class="fas fa-th-list me-2"></i>Topics Covered in This
-                                    Course</h6>
-                                <div class="co-topics-grid">
-                                    <div class="co-topic-item">
-                                        <span class="co-topic-icon"><i class="fas fa-cloud"></i></span>
-                                        <span>Cloud Computing Fundamentals</span>
-                                    </div>
-                                    <div class="co-topic-item">
-                                        <span class="co-topic-icon"><i class="fas fa-server"></i></span>
-                                        <span>EC2, ECS &amp; Lambda</span>
-                                    </div>
-                                    <div class="co-topic-item">
-                                        <span class="co-topic-icon"><i class="fas fa-database"></i></span>
-                                        <span>S3, RDS &amp; DynamoDB</span>
-                                    </div>
-                                    <div class="co-topic-item">
-                                        <span class="co-topic-icon"><i class="fas fa-network-wired"></i></span>
-                                        <span>VPC, Subnets &amp; Route Tables</span>
-                                    </div>
-                                    <div class="co-topic-item">
-                                        <span class="co-topic-icon"><i class="fas fa-shield-alt"></i></span>
-                                        <span>IAM, Security Groups &amp; KMS</span>
-                                    </div>
-                                    <div class="co-topic-item">
-                                        <span class="co-topic-icon"><i class="fas fa-chart-line"></i></span>
-                                        <span>CloudWatch, CloudTrail &amp; SNS</span>
-                                    </div>
-                                    <div class="co-topic-item">
-                                        <span class="co-topic-icon"><i class="fas fa-sync-alt"></i></span>
-                                        <span>Auto Scaling &amp; Elastic Load Balancer</span>
-                                    </div>
-                                    <div class="co-topic-item">
-                                        <span class="co-topic-icon"><i class="fas fa-file-alt"></i></span>
-                                        <span>Practice Tests &amp; Exam Strategies</span>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <style>
-                            .feature-list {
-                                padding-left: 0;
-                            }
-
-                            .feature-list li {
-                                position: relative;
-                                display: flex;
-                                align-items: flex-start;
-                                align-items: center;
-                                gap: 14px;
-                                padding-bottom: 18px;
-                                color: var(--bs-secondary-color);
-                                font-size: 16px;
-                                line-height: 1.5;
-                                /* font-weight: 500; */
-                            }
-
-                            .feature-list li::before {
-                                content: "\f00c";
-                                font-family: "Font Awesome 6 Free";
-                                font-weight: 900;
-                                width: 28px;
-                                height: 28px;
-                                min-width: 28px;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                background: var(--gradient-blue);
-                                color: var(--accent-color);
-                                border-radius: 50%;
-                                font-size: 16px;
-                                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
-                            }
-                        </style>
-
-                        <!-- What You Will Learn -->
-                        <div class="mb-5 what-you-learn-section">
-                            <h3 class="section-heading">What You Will Learn</h3>
-                            <p class="text-muted mb-4">By the end of this course, you'll have a comprehensive
-                                understanding of AWS cloud services and the confidence to ace your certification exam.
+            <div class="container">
+                <div class="row">
+                    <!-- Left Column: Details -->
+                    <div class="col-lg-8">
+                        <!-- Course Overview -->
+                        <div class="mb-5 course-overview-section">
+                            <h3 class="section-heading">About the Training
+                            </h3>
+                            <h5>Build Real-World AWS Architecture Skills</h5>
+                            <p>Cloud technology has transformed the way organizations
+                                build and manage applications, making AWS the preferred cloud platform for businesses
+                                worldwide. The AWS Certified Solutions Architect certification is one of the most
+                                respected cloud credentials because it validates your ability to design reliable,
+                                secure, and cost-efficient cloud environments.
                             </p>
-
-                            <ul class="feature-list">
-                                <li>
-                                    Design resilient, high-performing cloud architectures on AWS
-                                </li>
-                            </ul>
-
-                            <!-- <div class="row g-3 mb-4">
-                                <div class="col-md-6">
-                                    <div class="learn-item">
-                                        <div class="learn-icon"><i class="fas fa-check"></i></div>
-                                        <span>Design resilient, high-performing cloud architectures on AWS</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="learn-item">
-                                        <div class="learn-icon"><i class="fas fa-check"></i></div>
-                                        <span>Implement secure applications and architectures using IAM policies</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="learn-item">
-                                        <div class="learn-icon"><i class="fas fa-check"></i></div>
-                                        <span>Configure VPCs, subnets, security groups &amp; network ACLs</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="learn-item">
-                                        <div class="learn-icon"><i class="fas fa-check"></i></div>
-                                        <span>Deploy scalable applications using EC2, ECS, and Lambda</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="learn-item">
-                                        <div class="learn-icon"><i class="fas fa-check"></i></div>
-                                        <span>Set up monitoring, logging &amp; alarms with CloudWatch</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="learn-item">
-                                        <div class="learn-icon"><i class="fas fa-check"></i></div>
-                                        <span>Master S3 storage classes, lifecycle policies &amp; replication</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="learn-item">
-                                        <div class="learn-icon"><i class="fas fa-check"></i></div>
-                                        <span>Implement cost-optimization strategies for AWS workloads</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="learn-item">
-                                        <div class="learn-icon"><i class="fas fa-check"></i></div>
-                                        <span>Build fault-tolerant systems with auto-scaling &amp; load balancers</span>
-                                    </div>
-                                </div>
-                            </div> -->
-
-
+                            <p>Our training is designed to bridge the gap between theory and practical implementation.
+                                Instead of simply explaining AWS services, we demonstrate how they work together in real
+                                business environments. Throughout the course, learners gain practical experience with
+                                cloud infrastructure, networking, storage, databases, monitoring, security, and
+                                architecture best practices that can be applied immediately in professional projects.
+                            </p>
                         </div>
+                        <h3 class="section-heading">Why Learn with Pass4Job</h3>
+                        <h5>Practical Training Designed for Career Growth
+                        </h5>
+                        <p>At Pass4Job, we believe successful cloud professionals are built through practical
+                            experience rather than memorizing concepts. Every training session combines
+                            instructor-led learning with hands-on AWS labs, allowing learners to understand how
+                            cloud services are actually used in production environments. Our trainers explain
+                            industry scenarios, architecture decisions, deployment strategies, and troubleshooting
+                            techniques so that every participant develops confidence beyond the certification exam.
+                        </p>
+                        <p>From the first session to certification preparation, learners receive structured guidance
+                            that supports both technical learning and career development. The objective is not only
+                            to help you pass the AWS exam but also to prepare you for real responsibilities in
+                            cloud-focused job roles.</p>
+                        <h3 class="section-heading">What You Will Learn
+                        </h3>
+                        <h5>Learn the Skills Employers Expect
 
-                        <!-- Course Curriculum -->
-                        <div class="mb-5">
+                        </h5>
+                        <p>This training covers every major topic required to understand AWS cloud architecture. You
+                            will explore how computing, storage, networking, databases, monitoring, identity management,
+                            security, and cost optimization work together to build modern cloud environments. Practical
+                            demonstrations and guided exercises help reinforce every concept, making it easier to apply
+                            AWS services in real-world scenarios rather than simply remembering theoretical definitions.
+
+                            experience rather than memorizing concepts. Every training session combines
+                            instructor-led learning with hands-on AWS labs, allowing learners to understand how
+                            cloud services are actually used in production environments. Our trainers explain
+                            industry scenarios, architecture decisions, deployment strategies, and troubleshooting
+                            techniques so that every participant develops confidence beyond the certification exam.
+                        </p>
+                        <p>By the end of the program, learners develop the confidence to design scalable cloud
+                            infrastructures, improve application availability, secure cloud resources, and optimize
+                            workloads according to AWS architectural best practices.
+                        </p>
+                        <h3 class="section-heading">Training Methodology
+
+                        </h3>
+                        <h5>Learn Through Practical Implementation
+
+
+                        </h5>
+                        <p>Our learning approach follows a structured process that gradually builds your confidence with
+                            AWS technologies. Each module introduces core concepts before moving into practical
+                            demonstrations, cloud labs, architecture discussions, and real implementation scenarios.
+                            Instead of focusing only on certification objectives, every topic is connected to real
+                            business use cases that professionals encounter while working with AWS.
+
+                        </p>
+                        <p>Regular assessments, instructor feedback, and practice exercises ensure that learners
+                            continue improving throughout the training while identifying areas that need additional
+                            attention before appearing for the certification exam.
+
+                        </p>
+                        <h3 class="section-heading">Career Opportunities
+
+
+                        </h3>
+                        <h5>Open the Door to High-Demand Cloud Roles
+                        </h5>
+                        <p>AWS skills continue to be among the most requested cloud competencies across startups,
+                            multinational organizations, consulting companies, and enterprise technology teams.
+                            Professionals who understand cloud architecture are responsible for designing secure
+                            infrastructure, improving application performance, reducing operational costs, and
+                            supporting digital transformation initiatives.
+
+
+                        </p>
+                        <p>After completing this training, learners become well prepared to pursue opportunities such as
+                            AWS Solutions Architect, Cloud Engineer, Infrastructure Engineer, Cloud Consultant, and
+                            DevOps Engineer depending on their previous experience and career goals.
+                        </p>
+
+                        <h3 class="section-heading">Course Overview Table</h3>
+                        <h5>AWS Certified Solutions Architect Training at a Glance</h5>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Training Details</th>
+                                    <th>Information</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Course Name</td>
+                                    <td>AWS Certified Solutions Architect Training</td>
+                                </tr>
+                                <tr>
+                                    <td>Certification Preparation</td>
+                                    <td>AWS Certified Solutions Architect</td>
+                                </tr>
+                                <tr>
+                                    <td>Skill Level</td>
+                                    <td>Beginner to Intermediate</td>
+                                </tr>
+                                <tr>
+                                    <td>Training Mode</td>
+                                    <td>Online &amp; Live Instructor-Led</td>
+                                </tr>
+                                <tr>
+                                    <td>Practical AWS Labs</td>
+                                    <td>Included Throughout the Course</td>
+                                </tr>
+                                <tr>
+                                    <td>Real-World Projects</td>
+                                    <td>Included</td>
+                                </tr>
+                                <tr>
+                                    <td>Mock Tests</td>
+                                    <td>Included</td>
+                                </tr>
+                                <tr>
+                                    <td>Study Material</td>
+                                    <td>Comprehensive Digital Learning Resources</td>
+                                </tr>
+                                <tr>
+                                    <td>Trainer Support</td>
+                                    <td>Experienced AWS Certified Trainers</td>
+                                </tr>
+                                <tr>
+                                    <td>Certification Guidance</td>
+                                    <td>Complete Exam Preparation Assistance</td>
+                                </tr>
+                                <tr>
+                                    <td>Duration</td>
+                                    <td>Approximately 40+ Hours</td>
+                                </tr>
+                                <tr>
+                                    <td>Career Support</td>
+                                    <td>Interview Guidance &amp; Learning Support</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                        <h3 class="section-heading">Why AWS Certification Matters
+                        </h3>
+                        <h5>Invest in Skills That Stay Relevant
+                        </h5>
+
+                        <p>As businesses continue migrating applications and infrastructure to the cloud, organizations
+                            increasingly seek professionals who can design secure, scalable, and efficient AWS
+                            environments. The AWS Certified Solutions Architect certification demonstrates your ability
+                            to understand cloud architecture principles and apply them in practical business scenarios.
+                            It strengthens your professional profile, validates your technical expertise, and increases
+                            your credibility when applying for cloud-related roles across different industries.
+                        </p>
+                        <h3 class="section-heading">Why Choose Pass4Job
+
+                        </h3>
+                        <h5>More Than Just Certification Training
+
+                        </h5>
+
+                        <p>Choosing Pass4Job means learning from professionals who understand how cloud technologies are
+                            used in the real world. Our training focuses on practical implementation, interactive
+                            learning, continuous mentor support, and structured certification preparation. Every learner
+                            receives guidance throughout the journey, ensuring they develop both the technical
+                            confidence required for the AWS certification exam and the practical skills expected by
+                            employers.
+                        </p>
+                        <p>Rather than limiting learning to classroom concepts, we create an environment where learners
+                            gain hands-on exposure, solve realistic cloud scenarios, and build a strong foundation for
+                            long-term career growth in cloud computing.
+                        </p>
+
+                        <!-- <div class="mb-5">
                             <h3 class="section-heading">Course Curriculum</h3>
                             <div class="accordion curriculum-accordion" id="curriculumAccordion">
-                                <!-- Module 1 -->
+        
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -771,7 +854,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Module 2 -->
+                       
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingTwo">
                                         <button class="accordion-button collapsed" type="button"
@@ -798,7 +881,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Module 3 -->
+                   
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingThree">
                                         <button class="accordion-button collapsed" type="button"
@@ -821,7 +904,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Module 4 -->
+             
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingFour">
                                         <button class="accordion-button collapsed" type="button"
@@ -845,17 +928,19 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Student Reviews Section -->
-                        <div class="mb-5">
+                        </div> -->
+
+                        <!-- <div class="mb-5">
                             <h3 class="section-heading">Student Reviews</h3>
                             <div class="owl-carousel owl-theme" id="studentReviews">
-                                <!-- Review 1 -->
+                 
                                 <div class="item">
                                     <div class="testimonial-card">
                                         <div class="quote"><i class="fas fa-quote-left"></i></div>
-                                        <p class="testimonial-text">"This course was exactly what I needed to pass the
-                                            AWS exam. The hands-on labs were incredibly helpful and the explanations
+                                        <p class="testimonial-text">"This course was exactly what I needed to
+                                            pass the
+                                            AWS exam. The hands-on labs were incredibly helpful and the
+                                            explanations
                                             were clear and concise."</p>
                                         <div class="user">
                                             <img src="https://i.pravatar.cc/150?u=user1" alt="Student">
@@ -871,12 +956,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Review 2 -->
+         
                                 <div class="item">
                                     <div class="testimonial-card">
                                         <div class="quote"><i class="fas fa-quote-left"></i></div>
-                                        <p class="testimonial-text">"Excellent material! I went from zero AWS knowledge
-                                            to passing the Associate exam in just 2 months. Highly recommend this to
+                                        <p class="testimonial-text">"Excellent material! I went from zero AWS
+                                            knowledge
+                                            to passing the Associate exam in just 2 months. Highly recommend
+                                            this to
                                             anyone starting out."</p>
                                         <div class="user">
                                             <img src="https://i.pravatar.cc/150?u=user2" alt="Student">
@@ -892,12 +979,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Review 3 -->
+                    
                                 <div class="item">
                                     <div class="testimonial-card">
                                         <div class="quote"><i class="fas fa-quote-left"></i></div>
-                                        <p class="testimonial-text">"The practice exams provided at the end of the
-                                            course were very similar to the real exam. I felt completely prepared on
+                                        <p class="testimonial-text">"The practice exams provided at the end of
+                                            the
+                                            course were very similar to the real exam. I felt completely
+                                            prepared on
                                             exam day."</p>
                                         <div class="user">
                                             <img src="https://i.pravatar.cc/150?u=user3" alt="Student">
@@ -914,89 +1003,93 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
 
 
                         <!-- Career Opportunities Section -->
-                        <div class="mb-5 career-opportunities-section">
+                        <!-- <div class="mb-5 career-opportunities-section">
                             <h3 class="section-heading">Career Opportunities</h3>
-                            <p class="text-muted mb-4">An AWS Solutions Architect certification opens doors to some of
+                            <p class="text-muted mb-4">An AWS Solutions Architect certification opens doors to
+                                some of
                                 the most in-demand and high-paying roles in the tech industry.</p>
 
                             <div class="row g-3 mb-4">
-                                <!-- Role 1 -->
-                                <div class="col-md-6">
-                                    <div class="career-card">
-                                        <div class="career-card-header">
-                                            <div class="career-icon-wrap"><i class="fas fa-cloud"></i></div>
-                                            <div class="career-demand-badge"><i class="fas fa-fire me-1"></i>High Demand
-                                            </div>
-                                        </div>
-                                        <h5 class="career-role-title">Cloud Solutions Architect</h5>
-                                        <p class="career-role-desc">Design and oversee cloud infrastructure, ensuring
-                                            scalability, security and cost efficiency for enterprises.</p>
-                                        <div class="career-salary">
-                                            <i class="fas fa-indian-rupee-sign me-1"></i>
-                                            <span>₹8L – ₹25L / year</span>
-                                        </div>
+                       
+                        <div class="col-md-6">
+                            <div class="career-card">
+                                <div class="career-card-header">
+                                    <div class="career-icon-wrap"><i class="fas fa-cloud"></i></div>
+                                    <div class="career-demand-badge"><i class="fas fa-fire me-1"></i>High
+                                        Demand
                                     </div>
                                 </div>
-                                <!-- Role 2 -->
-                                <div class="col-md-6">
-                                    <div class="career-card">
-                                        <div class="career-card-header">
-                                            <div class="career-icon-wrap"><i class="fas fa-cogs"></i></div>
-                                            <div class="career-demand-badge"><i class="fas fa-fire me-1"></i>Trending
-                                            </div>
-                                        </div>
-                                        <h5 class="career-role-title">DevOps Engineer</h5>
-                                        <p class="career-role-desc">Automate CI/CD pipelines, manage
-                                            infrastructure-as-code, and streamline development workflows on AWS.</p>
-                                        <div class="career-salary">
-                                            <i class="fas fa-indian-rupee-sign me-1"></i>
-                                            <span>₹6L – ₹20L / year</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Role 3 -->
-                                <div class="col-md-6">
-                                    <div class="career-card">
-                                        <div class="career-card-header">
-                                            <div class="career-icon-wrap"><i class="fas fa-shield-alt"></i></div>
-                                            <div class="career-demand-badge badge-hot"><i
-                                                    class="fas fa-bolt me-1"></i>Top Paying</div>
-                                        </div>
-                                        <h5 class="career-role-title">Cloud Security Engineer</h5>
-                                        <p class="career-role-desc">Implement and manage security best practices,
-                                            compliance frameworks, and threat detection on AWS.</p>
-                                        <div class="career-salary">
-                                            <i class="fas fa-indian-rupee-sign me-1"></i>
-                                            <span>₹10L – ₹30L / year</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Role 4 -->
-                                <div class="col-md-6">
-                                    <div class="career-card">
-                                        <div class="career-card-header">
-                                            <div class="career-icon-wrap"><i class="fas fa-database"></i></div>
-                                            <div class="career-demand-badge"><i
-                                                    class="fas fa-chart-line me-1"></i>Growing</div>
-                                        </div>
-                                        <h5 class="career-role-title">Cloud Data Engineer</h5>
-                                        <p class="career-role-desc">Build data pipelines and analytics solutions using
-                                            AWS services like Redshift, Glue, and Athena.</p>
-                                        <div class="career-salary">
-                                            <i class="fas fa-indian-rupee-sign me-1"></i>
-                                            <span>₹7L – ₹22L / year</span>
-                                        </div>
-                                    </div>
+                                <h5 class="career-role-title">Cloud Solutions Architect</h5>
+                                <p class="career-role-desc">Design and oversee cloud infrastructure,
+                                    ensuring
+                                    scalability, security and cost efficiency for enterprises.</p>
+                                <div class="career-salary">
+                                    <i class="fas fa-indian-rupee-sign me-1"></i>
+                                    <span>₹8L – ₹25L / year</span>
                                 </div>
                             </div>
+                        </div>
+                    
+                        <div class="col-md-6">
+                            <div class="career-card">
+                                <div class="career-card-header">
+                                    <div class="career-icon-wrap"><i class="fas fa-cogs"></i></div>
+                                    <div class="career-demand-badge"><i class="fas fa-fire me-1"></i>Trending
+                                    </div>
+                                </div>
+                                <h5 class="career-role-title">DevOps Engineer</h5>
+                                <p class="career-role-desc">Automate CI/CD pipelines, manage
+                                    infrastructure-as-code, and streamline development workflows on AWS.
+                                </p>
+                                <div class="career-salary">
+                                    <i class="fas fa-indian-rupee-sign me-1"></i>
+                                    <span>₹6L – ₹20L / year</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="career-card">
+                                <div class="career-card-header">
+                                    <div class="career-icon-wrap"><i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <div class="career-demand-badge badge-hot"><i class="fas fa-bolt me-1"></i>Top
+                                        Paying</div>
+                                </div>
+                                <h5 class="career-role-title">Cloud Security Engineer</h5>
+                                <p class="career-role-desc">Implement and manage security best
+                                    practices,
+                                    compliance frameworks, and threat detection on AWS.</p>
+                                <div class="career-salary">
+                                    <i class="fas fa-indian-rupee-sign me-1"></i>
+                                    <span>₹10L – ₹30L / year</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="career-card">
+                                <div class="career-card-header">
+                                    <div class="career-icon-wrap"><i class="fas fa-database"></i></div>
+                                    <div class="career-demand-badge"><i class="fas fa-chart-line me-1"></i>Growing</div>
+                                </div>
+                                <h5 class="career-role-title">Cloud Data Engineer</h5>
+                                <p class="career-role-desc">Build data pipelines and analytics solutions
+                                    using
+                                    AWS services like Redshift, Glue, and Athena.</p>
+                                <div class="career-salary">
+                                    <i class="fas fa-indian-rupee-sign me-1"></i>
+                                    <span>₹7L – ₹22L / year</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                            <!-- Career Stats Banner -->
-                            <!-- <div class="career-stats-banner">
+               
+                    <div class="career-stats-banner">
                                 <div class="row g-0 text-center">
                                     <div class="col-6 col-md-3 career-stat-item">
                                         <div class="career-stat-number">50,000+</div>
@@ -1015,10 +1108,10 @@
                                         <div class="career-stat-label">Hiring Companies</div>
                                     </div>
                                 </div>
-                            </div> -->
-                        </div>
+                            </div>
+                </div> -->
                         <!-- FAQ Section -->
-                        <div class="mb-5">
+                        <!-- <div class="mb-5">
                             <h3 class="section-heading">Frequently Asked Questions</h3>
                             <div class="accordion" id="faqAccordion">
                                 <div class="accordion-item mb-3 border-0 shadow-sm rounded">
@@ -1061,13 +1154,14 @@
                                     <div id="faqCollapse3" class="accordion-collapse collapse"
                                         data-bs-parent="#faqAccordion">
                                         <div class="accordion-body text-muted">
-                                            You get lifetime access to all course materials, including future updates to
+                                            You get lifetime access to all course materials, including future
+                                            updates to
                                             the curriculum as AWS services evolve.
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
 
@@ -1090,7 +1184,9 @@
                                         AWS Certified Solutions Architect Professional</p>
                                     <div class="price-card-right">
                                         <div class="mb-4 d-flex justify-content-between align-items-center">
-                                            <div class="">Actual Price: <span class="previous-price">$1000</span> </div>
+                                            <div class="other-price">Actual Price: <span
+                                                    class="previous-price">$1000</span>
+                                            </div>
                                             <div class="our-price-wrapper">Our Price: <span
                                                     class="our-price">$500</span>
                                             </div>
@@ -1140,40 +1236,24 @@
 
                                 </div>
                             </div>
-                            <div class="sidebar-card bg-light border-0 border-top border-4 p-4"
-                                style="border-color: var(--secondary-blue) !important;">
-                                <h5 class="fw-bold mb-4">Why Choose Pass4Job?</h5>
-                                <ul class="course-features-list">
-                                    <li class="align-items-start">
-                                        <i class="fas fa-check-circle mt-1"></i>
-                                        <div>
-                                            <strong class="d-block">Official Partner</strong>
-                                            <span class="small text-muted">Authorized training and genuine
-                                                vouchers.</span>
-                                        </div>
-                                    </li>
-                                    <li class="align-items-start">
-                                        <i class="fas fa-headset mt-1"></i>
-                                        <div>
-                                            <strong class="d-block">24/7 Support</strong>
-                                            <span class="small text-muted">Expert assistance whenever you need
-                                                it.</span>
-                                        </div>
-                                    </li>
-                                    <li class="align-items-start">
-                                        <i class="fas fa-sync-alt mt-1"></i>
-                                        <div>
-                                            <strong class="d-block">Updated Content</strong>
-                                            <span class="small text-muted">Curriculum aligned with the latest
-                                                exams.</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
+
                         </div>
 
                     </div>
                 </div>
+        </section>
+
+        <section class="py-5 position-relative" style="background: var(--gradient-blue); color: white; ">
+            <div class="container text-center">
+                <h2 class="text-white mb-3">Start Your AWS Cloud Journey Today</h2>
+                <p class=" text-white mb-4">Take the next step toward becoming an AWS Certified Solutions Architect with
+                    training that combines expert instruction, practical cloud labs, real-world architecture concepts,
+                    and certification-focused preparation. Join Pass4Job and build the skills needed to succeed in
+                    today's rapidly growing cloud industry.
+                </p>
+                <a href="category.html" class="btn btn-light btn-lg text-primary fw-bold px-5 py-3 rounded-pill">Claim
+                    Enroll Now</a>
+            </div>
         </section>
 
         <!-- Custom Script for Owl Carousel Initialization -->

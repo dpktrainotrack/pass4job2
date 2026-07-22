@@ -13,6 +13,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .main-banner-section {
+            background-size: cover;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            color: white;
+            position: relative;
+            z-index: 2;
+        }
+
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #00000059;
+            top: 0;
+        }
+
+        .main-banner-section h1,
+        .main-banner-section p {
+            opacity: .9;
+        }
+    </style>
 </head>
 
 <body>
@@ -360,7 +383,9 @@
     </nav>
 
     <!-- Page Header -->
-    <div class="py-5 text-center" style="background: var(--gradient-blue); color: white; ">
+    <div class="py-5 mb-5 text-center  main-banner-section"
+        style="background-image: url('assets/images/banners/contact-banner.webp');">
+        <div class="overlay "></div>
         <div class="container">
             <h1 class="text-white">Contact Us</h1>
             <p class="lead opacity-75">We'd love to hear from you. Send us a message.</p>

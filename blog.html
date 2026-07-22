@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Pass4Job – IT Certification Insights & Tips</title>
+    <meta name="description"
+        content="Explore expert articles, study tips, and career advice on IT certifications including AWS, Azure, Cisco, CompTIA, and more at Pass4Job's blog.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Blog CSS -->
+    <link rel="stylesheet" href="assets/css/blog.css">
+</head>
+
+<body>
+
+    <!-- ===Navbar=== -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-shield-check" style="color: var(--accent-color);"></i>Pass4<span>Job</span>
+            </a>
+
+            <!-- Megamenu Toggler -->
+            <div class="dropdown me-auto position-static">
+                <button
+                    class="btn theme-primary dropdown-toggle courses-btn d-flex align-items-center gap-2 px-2 px-md-4 py-2"
+                    type="button" id="coursesMegaMenuButton" data-bs-toggle="dropdown" aria-expanded="false"
+                    data-bs-auto-close="outside">
+                    Training
+                </button>
+                <div class="dropdown-menu w-100 mega-menu-dropdown border-0 mt-3 p-3"
+                    aria-labelledby="coursesMegaMenuButton">
+                    <div class="container p-0 pb-5 rounded">
+                        <div class="row g-0">
+                            <div class="col-md-3 bg-light border-end mobile-responsive-sidebar">
+                                <div class="nav flex-md-column nav-pills mega-menu-tabs p-3 gap-2 brand-listing-tabs"
+                                    id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <button class="nav-link active d-flex align-items-center bg-white border"
+                                        id="v-pills-data-analytics-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-data-analytics" type="button" role="tab"
+                                        aria-selected="true">
+                                        <img src="assets/images/brands/aws.webp" alt="AWS" height="50">
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                    <button class="nav-link d-flex align-items-center bg-white border"
+                                        id="v-pills-data-science-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-data-science" type="button" role="tab"
+                                        aria-selected="false">
+                                        <img src="assets/images/brands/isaca.webp" alt="ISACA" height="50">
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                    <button class="nav-link d-flex align-items-center bg-white border"
+                                        id="v-pills-development-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-development" type="button" role="tab"
+                                        aria-selected="false">
+                                        <img src="assets/images/brands/comptia.webp" alt="CompTIA" height="50">
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                    <button class="nav-link d-flex align-items-center bg-white border"
+                                        id="v-pills-cyber-security-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-cyber-security" type="button" role="tab"
+                                        aria-selected="false">
+                                        <img src="assets/images/brands/pmi.webp" alt="PMI" height="50">
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                    <button class="nav-link d-flex align-items-center bg-white border"
+                                        id="v-pills-design-tab" data-bs-toggle="pill" data-bs-target="#v-pills-design"
+                                        type="button" role="tab" aria-selected="false">
+                                        <img src="assets/images/brands/microsoft.webp" alt="Microsoft" height="50">
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                    <button class="nav-link d-flex align-items-center bg-white border" id="tab8"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-tab-cisco" type="button"
+                                        role="tab" aria-selected="false">
+                                        <img src="assets/images/brands/cisco.webp" alt="Cisco" height="50">
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-9 p-sm-4 p-2 bg-white">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-data-analytics" role="tabpanel">
+                                        <div class="row g-3">
+                                            <div class="col-lg-6 col-12">
+                                                <a href="category.html" class="text-decoration-none text-dark">
+                                                    <div
+                                                        class="mega-course-card p-3 border rounded h-100 d-flex align-items-center gap-3">
+                                                        <div class="icon-wrapper rounded text-white bg-light">
+                                                            <img src="assets/images/cert/1.webp" alt="" height="65"
+                                                                class="rounded-3">
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <h6 class="fw-bold mb-2">AWS Certified Solutions Architect
+                                                            </h6>
+                                                            <div
+                                                                class="d-flex justify-content-between text-muted small">
+                                                                <span>8 Months</span><span>Online</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-data-science" role="tabpanel">
+                                        <h4 class="fw-bold mb-4">ISACA</h4>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-development" role="tabpanel">
+                                        <h4 class="fw-bold mb-4">CompTIA</h4>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-cyber-security" role="tabpanel">
+                                        <h4 class="fw-bold mb-4">PMI</h4>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-design" role="tabpanel">
+                                        <h4 class="fw-bold mb-4">Microsoft</h4>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-tab-cisco" role="tabpanel">
+                                        <h4 class="fw-bold mb-4">Cisco</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="traning.html">Our Trainings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="d-flex gap-2 hero-cta-btn">
+                    <a href="tel:+917428563177" class="btn btn-outline-light">+91 74285 63177</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===Blog Banner=== -->
+    <section class="blog-banner text-center" style="background-image: url('assets/images/banners/blog-banner.webp');">
+        <div class="container">
+            <span class="featured-badge mb-3">Pass4Job Blog</span>
+            <h1>IT Certification Insights & Career Tips</h1>
+            <p>Expert articles, study strategies, and career guidance to help you ace your IT certifications and land
+                your dream job.</p>
+        </div>
+    </section>
+
+    <!-- ===Breadcrumb=== -->
+    <nav class="blog-breadcrumb" aria-label="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home me-1"></i>Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Blog</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- ===Main Blog Content=== -->
+    <section class="py-5" style="background-color: #fdf9f6;">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- ── Left Column: Posts ── -->
+                <div class="col-12">
+                    <!-- <div class="blog-filter-bar">
+                        <div class="blog-search-wrap">
+                            <i class="fas fa-search search-icon"></i>
+                            <input type="text" id="blogSearch" placeholder="Search articles...">
+                        </div>
+                        <div class="blog-category-pills">
+                            <button class="blog-cat-pill active" data-cat="all">All</button>
+                            <button class="blog-cat-pill" data-cat="aws">AWS</button>
+                            <button class="blog-cat-pill" data-cat="cisco">Cisco</button>
+                            <button class="blog-cat-pill" data-cat="comptia">CompTIA</button>
+                            <button class="blog-cat-pill" data-cat="microsoft">Microsoft</button>
+                            <button class="blog-cat-pill" data-cat="career">Career Tips</button>
+                        </div>
+                    </div> -->
+
+                    <!-- Blog Cards Grid -->
+                    <div class="row g-4" id="blogGrid">
+
+                        <!-- Card 1 -->
+                        <div class="col-md-4 col-sm-6 col-12" data-category="comptia">
+                            <article class="blog-card">
+                                <div class="blog-card-img-wrap">
+                                    <img src="assets/images/banners/min-banner.webp"
+                                        alt="CompTIA Security+ Study Guide">
+                                    <span class="blog-card-category">CompTIA</span>
+                                    <span class="blog-card-read-time"><i class="fas fa-clock me-1"></i>6 min</span>
+                                </div>
+                                <div class="blog-card-body">
+                                    <div class="blog-card-meta">
+                                        <span><i class="fas fa-calendar-alt"></i> June 15, 2026</span>
+                                        <span><i class="fas fa-eye"></i> 2.1K views</span>
+                                    </div>
+                                    <h3 class="blog-card-title">The Ultimate CompTIA Security+ SY0-701 Study Guide for
+                                        2026</h3>
+                                    <p class="blog-card-excerpt">Break down every exam domain, discover the top prep
+                                        resources, and follow a structured 60-day study plan to pass with ease.</p>
+                                </div>
+                                <div class="blog-card-footer">
+                                    <div class="blog-card-author">
+                                        <img src="https://ui-avatars.com/api/?name=Priya+Sharma&background=974d17&color=fff"
+                                            alt="Priya Sharma">
+                                        <div class="blog-card-author-info">
+                                            <span class="author-name">Priya Sharma</span>
+                                            <span class="author-role">Security Expert</span>
+                                        </div>
+                                    </div>
+                                    <a href="blog-detail.html" class="blog-read-btn">Read <i
+                                            class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-md-4 col-sm-6 col-12" data-category="microsoft">
+                            <article class="blog-card">
+                                <div class="blog-card-img-wrap">
+                                    <img src="assets/images/banners/policy-banner.webp"
+                                        alt="Microsoft Azure AZ-900 Guide">
+                                    <span class="blog-card-category">Microsoft</span>
+                                    <span class="blog-card-read-time"><i class="fas fa-clock me-1"></i>5 min</span>
+                                </div>
+                                <div class="blog-card-body">
+                                    <div class="blog-card-meta">
+                                        <span><i class="fas fa-calendar-alt"></i> June 10, 2026</span>
+                                        <span><i class="fas fa-eye"></i> 1.8K views</span>
+                                    </div>
+                                    <h3 class="blog-card-title">AZ-900 Azure Fundamentals: Everything You Need to Know
+                                        in 2026</h3>
+                                    <p class="blog-card-excerpt">A beginner's complete roadmap to passing the Microsoft
+                                        AZ-900 exam — from cloud concepts to Azure services and pricing models.</p>
+                                </div>
+                                <div class="blog-card-footer">
+                                    <a href="author.html" class="text-decoration-none text-dark d-flex align-items-center">
+                                        <div class="blog-card-author">
+                                            <div style="width: 32px; height: 32px; border-radius: 50%; background: linear-gradient(135deg, #0284c7, #0f5a97); display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: white; font-family: 'Montserrat', sans-serif; font-weight: 800; flex-shrink: 0;" alt="Arjun Kumar">
+                                                AK
+                                            </div>
+                                            <div class="blog-card-author-info ms-2">
+                                                <span class="author-name">Arjun Kumar</span>
+                                                <span class="author-role">Cloud Architect</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="blog-detail.html" class="blog-read-btn">Read <i
+                                            class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-md-4 col-sm-6 col-12" data-category="cisco">
+                            <article class="blog-card">
+                                <div class="blog-card-img-wrap">
+                                    <img src="assets/images/banners/trams-condition-banner.webp" alt="CCNA Study Tips">
+                                    <span class="blog-card-category">Cisco</span>
+                                    <span class="blog-card-read-time"><i class="fas fa-clock me-1"></i>7 min</span>
+                                </div>
+                                <div class="blog-card-body">
+                                    <div class="blog-card-meta">
+                                        <span><i class="fas fa-calendar-alt"></i> June 5, 2026</span>
+                                        <span><i class="fas fa-eye"></i> 3.4K views</span>
+                                    </div>
+                                    <h3 class="blog-card-title">Top 10 Cisco CCNA Study Tips That Actually Work in 2026
+                                    </h3>
+                                    <p class="blog-card-excerpt">Learn the most effective techniques for mastering
+                                        networking fundamentals and conquering the Cisco CCNA 200-301 exam.</p>
+                                </div>
+                                <div class="blog-card-footer">
+                                    <div class="blog-card-author">
+                                        <img src="https://ui-avatars.com/api/?name=Amir+Khan&background=f8b400&color=311001"
+                                            alt="Amir Khan">
+                                        <div class="blog-card-author-info">
+                                            <span class="author-name">Amir Khan</span>
+                                            <span class="author-role">Network Engineer</span>
+                                        </div>
+                                    </div>
+                                    <a href="blog-detail.html" class="blog-read-btn">Read <i
+                                            class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                    </div>
+                    <!-- /Blog Cards Grid -->
+
+                    <!-- Pagination -->
+                    <div class="blog-pagination">
+                        <a href="#" class="blog-page-btn active">1</a>
+                        <a href="#" class="blog-page-btn">2</a>
+                        <a href="#" class="blog-page-btn">3</a>
+                        <a href="#" class="blog-page-btn"><i class="fas fa-ellipsis-h"></i></a>
+                        <a href="#" class="blog-page-btn">8</a>
+                        <a href="#" class="blog-page-btn"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                </div>
+                <!-- /Left Column -->
+
+
+                <!-- /Sidebar -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===Footer=== -->
+    <footer>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="mb-4">
+                        <img src="assets/images/logo-white.png" alt="Pass4Job Logo" style="height: 36px;">
+                    </div>
+                    <p class="small opacity-75 pe-lg-4">Your trusted partner for official and discounted IT
+                        certification vouchers. Start saving on your exams today.</p>
+                    <div class="footer-socials mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="category.html">Vouchers</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="mb-4">Training</h5>
+                    <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
+                        <li><a href="category.html">AWS Training</a></li>
+                        <li><a href="category.html">Microsoft Training</a></li>
+                        <li><a href="category.html">Cisco Training</a></li>
+                        <li><a href="category.html">CompTIA Training</a></li>
+                        <li><a href="category.html">PMI Training</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Contact Info</h5>
+                    <ul class="list-unstyled mb-0 d-flex flex-column gap-3 small opacity-75">
+                        <li><i class="fas fa-envelope me-2 text-primary"></i><a href="mailto:info@pass4job.com"
+                                class="text-decoration-none text-white">info@pass4job.com</a></li>
+                        <li><i class="fas fa-phone-alt me-2 text-primary"></i><a href="tel:+917428563177"
+                                class="text-decoration-none text-white">+91 74285 63177</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-5 mb-4" style="border-color: rgba(255,255,255,0.1);">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start small opacity-75">
+                    &copy; 2026 Pass4Job. All rights reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end small opacity-75 mt-3 mt-md-0">
+                    <a href="privacy-policy.html" class="me-3">Privacy Policy</a>
+                    <a href="terms-conditions.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        style="text-decoration:none;">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back To Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        // Category filter
+        const pills = document.querySelectorAll('.blog-cat-pill');
+        const cards = document.querySelectorAll('#blogGrid [data-category]');
+
+        pills.forEach(pill => {
+            pill.addEventListener('click', () => {
+                pills.forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+                const cat = pill.dataset.cat;
+                cards.forEach(card => {
+                    if (cat === 'all' || card.dataset.category === cat) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Search filter
+        document.getElementById('blogSearch').addEventListener('input', function () {
+            const val = this.value.toLowerCase();
+            cards.forEach(card => {
+                const title = card.querySelector('.blog-card-title').textContent.toLowerCase();
+                const excerpt = card.querySelector('.blog-card-excerpt').textContent.toLowerCase();
+                card.style.display = (title.includes(val) || excerpt.includes(val)) ? '' : 'none';
+            });
+        });
+    </script>
+
+</body>
+
+</html>

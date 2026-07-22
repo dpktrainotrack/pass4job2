@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Pass the AWS Solutions Architect Exam | Pass4Job Blog</title>
+    <meta name="description"
+        content="Discover the proven study plan, best resources, and exam strategies to pass the AWS Solutions Architect Associate (SAA-C03) certification on your first attempt.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Blog CSS -->
+    <link rel="stylesheet" href="assets/css/blog.css">
+
+    <style>
+        .blog-article h2 {
+            font-size: 1.55rem;
+            font-weight: 600;
+            color: var(--primary-blue);
+            padding-bottom: 10px;
+        }
+
+        .blog-article h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-top: 28px;
+            margin-bottom: 12px;
+        }
+
+        .blog-article ul li,
+        .blog-article ol li {
+            font-size: 0.97rem;
+            color: #4e5568;
+            line-height: 1.8;
+            margin-bottom: 8px;
+        }
+
+        .blog-article ul li::marker {
+            color: var(--primary-color);
+        }
+
+        .blog-article p {
+            font-size: 0.98rem;
+            color: #4e5568;
+            line-height: 1.85;
+            margin-bottom: 22px;
+        }
+
+        .blog-detail-img-wrapper {
+            border: none;
+            position: relative;
+        }
+
+        .blog-detail-title {
+            position: absolute;
+            z-index: 8;
+            bottom: 0;
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+
+        @media screen and (width >=1024px) {
+            .blog-detail-title h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ===Navbar=== -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-shield-check" style="color: var(--accent-color);"></i>Pass4<span>Job</span>
+            </a>
+
+            <!-- Megamenu Toggler -->
+            <div class="dropdown me-auto position-static">
+                <button
+                    class="btn theme-primary dropdown-toggle courses-btn d-flex align-items-center gap-2 px-2 px-md-4 py-2"
+                    type="button" id="coursesMegaMenuButton" data-bs-toggle="dropdown" aria-expanded="false"
+                    data-bs-auto-close="outside">
+                    Training
+                </button>
+                <div class="dropdown-menu w-100 mega-menu-dropdown border-0 mt-3 p-3"
+                    aria-labelledby="coursesMegaMenuButton">
+                    <div class="container p-0 pb-5 rounded">
+                        <div class="row g-0">
+                            <div class="col-md-3 bg-light border-end mobile-responsive-sidebar">
+                                <div class="nav flex-md-column nav-pills mega-menu-tabs p-3 gap-2 brand-listing-tabs"
+                                    id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <button class="nav-link active d-flex align-items-center bg-white border"
+                                        id="v-pills-data-analytics-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-data-analytics" type="button" role="tab"
+                                        aria-selected="true">
+                                        <img src="assets/images/brands/aws.webp" alt="AWS" height="50">
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                    <button class="nav-link d-flex align-items-center bg-white border"
+                                        id="v-pills-data-science-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-data-science" type="button" role="tab"
+                                        aria-selected="false">
+                                        <img src="assets/images/brands/isaca.webp" alt="ISACA" height="50">
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                    <button class="nav-link d-flex align-items-center bg-white border"
+                                        id="v-pills-development-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-development" type="button" role="tab"
+                                        aria-selected="false">
+                                        <img src="assets/images/brands/comptia.webp" alt="CompTIA" height="50">
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                    <button class="nav-link d-flex align-items-center bg-white border"
+                                        id="v-pills-cyber-security-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-cyber-security" type="button" role="tab"
+                                        aria-selected="false">
+                                        <img src="assets/images/brands/pmi.webp" alt="PMI" height="50">
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                    <button class="nav-link d-flex align-items-center bg-white border"
+                                        id="v-pills-design-tab" data-bs-toggle="pill" data-bs-target="#v-pills-design"
+                                        type="button" role="tab" aria-selected="false">
+                                        <img src="assets/images/brands/microsoft.webp" alt="Microsoft" height="50">
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                    <button class="nav-link d-flex align-items-center bg-white border" id="tab8"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-tab-cisco" type="button"
+                                        role="tab" aria-selected="false">
+                                        <img src="assets/images/brands/cisco.webp" alt="Cisco" height="50">
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-9 p-sm-4 p-2 bg-white">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-data-analytics" role="tabpanel">
+                                        <div class="row g-3">
+                                            <div class="col-lg-6 col-12">
+                                                <a href="category.html" class="text-decoration-none text-dark">
+                                                    <div
+                                                        class="mega-course-card p-3 border rounded h-100 d-flex align-items-center gap-3">
+                                                        <div class="icon-wrapper rounded text-white bg-light">
+                                                            <img src="assets/images/cert/1.webp" alt="" height="65"
+                                                                class="rounded-3">
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <h6 class="fw-bold mb-2">AWS Certified Solutions Architect
+                                                            </h6>
+                                                            <div
+                                                                class="d-flex justify-content-between text-muted small">
+                                                                <span>8 Months</span><span>Online</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-data-science" role="tabpanel">
+                                        <h4 class="fw-bold mb-4">ISACA</h4>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-development" role="tabpanel">
+                                        <h4 class="fw-bold mb-4">CompTIA</h4>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-cyber-security" role="tabpanel">
+                                        <h4 class="fw-bold mb-4">PMI</h4>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-design" role="tabpanel">
+                                        <h4 class="fw-bold mb-4">Microsoft</h4>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-tab-cisco" role="tabpanel">
+                                        <h4 class="fw-bold mb-4">Cisco</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="traning.html">Our Trainings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="d-flex gap-2 hero-cta-btn">
+                    <a href="tel:+917428563177" class="btn btn-outline-light">+91 74285 63177</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===Breadcrumb=== -->
+    <nav class="blog-breadcrumb" aria-label="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="index.html"></i>Home</a></li>
+                <li class="breadcrumb-item"><a href="blog.html">Blog</a></li>
+                <li class="breadcrumb-item active" aria-current="page">AWS Solutions Architect Exam Guide</li>
+            </ol>
+        </div>
+    </nav>
+
+
+
+    <!-- ===Article + Sidebar=== -->
+    <section class="py-5" style="background: #fdf9f6;">
+        <div class="container">
+            <div class="row g-4">
+                <!-- ── Article Column ── -->
+                <div class="col-lg-9 ">
+                    <!-- Article Body -->
+                    <article class="blog-article">
+                        <div class="blog-detail-img-wrapper">
+                            <img src="https://zorillalifescience.com/wp-content/uploads/2022/03/Corporate-Training.jpg"
+                                alt="" class="img-fluid">
+                            <div class="blog-detail-title">
+                                <h1>How to Pass the AWS Solutions Architect Exam: A Step-by-Step Guide</h1>
+                            </div>
+
+                        </div>
+                        <div class="mb-3  blog-article-author-info">
+                            <span><i class="fas fa-user me-2"></i>By <a href="author.html" class="text-decoration-none text-muted fw-semibold">Arjun Kumar</a></span>
+                            <span><i class="fas fa-calendar-alt me-2"></i>June 15, 2026</span>
+
+                        </div>
+
+                        <h2>Why the AWS SAA Certification Matters</h2>
+                        <p>
+                            Cloud computing has become the backbone of modern IT infrastructure. Amazon Web Services
+                            holds the largest market share in the cloud industry, making AWS certifications incredibly
+                            valuable. The Solutions Architect Associate exam validates your ability to design secure,
+                            resilient, and cost-optimized cloud architectures on AWS.
+                        </p>
+                        <p>
+                            Professionals who earn this certification can expect salary increases averaging 20–35%, with
+                            many certified architects earning upwards of $120,000 per year. It's not just a
+                            certification — it's a career accelerator.
+                        </p>
+
+
+
+                        <h2>Understanding the SAA-C03 Exam Format</h2>
+                        <p>Before diving into preparation, it's essential to understand what the exam involves:</p>
+
+
+
+                        <h2>The 4 Core Exam Domains</h2>
+                        <p>The SAA-C03 exam covers four key domains. Understanding their weight helps you prioritize
+                        your study time:</p>
+
+                        <ol>
+                            <li><strong>Design Secure Architectures (30%)</strong> — IAM, encryption, VPCs, security
+                                groups, and compliance.</li>
+                            <li><strong>Design Resilient Architectures (26%)</strong> — High availability, disaster
+                                recovery, decoupling, and caching.</li>
+                            <li><strong>Design High-Performing Architectures (24%)</strong> — Storage, compute,
+                                databases, and networking.</li>
+                            <li><strong>Design Cost-Optimized Architectures (20%)</strong> — Pricing models,
+                                rightsizing, and cost management tools.</li>
+                        </ol>
+
+                        <blockquote>
+                            "The key to passing AWS certifications is not memorizing services — it's understanding
+                            <em>when</em> and <em>why</em> to use each one in a given scenario."
+                            <cite>— Arjun Kumar, AWS Solutions Architect</cite>
+                        </blockquote>
+
+                        <h2>Your 8-Week Study Plan</h2>
+                        <p>Here is a proven 8-week study plan that has helped thousands of Pass4Job students achieve
+                            your AWS certification:</p>
+
+                        <h3>Week 1–2: Build Your Cloud Foundation</h3>
+                        <p>Start with AWS fundamentals if you're new to cloud. Use the <strong>AWS Skill
+                                Builder</strong> free tier and the official <strong>AWS Certified Solutions Architect
+                                Study Guide</strong> by Ben Piper. Focus on understanding core services: EC2, S3, RDS,
+                            VPC, and IAM.</p>
+
+                        <h3>Week 3–4: Deep Dive into Core Services</h3>
+                        <p>Spend dedicated time on each major service category. Create hands-on labs using the AWS free
+                            tier. Build simple architectures — a web application hosted on EC2 behind a load balancer
+                            with an RDS database is a great start.</p>
+
+                        <h3>Week 5–6: Advanced Topics & Scenario Practice</h3>
+                        <p>Tackle advanced topics: Auto Scaling, Route 53, CloudFront, SQS vs SNS vs Kinesis, Lambda,
+                            and DynamoDB. Start practicing scenario-based questions from reputable mock exam providers.
+                        </p>
+
+                        <h3>Week 7: Mock Exams & Gap Analysis</h3>
+                        <p>Take full-length practice exams under timed conditions. Target 80%+ before booking your real
+                            exam. Review every incorrect answer and understand the reasoning behind each correct one.
+                        </p>
+
+                        <h3>Week 8: Final Review & Exam Day</h3>
+                        <p>Revise your weak areas, review AWS whitepapers (Well-Architected Framework, Storage
+                            Whitepaper), and get a good night's sleep before exam day. Arrive 15 minutes early to settle
+                            in.</p>
+
+
+
+                        <h2>Top Resources We Recommend</h2>
+                        <ul>
+                            <li><strong>Stephane Maarek's AWS SAA Course</strong> (Udemy) — The most comprehensive video
+                                course available</li>
+                            <li><strong>Jon Bonso Practice Exams</strong> (TutorialsDojo) — Industry-standard mock exams
+                            </li>
+                            <li><strong>AWS Official Documentation</strong> — Always the most accurate source</li>
+                            <li><strong>AWS Well-Architected Framework Whitepaper</strong> — Essential reading</li>
+                            <li><strong>Pass4Job Exam Vouchers</strong> — Save up to 30% on your exam booking</li>
+                        </ul>
+
+                        <h2>Exam Day Tips</h2>
+                        <p>On the day of your exam, keep these strategies in mind:</p>
+                        <ul>
+                            <li>Read each question carefully — AWS loves tricky wording that changes the correct answer
+                            </li>
+                            <li>Eliminate obviously wrong answers first (process of elimination)</li>
+                            <li>Look for keywords: "most cost-effective," "least operational overhead," "highly
+                                available"</li>
+                            <li>Flag uncertain questions and revisit them — don't waste time getting stuck</li>
+                            <li>Trust your preparation — you've put in the work!</li>
+                        </ul>
+
+                        <!-- Tags -->
+
+
+                    </article>
+
+                    <!-- Share Bar -->
+                    <!-- <div class="blog-share-bar">
+                        <span class="share-label"><i class="fas fa-share-alt me-2"></i>Share this article:</span>
+                        <a href="#" class="share-btn share-btn-fb"><i class="fab fa-facebook-f"></i> Facebook</a>
+                        <a href="#" class="share-btn share-btn-tw"><i class="fab fa-twitter"></i> Twitter</a>
+                        <a href="#" class="share-btn share-btn-li"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                        <a href="#" class="share-btn share-btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    </div> -->
+
+                    <!-- Author Card -->
+                    <div class="blog-author-card">
+                        <div style="width: 100px; height: 100px; border-radius: 50%; background: linear-gradient(135deg, #0284c7, #0f5a97); display: flex; align-items: center; justify-content: center; font-size: 2.2rem; color: white; font-family: 'Montserrat', sans-serif; font-weight: 800; flex-shrink: 0;" alt="Arjun Kumar">
+                            AK
+                        </div>
+                        <div class="author-card-info ms-4">
+                            <div class="author-card-name"><a href="author.html" class="text-decoration-none text-dark">Arjun Kumar</a></div>
+                            <div class="author-card-role">Cloud Architect & AWS Subject Matter Expert</div>
+                            <p>Arjun is a Senior IT Certification Trainer and Cloud Architect with over 12 years of experience. He has helped 8,500+ students pass their global cloud and networking certifications.</p>
+                            <div class="mt-3">
+                                <a href="author.html" class="btn theme-primary btn-sm px-3 rounded-pill text-white text-decoration-none">View Profile</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /Article Column -->
+
+                <!-- ── Sidebar ── -->
+                <aside class="col-lg-3 blog-sidebar">
+                    <!-- Recent Posts -->
+                    <div class="sidebar-widget">
+                        <h3 class="sidebar-widget-title"><i class="fas fa-clock"></i> Recent Posts</h3>
+                        <article class=" recent-blog-custom-card">
+                            <a href="blog-detail.html" class="recent-post-item">
+                                <img src="assets/images/banners/min-banner.webp" alt="Top 10 AWS Services" class="">
+                                <div class="recent-post-item-content">
+                                    <div class="recent-post-item-title">Top 10 AWS Services Every Cloud Professional
+                                        Must Know</div>
+                                    <div class="recent-post-item-meta">
+                                        <span><i class="fas fa-calendar-alt me-1"></i> June 15, 2026</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+
+                    </div>
+                </aside>
+                <!-- /Sidebar -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===Recent Blogs Section=== -->
+    <section class="detail-recent-blogs">
+        <div class="container">
+            <span class="section-label">Don't Stop Here</span>
+            <h2>Recent Blog Posts</h2>
+
+            <div class="row g-4">
+
+                <!-- Recent Card 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <article class="recent-blog-card">
+                        <div class="recent-blog-card-img">
+                            <img src="assets/images/banners/min-banner.webp" alt="CompTIA Security+ Guide">
+                            <span class="recent-blog-card-category">CompTIA</span>
+                        </div>
+                        <div class="recent-blog-card-body">
+                            <div class="recent-blog-card-meta">
+                                <span><i class="fas fa-calendar-alt"></i> June 15, 2026</span>
+                                <span><i class="fas fa-clock"></i> 6 min</span>
+                            </div>
+                            <a href="blog-detail.html" class="recent-blog-card-title">
+                                The Ultimate CompTIA Security+ SY0-701 Study Guide for 2026
+                            </a>
+                            <p class="recent-blog-card-excerpt">Break down every exam domain and follow a 60-day study
+                                plan to pass with ease.</p>
+                            <a href="blog-detail.html" class="recent-blog-card-link">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Recent Card 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <article class="recent-blog-card">
+                        <div class="recent-blog-card-img">
+                            <img src="assets/images/banners/policy-banner.webp" alt="AZ-900 Guide">
+                            <span class="recent-blog-card-category">Microsoft</span>
+                        </div>
+                        <div class="recent-blog-card-body">
+                            <div class="recent-blog-card-meta">
+                                <span><i class="fas fa-calendar-alt"></i> June 10, 2026</span>
+                                <span><i class="fas fa-clock"></i> 5 min</span>
+                            </div>
+                            <a href="blog-detail.html" class="recent-blog-card-title">
+                                AZ-900 Azure Fundamentals: Everything You Need to Know in 2026
+                            </a>
+                            <p class="recent-blog-card-excerpt">A beginner's complete roadmap to passing the Microsoft
+                                AZ-900 from cloud concepts to Azure pricing.</p>
+                            <a href="blog-detail.html" class="recent-blog-card-link">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Recent Card 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <article class="recent-blog-card">
+                        <div class="recent-blog-card-img">
+                            <img src="assets/images/banners/trams-condition-banner.webp" alt="Cisco CCNA">
+                            <span class="recent-blog-card-category">Cisco</span>
+                        </div>
+                        <div class="recent-blog-card-body">
+                            <div class="recent-blog-card-meta">
+                                <span><i class="fas fa-calendar-alt"></i> June 5, 2026</span>
+                                <span><i class="fas fa-clock"></i> 7 min</span>
+                            </div>
+                            <a href="blog-detail.html" class="recent-blog-card-title">
+                                Top 10 Cisco CCNA Study Tips That Actually Work in 2026
+                            </a>
+                            <p class="recent-blog-card-excerpt">The most effective techniques for mastering networking
+                                fundamentals and passing the 200-301 exam.</p>
+                            <a href="blog-detail.html" class="recent-blog-card-link">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Recent Card 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <article class="recent-blog-card">
+                        <div class="recent-blog-card-img">
+                            <img src="assets/images/banners/banner1.jpg" alt="IT Career">
+                            <span class="recent-blog-card-category">Career Tips</span>
+                        </div>
+                        <div class="recent-blog-card-body">
+                            <div class="recent-blog-card-meta">
+                                <span><i class="fas fa-calendar-alt"></i> May 28, 2026</span>
+                                <span><i class="fas fa-clock"></i> 9 min</span>
+                            </div>
+                            <a href="blog-detail.html" class="recent-blog-card-title">
+                                How IT Certifications Boosted These 5 Professionals' Salaries by 40%
+                            </a>
+                            <p class="recent-blog-card-excerpt">Real success stories from IT pros who used
+                                certifications to dramatically grow their income.</p>
+                            <a href="blog-detail.html" class="recent-blog-card-link">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+
+            <!-- View All Button -->
+            <div class="text-center mt-5">
+                <a href="blog.html" class="btn theme-primary btn-lg px-5">
+                    <i class="fas fa-newspaper me-2"></i>View All Articles
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===Footer=== -->
+    <footer>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="mb-4">
+                        <img src="assets/images/logo-white.png" alt="Pass4Job Logo" style="height: 36px;">
+                    </div>
+                    <p class="small opacity-75 pe-lg-4">Your trusted partner for official and discounted IT
+                        certification vouchers. Start saving on your exams today.</p>
+                    <div class="footer-socials mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="category.html">Vouchers</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="mb-4">Training</h5>
+                    <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
+                        <li><a href="category.html">AWS Training</a></li>
+                        <li><a href="category.html">Microsoft Training</a></li>
+                        <li><a href="category.html">Cisco Training</a></li>
+                        <li><a href="category.html">CompTIA Training</a></li>
+                        <li><a href="category.html">PMI Training</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Contact Info</h5>
+                    <ul class="list-unstyled mb-0 d-flex flex-column gap-3 small opacity-75">
+                        <li><i class="fas fa-envelope me-2 text-primary"></i><a href="mailto:info@pass4job.com"
+                                class="text-decoration-none text-white">info@pass4job.com</a></li>
+                        <li><i class="fas fa-phone-alt me-2 text-primary"></i><a href="tel:+917428563177"
+                                class="text-decoration-none text-white">+91 74285 63177</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-5 mb-4" style="border-color: rgba(255,255,255,0.1);">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start small opacity-75">
+                    &copy; 2026 Pass4Job. All rights reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end small opacity-75 mt-3 mt-md-0">
+                    <a href="privacy-policy.html" class="me-3">Privacy Policy</a>
+                    <a href="terms-conditions.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        style="text-decoration:none;">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back To Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

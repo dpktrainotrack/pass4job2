@@ -75,6 +75,50 @@
 
        
             */
+
+        .training-dropdown-wrapper {
+            position: relative;
+        }
+
+        .training-wrapper {
+            position: absolute;
+            left: 10px;
+            display: none;
+            background-color: #1899bcb8;
+            top: 100%;
+        }
+
+        .sticky .training-wrapper {
+            background-color: #ffffffe3;
+        }
+
+        .training-wrapper ul li {
+            list-style: none;
+        }
+
+        .training-wrapper ul {
+
+            padding: 0;
+            min-width: 140px;
+        }
+
+        .training-dropdown-wrapper:hover .training-wrapper {
+            display: block;
+        }
+
+        @media screen and (max-width: 768px) {
+            .training-wrapper {
+                display: block;
+                position: static;
+                background-color: transparent;
+            }
+
+            .training-dropdown-wrapper .training-wrapper ul li:last-child a {
+                margin-bottom: 0;
+            }
+
+
+        }
     </style>
 </head>
 
@@ -425,8 +469,19 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="traning.html">Our Courses</a>
+                        <li class="nav-item training-dropdown-wrapper">
+
+                            <a class="nav-link" href="traning.html">Our Trainings <i
+                                    class="fa-solid fa-angle-down "></i></a>
+
+                            <div class="training-wrapper ">
+                                <ul>
+                                    <li><a class="nav-link" href="#">aws</a></li>
+                                    <li><a class="nav-link" href="#">aws</a></li>
+                                    <li><a class="nav-link" href="#">aws</a></li>
+
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About Us</a>
@@ -519,8 +574,9 @@
                                 <div class="hef-field-group mb-3">
                                     <div class="hef-input-wrap">
                                         <span class="hef-input-icon"><i class="fas fa-user"></i></span>
-                                        <input type="text" id="idxName" class="hef-input" placeholder=" " required>
-                                        <label for="idxName" class="hef-label">Full Name</label>
+                                        <input type="text" id="idxName" class="hef-input" placeholder="Full Name"
+                                            required>
+
                                     </div>
                                 </div>
 
@@ -528,8 +584,9 @@
                                 <div class="hef-field-group mb-3">
                                     <div class="hef-input-wrap">
                                         <span class="hef-input-icon"><i class="fas fa-envelope"></i></span>
-                                        <input type="email" id="idxEmail" class="hef-input" placeholder=" " required>
-                                        <label for="idxEmail" class="hef-label">Email Address</label>
+                                        <input type="email" id="idxEmail" class="hef-input" placeholder="Email Address"
+                                            required>
+
                                     </div>
                                 </div>
 
@@ -537,29 +594,14 @@
                                 <div class="hef-field-group mb-3">
                                     <div class="hef-input-wrap hef-phone-wrap">
                                         <span class="hef-input-icon"><i class="fas fa-phone-alt"></i></span>
-                                        <span class="hef-country-code">+91</span>
+
                                         <input type="tel" id="idxPhone" class="hef-input hef-input-phone"
-                                            placeholder=" " required>
-                                        <label for="idxPhone" class="hef-label hef-label-phone">Phone Number</label>
+                                            placeholder="Phone Number" required>
+
                                     </div>
                                 </div>
 
-                                <!-- Course Interest -->
-                                <!-- <div class="hef-field-group mb-3">
-                                    <div class="hef-input-wrap hef-select-wrap">
-                                        <span class="hef-input-icon"><i class="fas fa-graduation-cap"></i></span>
-                                        <select id="idxCourse" class="hef-input hef-select" required>
-                                            <option value="" disabled selected hidden></option>
-                                            <option>AWS Solutions Architect</option>
-                                            <option>Microsoft Azure</option>
-                                            <option>Google Cloud (GCP)</option>
-                                            <option>Cisco CCNA / CCNP</option>
-                                            <option>CompTIA Security+</option>
-                                        </select>
-                                        <label for="idxCourse" class="hef-label">Course Interested In</label>
-                                        <span class="hef-select-arrow"><i class="fas fa-chevron-down"></i></span>
-                                    </div>
-                                </div> -->
+
 
                                 <!-- your message -->
                                 <div class="hef-field-group mb-4">
@@ -567,8 +609,8 @@
                                         <span class="hef-input-icon hef-textarea-icon"><i
                                                 class="fas fa-message"></i></span>
                                         <textarea id="idxTime" class="hef-input hef-textarea"
-                                            placeholder=" "></textarea>
-                                        <label for="idxTime" class="hef-label">Your Message</label>
+                                            placeholder="Your Message"></textarea>
+
 
                                     </div>
                                 </div>
@@ -1714,78 +1756,72 @@
                     </div>
                 </div>
                 <div class="col-lg-7">
-                    <div class="accordion" id="faqAccordion">
+                    <div class="accordion" id="faqAccordion"> <!-- FAQ 1 -->
                         <div class="accordion-item border-0 mb-3 rounded shadow-sm">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button rounded" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <strong>What is an IT Certification Voucher?</strong>
-                                </button>
+                            <h2 class="accordion-header" id="headingOne"> <button class="accordion-button rounded"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne"> <strong>Which IT certification is
+                                        best for beginners?</strong> </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#faqAccordion">
-                                <div class="accordion-body text-muted">
-                                    An IT Certification Voucher is a pre-paid alphanumeric code that you use to pay for
-                                    your official IT certification exam instead of paying with a credit card at the time
-                                    of registration.
-                                </div>
+                                <div class="accordion-body text-muted"> If you are starting your IT career,
+                                    certifications such as CCNA,
+                                    CompTIA Security+, AWS Cloud, and Microsoft Azure are excellent options. These
+                                    certifications help build
+                                    strong technical skills and create opportunities in networking, cybersecurity, cloud
+                                    computing, and IT
+                                    support. </div>
                             </div>
-                        </div>
+                        </div> <!-- FAQ 2 -->
                         <div class="accordion-item border-0 mb-3 rounded shadow-sm">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed rounded" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                                    aria-controls="collapseTwo">
-                                    <strong>How long is the voucher valid?</strong>
-                                </button>
+                            <h2 class="accordion-header" id="headingTwo"> <button
+                                    class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <strong>Do you provide online IT certification training?</strong> </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#faqAccordion">
-                                <div class="accordion-body text-muted">
-                                    Typically, vouchers are valid for up to 12 months from the date of purchase. Ensure
-                                    to schedule and take your exam before the expiration date.
-                                </div>
+                                <div class="accordion-body text-muted"> Yes. We provide instructor-led online IT
+                                    certification training with
+                                    expert guidance, hands-on learning, study materials, and exam-focused preparation.
+                                    Our programs are
+                                    designed for both beginners and experienced professionals. </div>
                             </div>
-                        </div>
+                        </div> <!-- FAQ 3 -->
                         <div class="accordion-item border-0 mb-3 rounded shadow-sm">
-                            <h2 class="accordion-header" id="headingfour">
-                                <button class="accordion-button collapsed rounded" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                                    aria-controls="collapseThree">
-                                    <strong>How do I redeem my voucher?</strong>
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            <h2 class="accordion-header" id="headingThree"> <button
+                                    class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <strong>How do I choose the right IT certification training?</strong>
+                                </button> </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#faqAccordion">
-                                <div class="accordion-body text-muted">
-                                    During the checkout process on the official testing provider (like Pearson VUE), you
-                                    will see an option to "Add Voucher or Promo Code". Enter the code we sent you there,
-                                    and the balance will become zero.
-                                </div>
+                                <div class="accordion-body text-muted"> Choosing the right IT certification training
+                                    starts with identifying your career goals and current skill level. Look for
+                                    training that follows the latest certification objectives, includes expert guidance,
+                                    and helps you build practical
+                                    knowledge so you can prepare confidently for your certification exam.</div>
                             </div>
-                        </div>
+                        </div> <!-- FAQ 4 -->
                         <div class="accordion-item border-0 mb-3 rounded shadow-sm">
-                            <h2 class="accordion-header" id="headingfive">
-                                <button class="accordion-button collapsed rounded" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false"
-                                    aria-controls="collapsesix">
-                                    <strong>Can I get a refund if I don't use the voucher?</strong>
-                                </button>
-                            </h2>
-                            <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="collapsesix"
+                            <h2 class="accordion-header" id="headingFour"> <button
+                                    class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <strong>How long does IT certification training usually take?</strong>
+                                </button> </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#faqAccordion">
-                                <div class="accordion-body text-muted">
-                                    No, generally vouchers are non-refundable. Once purchased, they cannot be canceled
-
-                                </div>
+                                <div class="accordion-body text-muted"> Training duration varies depending on the
+                                    certification, course
+                                    complexity, and learning format. Most certification programs can be completed within
+                                    a few weeks to
+                                    several months, allowing learners to progress according to their schedule and career
+                                    goals. </div>
                             </div>
                         </div>
+                    </div>
 
-                    </div>
-                    <div class="text-center mt-4">
-                        <a href="faq.html" class="text-primary fw-bold text-decoration-none">View All FAQs <i
-                                class="fas fa-arrow-right"></i></a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -1814,6 +1850,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="category.html">Vouchers</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                         <li><a href="faq.html">FAQ</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
@@ -1847,8 +1884,8 @@
                     &copy; 2024 Pass4Job. All rights reserved.
                 </div>
                 <div class="col-md-6 text-center text-md-end small opacity-75 mt-3 mt-md-0">
-                    <a href="#" class="me-3">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
+                    <a href="privacy-policy.html" class="me-3">Privacy Policy</a>
+                    <a href="terms-conditions.html">Terms of Service</a>
                 </div>
             </div>
         </div>
